@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-09-08T10:48:14.760Z",
+  "mode": "cold-single",
+  "singleThread": true,
+  "workerConcurrency": 1,
+  "requestedWorkers": 1,
+  "workerLimitMethod": null,
+  "repetitions": 1,
+  "nodeHardwareConcurrency": 16,
+  "scope": "groth16.prove only, using an existing .wtns and zkey; proof verification is performed by the parent benchmark outside the measured process",
+  "runs": [
+    {
+      "run": 1,
+      "elapsedMs": 2290.7,
+      "before": {
+        "rssMiB": 57.1,
+        "heapUsedMiB": 9.37,
+        "externalMiB": 2.49,
+        "arrayBuffersMiB": 0.14
+      },
+      "sampledPeakRssMiB": 118.13,
+      "after": {
+        "rssMiB": 118.13,
+        "heapUsedMiB": 11.13,
+        "externalMiB": 50.76,
+        "arrayBuffersMiB": 45.03
+      },
+      "afterGc": {
+        "rssMiB": 71,
+        "heapUsedMiB": 9.59,
+        "externalMiB": 31.2,
+        "arrayBuffersMiB": 0.14
+      }
+    }
+  ]
+}

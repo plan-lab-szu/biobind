@@ -1,0 +1,139 @@
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+{
+  "v1": {
+    "runtimeBytes": 6658,
+    "deploymentGas": 1619926,
+    "medians": {
+      "createSession": 135121,
+      "bindRequest": 87814,
+      "finalizeAppend": 159041,
+      "finalizeMerge": 138107,
+      "finalizeStale": 127425,
+      "finalizeDuplicate": 124773
+    },
+    "tSweep": [
+      {
+        "t": 3,
+        "n": 5,
+        "finalizeAppendMedian": 170987,
+        "finalizeMergeMedian": 138119,
+        "samples": {
+          "append": 2,
+          "merge": 12
+        }
+      },
+      {
+        "t": 5,
+        "n": 9,
+        "finalizeAppendMedian": 202900,
+        "finalizeMergeMedian": 170056,
+        "samples": {
+          "append": 2,
+          "merge": 12
+        }
+      },
+      {
+        "t": 7,
+        "n": 13,
+        "finalizeAppendMedian": 234848,
+        "finalizeMergeMedian": 202004,
+        "samples": {
+          "append": 2,
+          "merge": 12
+        }
+      }
+    ],
+    "endToEnd": [
+      {
+        "person": "P1",
+        "append": true,
+        "createSession": 132321,
+        "bindRequest": 87790,
+        "finalize": 170975,
+        "issuance": 469857,
+        "total": 860943
+      },
+      {
+        "person": "P2",
+        "append": false,
+        "createSession": 135121,
+        "bindRequest": 87814,
+        "finalize": 138119,
+        "issuance": 452902,
+        "total": 813956
+      }
+    ]
+  },
+  "compact": {
+    "runtimeBytes": 7018,
+    "deploymentGas": 1697903,
+    "medians": {
+      "createSession": 61285,
+      "bindRequest": 48087,
+      "finalizeAppend": 142319,
+      "finalizeMerge": 119398,
+      "finalizeStale": 78889,
+      "finalizeDuplicate": 76180
+    },
+    "tSweep": [
+      {
+        "t": 3,
+        "n": 5,
+        "finalizeAppendMedian": 153680,
+        "finalizeMergeMedian": 119398,
+        "samples": {
+          "append": 2,
+          "merge": 12
+        }
+      },
+      {
+        "t": 5,
+        "n": 9,
+        "finalizeAppendMedian": 185629,
+        "finalizeMergeMedian": 151347,
+        "samples": {
+          "append": 2,
+          "merge": 12
+        }
+      },
+      {
+        "t": 7,
+        "n": 13,
+        "finalizeAppendMedian": 217567,
+        "finalizeMergeMedian": 183273,
+        "samples": {
+          "append": 2,
+          "merge": 12
+        }
+      }
+    ],
+    "endToEnd": [
+      {
+        "person": "P1",
+        "append": true,
+        "createSession": 78385,
+        "bindRequest": 47643,
+        "finalize": 153656,
+        "issuance": 455191,
+        "total": 734875
+      },
+      {
+        "person": "P2",
+        "append": false,
+        "createSession": 61285,
+        "bindRequest": 48087,
+        "finalize": 119398,
+        "issuance": 438071,
+        "total": 666841
+      }
+    ]
+  }
+}

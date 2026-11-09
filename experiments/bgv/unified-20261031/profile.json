@@ -1,0 +1,29 @@
+{
+  "profile": "Unified512-2",
+  "L": 512,
+  "Gamma": 2047,
+  "degree": 8192,
+  "layers": 2,
+  "capacity": 16384,
+  "T": 8473312,
+  "D": "4236655.322594843609038352909095316031469313893262345803292682614778673",
+  "integerNormSquaredMax": 4236655,
+  "plainBits": 48,
+  "coeffBits": [
+    60,
+    50,
+    50,
+    50
+  ],
+  "keyBits": 210,
+  "dataBits": 160,
+  "requiredSecurityCheck": "SEAL tc128; must remain enabled",
+  "C1_T": true,
+  "C1_plainLowerBound": true,
+  "runtimeValidation": "blocked before execution; no actual prime/parameter-id or noise results for this profile",
+  "seeds": [
+    20261031,
+    20261032,
+    20261033
+  ]
+}

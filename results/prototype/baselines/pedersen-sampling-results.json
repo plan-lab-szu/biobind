@@ -1,0 +1,402 @@
+{
+  "generatedAt": "2026-09-08T09:43:58.491Z",
+  "scope": "Recomputed sampling soundness plus an audit of gas values reported by the old BioZero manuscript; this is not a fresh Pedersen EVM remeasurement.",
+  "roundingRule": "The near-5% case uses round(0.05*N): w=6 at N=128 and w=26 at N=512.",
+  "oldPaper128": {
+    "source": "ISC_2026_paper_7168.pdf, Section 6.3, Table 1 and Figure 3",
+    "fixedGroth16Gas": 271200,
+    "rows": [
+      {
+        "lambda": 1,
+        "reportedSpotGas": 701400,
+        "reportedFivePercent": 0.2914
+      },
+      {
+        "lambda": 2,
+        "reportedSpotGas": 981900,
+        "reportedFivePercent": 0.4979
+      },
+      {
+        "lambda": 4,
+        "reportedSpotGas": 1568200,
+        "reportedFivePercent": 0.7479
+      },
+      {
+        "lambda": 8,
+        "reportedSpotGas": 2874200,
+        "reportedFivePercent": 0.9712
+      }
+    ]
+  },
+  "routeA128": {
+    "pureVerifierGas": 241694,
+    "statefulAuthenticationGas": 282479,
+    "statefulChallengeGas": 76689,
+    "anchoredFirstAuthenticationGas": 306328,
+    "anchoredSteadyAuthenticationGas": 289240
+  },
+  "sameHarnessPedersenKernel": {
+    "generatedAt": "2026-09-08T09:40:05.817Z",
+    "scope": "Same-harness BN254 verification kernel for six legacy Pedersen consistency equations per sampled coordinate plus full-vector distance commitment reconstruction. It excludes Fiat-Shamir sample derivation, enrollment storage, nonce state, and the legacy threshold Groth16 verifier.",
+    "securityWarning": "The benchmark uses H=5G so valid points can be generated deterministically. This is insecure for a real Pedersen commitment but has the same EVM group-operation cost.",
+    "dimension": 128,
+    "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+    "optimizerRuns": 200,
+    "evmVersion": "shanghai",
+    "chain": "Ganache 7.9.2, chain id 31337",
+    "repetitions": 3,
+    "deployment": {
+      "gasUsed": 541007,
+      "initCodeBytes": 2413,
+      "runtimeCodeBytes": 2247
+    },
+    "operationCountPerSample": {
+      "consistencyEquations": 6,
+      "bn254ScalarMultiplications": 18,
+      "bn254Additions": 12
+    },
+    "fixedDistanceReconstruction": {
+      "coordinates": 128,
+      "bn254AdditionsPerCoordinate": 4
+    },
+    "results": [
+      {
+        "label": "reconstruction-only",
+        "lambda": null,
+        "samples": 0,
+        "oneBadCoordinateDetection": 0,
+        "repetitions": 3,
+        "accepted": true,
+        "modifiedResponseRejected": null,
+        "unsampledTargetTamperAccepted": true,
+        "distanceReconstructionMatches": true,
+        "gasUsed": [
+          999981,
+          999981,
+          999981
+        ],
+        "medianGasUsed": 999981,
+        "gasEstimated": [
+          1594193,
+          1594193,
+          1594193
+        ],
+        "medianGasEstimated": 1594193,
+        "calldata": {
+          "bytes": 24900,
+          "zeroBytes": 421,
+          "nonzeroBytes": 24479,
+          "gas": 393348
+        },
+        "intrinsicGas": 414348,
+        "medianExecutionGasAfterIntrinsic": 585633
+      },
+      {
+        "label": "lambda-1",
+        "lambda": 1,
+        "samples": 7,
+        "oneBadCoordinateDetection": 0.0546875,
+        "repetitions": 3,
+        "accepted": true,
+        "modifiedResponseRejected": true,
+        "unsampledTargetTamperAccepted": true,
+        "distanceReconstructionMatches": true,
+        "gasUsed": [
+          1988454,
+          1988454,
+          1988454
+        ],
+        "medianGasUsed": 1988454,
+        "gasEstimated": [
+          2152485,
+          2152485,
+          2152485
+        ],
+        "medianGasEstimated": 2152485,
+        "calldata": {
+          "bytes": 30724,
+          "zeroBytes": 1912,
+          "nonzeroBytes": 28812,
+          "gas": 468640
+        },
+        "intrinsicGas": 489640,
+        "medianExecutionGasAfterIntrinsic": 1498814
+      },
+      {
+        "label": "lambda-2",
+        "lambda": 2,
+        "samples": 14,
+        "oneBadCoordinateDetection": 0.109375,
+        "repetitions": 3,
+        "accepted": true,
+        "modifiedResponseRejected": true,
+        "unsampledTargetTamperAccepted": true,
+        "distanceReconstructionMatches": true,
+        "gasUsed": [
+          2984186,
+          2984186,
+          2984186
+        ],
+        "medianGasUsed": 2984186,
+        "gasEstimated": [
+          2987255,
+          2987255,
+          2987255
+        ],
+        "medianGasEstimated": 2987255,
+        "calldata": {
+          "bytes": 36548,
+          "zeroBytes": 3412,
+          "nonzeroBytes": 33136,
+          "gas": 543824
+        },
+        "intrinsicGas": 564824,
+        "medianExecutionGasAfterIntrinsic": 2419362
+      },
+      {
+        "label": "lambda-4",
+        "lambda": 4,
+        "samples": 28,
+        "oneBadCoordinateDetection": 0.21875,
+        "repetitions": 3,
+        "accepted": true,
+        "modifiedResponseRejected": true,
+        "unsampledTargetTamperAccepted": true,
+        "distanceReconstructionMatches": true,
+        "gasUsed": [
+          4997901,
+          4997901,
+          4997901
+        ],
+        "medianGasUsed": 4997901,
+        "gasEstimated": [
+          5000863,
+          5000863,
+          5000863
+        ],
+        "medianGasEstimated": 5000863,
+        "calldata": {
+          "bytes": 48196,
+          "zeroBytes": 6396,
+          "nonzeroBytes": 41800,
+          "gas": 694384
+        },
+        "intrinsicGas": 715384,
+        "medianExecutionGasAfterIntrinsic": 4282517
+      },
+      {
+        "label": "lambda-8",
+        "lambda": 8,
+        "samples": 56,
+        "oneBadCoordinateDetection": 0.4375,
+        "repetitions": 3,
+        "accepted": true,
+        "modifiedResponseRejected": true,
+        "unsampledTargetTamperAccepted": true,
+        "distanceReconstructionMatches": true,
+        "gasUsed": [
+          9113567,
+          9113567,
+          9113567
+        ],
+        "medianGasUsed": 9113567,
+        "gasEstimated": [
+          9116315,
+          9116315,
+          9116315
+        ],
+        "medianGasEstimated": 9116315,
+        "calldata": {
+          "bytes": 71492,
+          "zeroBytes": 12364,
+          "nonzeroBytes": 59128,
+          "gas": 995504
+        },
+        "intrinsicGas": 1016504,
+        "medianExecutionGasAfterIntrinsic": 8097063
+      },
+      {
+        "label": "full-check",
+        "lambda": null,
+        "samples": 128,
+        "oneBadCoordinateDetection": 1,
+        "repetitions": 3,
+        "accepted": true,
+        "modifiedResponseRejected": true,
+        "unsampledTargetTamperAccepted": false,
+        "distanceReconstructionMatches": true,
+        "gasUsed": [
+          20237503,
+          20237503,
+          20237503
+        ],
+        "medianGasUsed": 20237503,
+        "gasEstimated": [
+          20239700,
+          20239700,
+          20239700
+        ],
+        "medianGasEstimated": 20239700,
+        "calldata": {
+          "bytes": 131396,
+          "zeroBytes": 27663,
+          "nonzeroBytes": 103733,
+          "gas": 1770380
+        },
+        "intrinsicGas": 1791380,
+        "medianExecutionGasAfterIntrinsic": 18446123
+      }
+    ]
+  },
+  "sampling": [
+    {
+      "dimension": 128,
+      "nearFivePercentBadCoordinates": 6,
+      "nearFivePercentActualFraction": 0.046875,
+      "rows": [
+        {
+          "lambda": 1,
+          "samples": 7,
+          "coverage": 0.0546875,
+          "oneBadCoordinateDetection": 0.0546875,
+          "nearFivePercentDetection": 0.2913718660364151
+        },
+        {
+          "lambda": 2,
+          "samples": 14,
+          "coverage": 0.109375,
+          "oneBadCoordinateDetection": 0.109375,
+          "nearFivePercentDetection": 0.5082748357773139
+        },
+        {
+          "lambda": 4,
+          "samples": 28,
+          "coverage": 0.21875,
+          "oneBadCoordinateDetection": 0.21875,
+          "nearFivePercentDetection": 0.7802105726162673
+        },
+        {
+          "lambda": 8,
+          "samples": 56,
+          "coverage": 0.4375,
+          "oneBadCoordinateDetection": 0.4375,
+          "nearFivePercentDetection": 0.971192826653946
+        }
+      ],
+      "samplesRequiredForOneBadCoordinate": [
+        {
+          "targetDetection": 0.95,
+          "samples": 122
+        },
+        {
+          "targetDetection": 0.99,
+          "samples": 127
+        },
+        {
+          "targetDetection": 1,
+          "samples": 128
+        }
+      ]
+    },
+    {
+      "dimension": 512,
+      "nearFivePercentBadCoordinates": 26,
+      "nearFivePercentActualFraction": 0.05078125,
+      "rows": [
+        {
+          "lambda": 1,
+          "samples": 9,
+          "coverage": 0.017578125,
+          "oneBadCoordinateDetection": 0.017578125,
+          "nearFivePercentDetection": 0.3767757556290946
+        },
+        {
+          "lambda": 2,
+          "samples": 18,
+          "coverage": 0.03515625,
+          "oneBadCoordinateDetection": 0.03515625,
+          "nearFivePercentDetection": 0.6149795608950781
+        },
+        {
+          "lambda": 4,
+          "samples": 36,
+          "coverage": 0.0703125,
+          "oneBadCoordinateDetection": 0.0703125,
+          "nearFivePercentDetection": 0.8570563392383934
+        },
+        {
+          "lambda": 8,
+          "samples": 72,
+          "coverage": 0.140625,
+          "oneBadCoordinateDetection": 0.140625,
+          "nearFivePercentDetection": 0.9825437396931868
+        }
+      ],
+      "samplesRequiredForOneBadCoordinate": [
+        {
+          "targetDetection": 0.95,
+          "samples": 487
+        },
+        {
+          "targetDetection": 0.99,
+          "samples": 507
+        },
+        {
+          "targetDetection": 1,
+          "samples": 512
+        }
+      ]
+    }
+  ],
+  "paperAudit": [
+    {
+      "lambda": 1,
+      "reportedSpotGas": 701400,
+      "reportedFivePercent": 0.2914,
+      "samples": 7,
+      "recomputedOneBadCoordinateDetection": 0.0546875,
+      "recomputedFivePercentDetection": 0.2913718660364151,
+      "fivePercentPercentagePointDifference": 0.002813396358491982,
+      "totalReportedCryptographicGas": 972600,
+      "ratioToRouteAPureVerifier": 4.024,
+      "ratioToRouteAAnchoredFirstAuthentication": 3.175
+    },
+    {
+      "lambda": 2,
+      "reportedSpotGas": 981900,
+      "reportedFivePercent": 0.4979,
+      "samples": 14,
+      "recomputedOneBadCoordinateDetection": 0.109375,
+      "recomputedFivePercentDetection": 0.5082748357773139,
+      "fivePercentPercentagePointDifference": -1.0374835777313907,
+      "totalReportedCryptographicGas": 1253100,
+      "ratioToRouteAPureVerifier": 5.185,
+      "ratioToRouteAAnchoredFirstAuthentication": 4.091
+    },
+    {
+      "lambda": 4,
+      "reportedSpotGas": 1568200,
+      "reportedFivePercent": 0.7479,
+      "samples": 28,
+      "recomputedOneBadCoordinateDetection": 0.21875,
+      "recomputedFivePercentDetection": 0.7802105726162673,
+      "fivePercentPercentagePointDifference": -3.231057261626724,
+      "totalReportedCryptographicGas": 1839400,
+      "ratioToRouteAPureVerifier": 7.61,
+      "ratioToRouteAAnchoredFirstAuthentication": 6.005
+    },
+    {
+      "lambda": 8,
+      "reportedSpotGas": 2874200,
+      "reportedFivePercent": 0.9712,
+      "samples": 56,
+      "recomputedOneBadCoordinateDetection": 0.4375,
+      "recomputedFivePercentDetection": 0.971192826653946,
+      "fivePercentPercentagePointDifference": 0.0007173346053934715,
+      "totalReportedCryptographicGas": 3145400,
+      "ratioToRouteAPureVerifier": 13.014,
+      "ratioToRouteAAnchoredFirstAuthentication": 10.268
+    }
+  ],
+  "comparisonWarning": "Old reported gas and current Route A gas were measured in different implementations. Ratios are orientation only until both relations run in one harness."
+}

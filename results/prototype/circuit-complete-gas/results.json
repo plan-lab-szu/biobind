@@ -1,0 +1,59 @@
+{
+  "generatedAt": "2026-10-27T05:32:30.685Z",
+  "scope": "Complete CircuitCheck authentication transaction: enrollment-commitment lookup, nonce check and update, chi = keccak(ctx, id, nonce) mod r, Groth16 verification with five public inputs, event. Same state handling as hom-complete-gas.",
+  "securityWarning": "Groth16 keys from the local benchmark-only setup; never deploy.",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "optimizerRuns": 200,
+  "evmVersion": "shanghai",
+  "chain": "Ganache 7.9.2, chain id 31337",
+  "results": [
+    {
+      "dimension": 128,
+      "repetitions": 3,
+      "gasUsed": [
+        272111,
+        254999,
+        254999
+      ],
+      "medianGasUsed": 254999,
+      "calldata": {
+        "bytes": 356,
+        "zeroBytes": 65,
+        "nonzeroBytes": 291,
+        "gas": 4916
+      },
+      "intrinsicGas": 25916,
+      "medianExecutionGasAfterIntrinsic": 229083,
+      "enrollmentGas": 45391,
+      "deploymentGas": 399147,
+      "controls": {
+        "replayRejected": true,
+        "wrongNonceProofRejected": true
+      }
+    },
+    {
+      "dimension": 512,
+      "repetitions": 3,
+      "gasUsed": [
+        272111,
+        255011,
+        255011
+      ],
+      "medianGasUsed": 255011,
+      "calldata": {
+        "bytes": 356,
+        "zeroBytes": 64,
+        "nonzeroBytes": 292,
+        "gas": 4928
+      },
+      "intrinsicGas": 25928,
+      "medianExecutionGasAfterIntrinsic": 229083,
+      "enrollmentGas": 45391,
+      "deploymentGas": 399147,
+      "controls": {
+        "replayRejected": true,
+        "wrongNonceProofRejected": true
+      }
+    }
+  ]
+}

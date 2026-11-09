@@ -1,0 +1,559 @@
+{
+  "generatedAt": "2026-10-27T12:58:20.757Z",
+  "scope": "BioZKFHE enrollment source, v1 (all session fields in storage) vs compact (record digest while open, adapter fields on Finalized only): bound request, snapshot verdict with stale abort, gallery root migration, adapter view, atomic gateway issuance; local Ganache 7.9.2, solc 0.8.36+commit.8a079791.Emscripten.clang",
+  "securityWarning": "Simulated committee and software bridge keys; PVSC, coverage, and threshold decryption not executed and not in gas; synthetic vectors; never deploy.",
+  "params": {
+    "L": 128,
+    "d": 4,
+    "n": 3,
+    "gamma": 128,
+    "T": "35729",
+    "tau": "8192"
+  },
+  "summary": {
+    "v1": {
+      "runtimeBytes": 6658,
+      "deploymentGas": 1619926,
+      "medians": {
+        "createSession": 135121,
+        "bindRequest": 87814,
+        "finalizeAppend": 159017,
+        "finalizeMerge": 138119,
+        "finalizeStale": 127437,
+        "finalizeDuplicate": 124761
+      },
+      "tSweep": [
+        {
+          "t": 3,
+          "n": 5,
+          "finalizeAppendMedian": 170975,
+          "finalizeMergeMedian": 138119,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 5,
+          "n": 9,
+          "finalizeAppendMedian": 202912,
+          "finalizeMergeMedian": 170056,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 7,
+          "n": 13,
+          "finalizeAppendMedian": 234860,
+          "finalizeMergeMedian": 201992,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        }
+      ],
+      "endToEnd": [
+        {
+          "person": "P1",
+          "append": true,
+          "createSession": 132321,
+          "bindRequest": 87766,
+          "finalize": 170951,
+          "issuance": 469845,
+          "total": 860883
+        },
+        {
+          "person": "P2",
+          "append": false,
+          "createSession": 135121,
+          "bindRequest": 87802,
+          "finalize": 138119,
+          "issuance": 452866,
+          "total": 813908
+        }
+      ]
+    },
+    "compact": {
+      "runtimeBytes": 7018,
+      "deploymentGas": 1697903,
+      "medians": {
+        "createSession": 61285,
+        "bindRequest": 48075,
+        "finalizeAppend": 142307,
+        "finalizeMerge": 119386,
+        "finalizeStale": 78889,
+        "finalizeDuplicate": 76180
+      },
+      "tSweep": [
+        {
+          "t": 3,
+          "n": 5,
+          "finalizeAppendMedian": 153668,
+          "finalizeMergeMedian": 119398,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 5,
+          "n": 9,
+          "finalizeAppendMedian": 185629,
+          "finalizeMergeMedian": 151347,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 7,
+          "n": 13,
+          "finalizeAppendMedian": 217567,
+          "finalizeMergeMedian": 183273,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        }
+      ],
+      "endToEnd": [
+        {
+          "person": "P1",
+          "append": true,
+          "createSession": 78385,
+          "bindRequest": 47631,
+          "finalize": 153692,
+          "issuance": 455171,
+          "total": 734879
+        },
+        {
+          "person": "P2",
+          "append": false,
+          "createSession": 61285,
+          "bindRequest": 48075,
+          "finalize": 119422,
+          "issuance": 438059,
+          "total": 666841
+        }
+      ]
+    }
+  },
+  "byVariant": {
+    "v1": {
+      "main": {
+        "variant": "v1",
+        "t": 3,
+        "n": 5,
+        "contextHashMatchesModel": true,
+        "honestEnrolled": 14,
+        "blockCount": 2,
+        "onChainLastCommitmentMatchesCommittee": true,
+        "recaptureIsDuplicate": "Duplicate",
+        "negative": {
+          "A1_swappedEnrollCiphertext": "UnregisteredBridge",
+          "A1_noBridgeDeclaration": "UnregisteredBridge",
+          "A2_wrongDeclaredCount": "DeclaredCountMismatch",
+          "slotInconsistentWithCount": "SlotMismatch",
+          "A3prime": {
+            "firstStatus": "Finalized",
+            "secondVerdictOnSnapshotWasUnique": true,
+            "secondStatus": "AbortedStaleSlot",
+            "retryStatus": "Duplicate"
+          },
+          "A3_distinctConcurrent": {
+            "B": "Finalized",
+            "C": "AbortedStaleSlot",
+            "Cretry": "Finalized"
+          },
+          "mergeDropWithTMinus1Signers": "InsufficientConfirmations",
+          "mergeDropWithOutsiderSigners": "InsufficientConfirmations",
+          "mergeDropWithRepeatedSigner": "InsufficientConfirmations",
+          "honestSignaturesReplayedOnOtherUNew": "InsufficientConfirmations",
+          "honestMergeAfterAttacks": "Finalized",
+          "appendWrongCommitmentWithTSigners": "AppendMismatch",
+          "honestAppendAfterAttack": "Finalized",
+          "adapterReadsFinalized": true,
+          "adapterRejectsDuplicate": true
+        },
+        "runtimeBytes": 6658,
+        "deploymentGas": 1619926,
+        "gas": {
+          "createSession": [
+            132321,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121,
+            135121
+          ],
+          "bindRequest": [
+            87790,
+            87814,
+            87814,
+            87814,
+            87814,
+            87814,
+            87826,
+            87790,
+            87790,
+            87814,
+            87826,
+            87826,
+            87790,
+            87814,
+            87814,
+            87814,
+            87814,
+            87814,
+            87814,
+            87802,
+            87802,
+            87802,
+            87814,
+            87814,
+            87802,
+            87826,
+            87826,
+            87826,
+            87790,
+            87802,
+            87814
+          ],
+          "finalizeAppend": [
+            170951,
+            159017,
+            141917
+          ],
+          "finalizeMerge": [
+            138095,
+            138107,
+            138107,
+            138131,
+            138119,
+            138107,
+            138107,
+            138059,
+            138131,
+            138095,
+            138119,
+            138119,
+            138071,
+            138119,
+            138071,
+            138047,
+            138095,
+            138119,
+            138131,
+            138131,
+            138131,
+            138131,
+            138131
+          ],
+          "finalizeStale": [
+            127413,
+            127437
+          ],
+          "finalizeDuplicate": [
+            124785,
+            124749,
+            124761
+          ]
+        }
+      },
+      "tSweep": [
+        {
+          "t": 3,
+          "n": 5,
+          "finalizeAppendMedian": 170975,
+          "finalizeMergeMedian": 138119,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 5,
+          "n": 9,
+          "finalizeAppendMedian": 202912,
+          "finalizeMergeMedian": 170056,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 7,
+          "n": 13,
+          "finalizeAppendMedian": 234860,
+          "finalizeMergeMedian": 201992,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        }
+      ],
+      "endToEnd": {
+        "issued": [
+          "Finalized",
+          "Finalized"
+        ],
+        "sameSecondEnrollment": "Duplicate",
+        "gas": [
+          {
+            "person": "P1",
+            "append": true,
+            "createSession": 132321,
+            "bindRequest": 87766,
+            "finalize": 170951,
+            "issuance": 469845,
+            "total": 860883
+          },
+          {
+            "person": "P2",
+            "append": false,
+            "createSession": 135121,
+            "bindRequest": 87802,
+            "finalize": 138119,
+            "issuance": 452866,
+            "total": 813908
+          }
+        ]
+      }
+    },
+    "compact": {
+      "main": {
+        "variant": "compact",
+        "t": 3,
+        "n": 5,
+        "contextHashMatchesModel": true,
+        "honestEnrolled": 14,
+        "blockCount": 2,
+        "onChainLastCommitmentMatchesCommittee": true,
+        "recaptureIsDuplicate": "Duplicate",
+        "negative": {
+          "A1_swappedEnrollCiphertext": "UnregisteredBridge",
+          "A1_noBridgeDeclaration": "UnregisteredBridge",
+          "A2_wrongDeclaredCount": "DeclaredCountMismatch",
+          "slotInconsistentWithCount": "SlotMismatch",
+          "A3prime": {
+            "firstStatus": "Finalized",
+            "secondVerdictOnSnapshotWasUnique": true,
+            "secondStatus": "AbortedStaleSlot",
+            "retryStatus": "Duplicate"
+          },
+          "A3_distinctConcurrent": {
+            "B": "Finalized",
+            "C": "AbortedStaleSlot",
+            "Cretry": "Finalized"
+          },
+          "mergeDropWithTMinus1Signers": "InsufficientConfirmations",
+          "mergeDropWithOutsiderSigners": "InsufficientConfirmations",
+          "mergeDropWithRepeatedSigner": "InsufficientConfirmations",
+          "honestSignaturesReplayedOnOtherUNew": "InsufficientConfirmations",
+          "honestMergeAfterAttacks": "Finalized",
+          "appendWrongCommitmentWithTSigners": "AppendMismatch",
+          "honestAppendAfterAttack": "Finalized",
+          "adapterReadsFinalized": true,
+          "adapterRejectsDuplicate": true
+        },
+        "runtimeBytes": 7018,
+        "deploymentGas": 1697903,
+        "gas": {
+          "createSession": [
+            78385,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285,
+            61285
+          ],
+          "bindRequest": [
+            47643,
+            48087,
+            48087,
+            48087,
+            48051,
+            48075,
+            48099,
+            48087,
+            48063,
+            48075,
+            48099,
+            48099,
+            48075,
+            48063,
+            48075,
+            48051,
+            48075,
+            48087,
+            48063,
+            48087,
+            48075,
+            48075,
+            48075,
+            48075,
+            48063,
+            48099,
+            48063,
+            48075,
+            48075,
+            48075,
+            48087
+          ],
+          "finalizeAppend": [
+            153680,
+            142307,
+            125219
+          ],
+          "finalizeMerge": [
+            119398,
+            119422,
+            119398,
+            119386,
+            119386,
+            119386,
+            119410,
+            119398,
+            119410,
+            119410,
+            119422,
+            119374,
+            119398,
+            119398,
+            119386,
+            119374,
+            119386,
+            119386,
+            119386,
+            119410,
+            119374,
+            119362,
+            119386
+          ],
+          "finalizeStale": [
+            78853,
+            78889
+          ],
+          "finalizeDuplicate": [
+            76180,
+            76168,
+            76192
+          ]
+        }
+      },
+      "tSweep": [
+        {
+          "t": 3,
+          "n": 5,
+          "finalizeAppendMedian": 153668,
+          "finalizeMergeMedian": 119398,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 5,
+          "n": 9,
+          "finalizeAppendMedian": 185629,
+          "finalizeMergeMedian": 151347,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        },
+        {
+          "t": 7,
+          "n": 13,
+          "finalizeAppendMedian": 217567,
+          "finalizeMergeMedian": 183273,
+          "samples": {
+            "append": 2,
+            "merge": 12
+          }
+        }
+      ],
+      "endToEnd": {
+        "issued": [
+          "Finalized",
+          "Finalized"
+        ],
+        "sameSecondEnrollment": "Duplicate",
+        "gas": [
+          {
+            "person": "P1",
+            "append": true,
+            "createSession": 78385,
+            "bindRequest": 47631,
+            "finalize": 153692,
+            "issuance": 455171,
+            "total": 734879
+          },
+          {
+            "person": "P2",
+            "append": false,
+            "createSession": 61285,
+            "bindRequest": 48075,
+            "finalize": 119422,
+            "issuance": 438059,
+            "total": 666841
+          }
+        ]
+      }
+    }
+  }
+}

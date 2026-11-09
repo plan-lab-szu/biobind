@@ -1,0 +1,3 @@
+# Runtime r3: explicit no-console child launch
+
+The C++ driver and repaired SEAL binary are identical to runtime-r2. All Windows child launch levels now use CREATE_NO_WINDOW. The r2 full runs ended with 0xC000013A (control-C/console interruption), not a decoded-value error or a handle alarm. The initiator of that interruption is unconfirmed. Preserve r2 evidence. Numerical settings, raw-check semantics and resource/watchdog guards are unchanged. The controller repeats smoke and serial measurement before three fresh-key capacity histories. See ../../../notes/runtime-launch-repair-20261031.md.

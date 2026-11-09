@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "0.1",
+  "updatedLocalDate": "2026-10-27",
+  "purpose": "Journal biometric verification study; first LFW View 2 result exists (2026-10-27)",
+  "datasets": [
+    {
+      "id": "lfw-view2",
+      "role": "primary-protocol-candidate",
+      "protocol": "official pairs.txt; 10 folds, 300 genuine and 300 impostor pairs per fold",
+      "protocolSource": "https://people.cs.umass.edu/~elm/papers/lfw.pdf",
+      "annotationMirror": "https://ndownloader.figshare.com/files/5976006",
+      "annotationExpectedSha256": "ea42330c62c92989f9d7c03237ed5d591365e89b3e649747777b70e692dc1592",
+      "annotationStatus": "downloaded_and_sha256_validated; 6000 pairs parsed into 10 fixed folds",
+      "annotationPath": "data/lfw/pairs.txt",
+      "pairRecordsPath": "data/lfw/view2_pairs.csv",
+      "protocolSummaryPath": "data/lfw/protocol_summary.json",
+      "imagesStatus": "downloaded_sha256_validated_extracted_outside_dropbox",
+      "imagesSha256": "055f7d9c632d7370e6fb4afc7468d40f970c34a80d4c6f50ffec63f5a8d536c0",
+      "useTermsStatus": "needs_review",
+      "imagesArchive": "lfw.tgz from https://ndownloader.figshare.com/files/5976018 (scikit-learn ARCHIVE metadata)",
+      "imagesLocalPath": "C:/biobind-data/lfw/lfw (13,233 images, 5,749 identities; 7,701 referenced by View 2)"
+    },
+    {
+      "id": "cfp-fp",
+      "role": "pose-stress-candidate",
+      "protocolSource": "https://engineering.jhu.edu/vpatel36/wp-content/uploads/2018/08/WACV2016_CFP.pdf",
+      "annotationStatus": "missing",
+      "imagesStatus": "missing",
+      "useTermsStatus": "needs_review"
+    },
+    {
+      "id": "agedb-30",
+      "role": "age-stress-candidate",
+      "protocolSource": "https://ibug.doc.ic.ac.uk/media/uploads/documents/agedb.pdf",
+      "annotationStatus": "missing",
+      "imagesStatus": "missing",
+      "useTermsStatus": "needs_review"
+    }
+  ],
+  "models": [
+    {
+      "id": "inceptionresnetv1-vggface2-512",
+      "role": "first-reproducible-candidate",
+      "upstream": "https://github.com/timesler/facenet-pytorch",
+      "weightsTrainingSource": "VGGFace2 according to upstream README",
+      "dimension": 512,
+      "weightsStatus": "downloaded_and_pinned",
+      "weightsSha256": "281cebca8662831adb987a874bdcb36e73f5b1c6dc5ee5878f305e985625d99b",
+      "softwareCommit": "facenet-pytorch 2.6.0 (PyPI), torch 2.2.2+cpu, torchvision 0.17.2+cpu, numpy 1.26.4; frozen list C:/biobind-data/requirements-frozen.txt",
+      "preprocessing": "MTCNN(image_size=160, margin=0, post_process=True, select_largest=False, selection_method='center_weighted_size'); fallback central 160x160 crop (0 used)",
+      "weightsFile": "20180402-114759-vggface2.pt (facenet-pytorch v2.2.9 GitHub release)",
+      "weightsBytes": 111898327,
+      "weightsUseTerms": "trained on VGGFace2; non-commercial research use",
+      "embeddingsFile": "C:/biobind-data/embeddings/inception_vggface2_512.npz",
+      "embeddingsSha256": "f511b67a4abb5f383fdfbac33c314c5686a5b5454f8ec98afcaeae94453af38f"
+    },
+    {
+      "id": "historical-mobilenet-128",
+      "role": "recovery-only-candidate",
+      "upstreamSnapshot": "788a9362ece22a1d20748201228fbec09983fdd0",
+      "dimension": 128,
+      "weightsStatus": "missing",
+      "weightsSha256": null,
+      "externalProjectStatus": "missing"
+    }
+  ],
+  "evaluation": {
+    "metric": "squared integer Euclidean distance for BioZERO circuit; float reference reported separately",
+    "thresholdSelection": "held-out fold excluded from selection; calibration rule to be frozen before scoring",
+    "quantizationWidthsPlanned": [
+      4,
+      6,
+      8,
+      10,
+      12,
+      16
+    ],
+    "pairLevelRecordsStatus": "scores for all 6,000 pairs under float and 7 quantizations in results/scores_*.csv",
+    "scoreEvaluatorStatus": "fixed-fold integer-distance scorer implemented and tested; no real scores",
+    "lowFarRule": "report false-accept counts and interval; no unsupported TAR@1e-4 from LFW alone",
+    "quantizationRule": "L2-normalize, x Gamma, round half away from zero; Gamma = 2^(b-1)-1 for b in {4,6,8,10,12,16}, plus BioZKFHE Gamma = 512",
+    "resultsSummary": "results/lfw_view2_summary.json"
+  }
+}

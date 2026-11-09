@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-10-05T08:23:26.974Z",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "node": "v24.19.0",
+  "scope": "local synthetic comparison; software capture/matcher; fixture upstream; benchmark-only proving key",
+  "sourceSha256": {
+    "UBCALifecycle.sol": "b80c4145478a95df7370a1fffbec372d3b57788cea4679debbc95efc3de058df",
+    "UBCAAuthGateway.sol": "c8a0f7e16b78897c3905360e8997920fb8bb1b2b623a192d5ba914c762602cfa",
+    "interfaces/IBioZKFHEUniquenessAdapter.sol": "12ddd16a0bdfae7481447f19a91b2285ac97d0926eece9f9ede66acd9d5fab3b",
+    "interfaces/IBioZKFHEFinalizationSource.sol": "17736491248117d6787d30b1c373d27c08990269ce93f53ceffcdad07695f91b",
+    "BioZKFHEFinalizationAdapter.sol": "bc85b0e01a8c305e5d680ba728a47049e9948924f8ed6d94d37c025ad9105252",
+    "test/LocalBioZKFHEFinalizationSource.sol": "9cc7d2254d6ab3f9e3921115658bffa634ec4669f987edb1d40fba6e83a4ae0b",
+    "test/AttestedMatchVerifier.sol": "609b0d55b6c9fc000b2e0eec204142868e814cfb3cabbc9005367268318ec7d4",
+    "generated/Groth16Verifier128.sol": "48890afa34e2be69d35636bfdccbd06e1fc7164e99e397a92a028d6454588657",
+    "UnboundThresholdGateway.sol": "8af4bd19bc8bada6f5b2e6d1a20b9b58d1e9035eb870eba5ff1d6f794ed84517"
+  },
+  "profiles": [
+    {
+      "profile": "zk-unbound-control",
+      "controls": {
+        "enrollmentSubstitutionRejected": true,
+        "outsideCaptureSignerRejected": true,
+        "contextTransplantRejected": true,
+        "credentialRevocationRejected": true,
+        "deviceRevocationRejected": true,
+        "policyRevocationRejected": true,
+        "validMatchAccepted": true,
+        "replayRejected": true
+      },
+      "mismatch": {
+        "squaredDistance": "1000251",
+        "authorizedEpsilon": "271",
+        "raisedEpsilon": "1000267",
+        "raisedThresholdProofValid": true,
+        "raisedThresholdAccepted": true,
+        "invalidPolicyAcceptanceCommitted": true
+      },
+      "authenticationGas": 326928
+    },
+    {
+      "profile": "zk-bound",
+      "controls": {
+        "enrollmentSubstitutionRejected": true,
+        "outsideCaptureSignerRejected": true,
+        "contextTransplantRejected": true,
+        "credentialRevocationRejected": true,
+        "deviceRevocationRejected": true,
+        "policyRevocationRejected": true,
+        "validMatchAccepted": true,
+        "replayRejected": true
+      },
+      "mismatch": {
+        "squaredDistance": "1000251",
+        "authorizedEpsilon": "271",
+        "raisedEpsilon": "1000267",
+        "raisedThresholdProofValid": true,
+        "raisedThresholdRejected": true,
+        "challengePreserved": true,
+        "relabelledProofRejected": true
+      },
+      "authenticationGas": 329262
+    },
+    {
+      "profile": "attested-bound",
+      "controls": {
+        "enrollmentSubstitutionRejected": true,
+        "outsideMatcherSignerRejected": true,
+        "outsideCaptureSignerRejected": true,
+        "contextTransplantRejected": true,
+        "credentialRevocationRejected": true,
+        "deviceRevocationRejected": true,
+        "policyRevocationRejected": true,
+        "validMatchAccepted": true,
+        "replayRejected": true
+      },
+      "mismatch": {
+        "squaredDistance": "1000251",
+        "authorizedEpsilon": "271",
+        "honestMatcherRefusesCertificate": true,
+        "matchOnlyFaultAccepted": true
+      },
+      "authenticationGas": 116104
+    }
+  ],
+  "limits": [
+    "No real TEE, sensor, or BioZKFHE upstream run",
+    "Matcher-only fault is outside the honest trusted-matcher model; not a full TEE-compromise claim",
+    "Two signatures and padded verifier ABI favor reuse; not an optimized attestation gas lower bound",
+    "Unbound variant is a documented guard ablation, not a proposed baseline",
+    "No empirical novelty claim or named-system vulnerability follows"
+  ]
+}

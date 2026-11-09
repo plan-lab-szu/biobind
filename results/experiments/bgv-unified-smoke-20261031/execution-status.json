@@ -1,0 +1,11 @@
+{
+  "status": "blocked_before_execution",
+  "winError": 4551,
+  "codeIntegrityEvents": [
+    3033,
+    3077
+  ],
+  "executedCheckpoints": 0,
+  "fullCapacityVerified": false,
+  "runningInBackground": false
+}

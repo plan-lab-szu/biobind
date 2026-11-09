@@ -1,0 +1,2501 @@
+{
+  "run": "R-BOSPHORUS-20261109",
+  "gamma": 2047,
+  "subjectsInGallery": 98,
+  "galleryFailures": [],
+  "excludedUnpublishableSubjects": [
+    "bs006",
+    "bs019",
+    "bs021",
+    "bs039",
+    "bs041",
+    "bs059",
+    "bs079"
+  ],
+  "detectionFailuresTotal": 41,
+  "thresholdsSource": "results/dedup_calibration.json (LFW)",
+  "attendedGroups": [
+    "O_EYE",
+    "O_MOUTH",
+    "O_GLASSES",
+    "O_HAIR",
+    "E_all",
+    "LFAU_all",
+    "UFAU_all",
+    "CAU_all",
+    "YR_le30",
+    "PR_slight"
+  ],
+  "tables": {
+    "FMR<=0.001": {
+      "tau": 2322295,
+      "cosineEquivalent": 0.5542,
+      "groups": {
+        "O_EYE": {
+          "detected": 93,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.0612,
+            "ci95": [
+              0.0228,
+              0.1285
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          }
+        },
+        "O_MOUTH": {
+          "detected": 98,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0369
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0369
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0369
+            ]
+          }
+        },
+        "O_GLASSES": {
+          "detected": 96,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 96,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0377
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.0103,
+            "ci95": [
+              0.0003,
+              0.0561
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 96,
+            "rate": 0.0104,
+            "ci95": [
+              0.0003,
+              0.0567
+            ]
+          }
+        },
+        "O_HAIR": {
+          "detected": 63,
+          "detectionFailures": 2,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 63,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0569
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.0308,
+            "ci95": [
+              0.0037,
+              0.1068
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 63,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0569
+            ]
+          }
+        },
+        "E_all": {
+          "detected": 418,
+          "detectionFailures": 3,
+          "openMissDetectedOnly": {
+            "k": 3,
+            "n": 418,
+            "rate": 0.0072,
+            "ci95": [
+              0.0015,
+              0.0208
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 421,
+            "rate": 0.0143,
+            "ci95": [
+              0.0052,
+              0.0308
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 3,
+            "n": 418,
+            "rate": 0.0072,
+            "ci95": [
+              0.0015,
+              0.0208
+            ]
+          }
+        },
+        "LFAU_all": {
+          "detected": 1435,
+          "detectionFailures": 8,
+          "openMissDetectedOnly": {
+            "k": 5,
+            "n": 1435,
+            "rate": 0.0035,
+            "ci95": [
+              0.0011,
+              0.0081
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 13,
+            "n": 1443,
+            "rate": 0.009,
+            "ci95": [
+              0.0048,
+              0.0154
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 5,
+            "n": 1435,
+            "rate": 0.0035,
+            "ci95": [
+              0.0011,
+              0.0081
+            ]
+          }
+        },
+        "UFAU_all": {
+          "detected": 397,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 397,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0092
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.0124,
+            "ci95": [
+              0.0041,
+              0.0288
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 397,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0092
+            ]
+          }
+        },
+        "CAU_all": {
+          "detected": 159,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          }
+        },
+        "YR_le30": {
+          "detected": 293,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.0034,
+            "ci95": [
+              0.0001,
+              0.0188
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          }
+        },
+        "YR_45": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 195,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0187
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.0051,
+            "ci95": [
+              0.0001,
+              0.0281
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 195,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0187
+            ]
+          }
+        },
+        "YR_90": {
+          "detected": 187,
+          "detectionFailures": 9,
+          "openMissDetectedOnly": {
+            "k": 18,
+            "n": 187,
+            "rate": 0.0963,
+            "ci95": [
+              0.0581,
+              0.1479
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 27,
+            "n": 196,
+            "rate": 0.1378,
+            "ci95": [
+              0.0928,
+              0.1941
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 21,
+            "n": 187,
+            "rate": 0.1123,
+            "ci95": [
+              0.0709,
+              0.1665
+            ]
+          }
+        },
+        "PR_slight": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.0153,
+            "ci95": [
+              0.0032,
+              0.0441
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          }
+        },
+        "PR_full": {
+          "detected": 191,
+          "detectionFailures": 4,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 191,
+            "rate": 0.0105,
+            "ci95": [
+              0.0013,
+              0.0373
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 195,
+            "rate": 0.0308,
+            "ci95": [
+              0.0114,
+              0.0658
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 191,
+            "rate": 0.0105,
+            "ci95": [
+              0.0013,
+              0.0373
+            ]
+          }
+        },
+        "CR_all": {
+          "detected": 196,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0186
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.0051,
+            "ci95": [
+              0.0001,
+              0.028
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0186
+            ]
+          }
+        },
+        "N_repeat_control": {
+          "detected": 187,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          }
+        },
+        "ATTENDED_pooled": {
+          "detected": 3247,
+          "detectionFailures": 26,
+          "openMissIncludingFailures": {
+            "k": 37,
+            "n": 3273,
+            "rate": 0.0113,
+            "ci95": [
+              0.008,
+              0.0155
+            ]
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 58,
+        "n": 187,
+        "rate": 0.3102,
+        "ci95": [
+          0.2447,
+          0.3818
+        ],
+        "gallerySize": 97
+      }
+    },
+    "FMR<=0.0001": {
+      "tau": 2777020,
+      "cosineEquivalent": 0.6627,
+      "groups": {
+        "O_EYE": {
+          "detected": 93,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.0612,
+            "ci95": [
+              0.0228,
+              0.1285
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          }
+        },
+        "O_MOUTH": {
+          "detected": 98,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.0102,
+            "ci95": [
+              0.0003,
+              0.0555
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.0102,
+            "ci95": [
+              0.0003,
+              0.0555
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.0102,
+            "ci95": [
+              0.0003,
+              0.0555
+            ]
+          }
+        },
+        "O_GLASSES": {
+          "detected": 96,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 3,
+            "n": 96,
+            "rate": 0.0312,
+            "ci95": [
+              0.0065,
+              0.0886
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 4,
+            "n": 97,
+            "rate": 0.0412,
+            "ci95": [
+              0.0113,
+              0.1022
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 3,
+            "n": 96,
+            "rate": 0.0312,
+            "ci95": [
+              0.0065,
+              0.0886
+            ]
+          }
+        },
+        "O_HAIR": {
+          "detected": 63,
+          "detectionFailures": 2,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 63,
+            "rate": 0.0317,
+            "ci95": [
+              0.0039,
+              0.11
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 4,
+            "n": 65,
+            "rate": 0.0615,
+            "ci95": [
+              0.017,
+              0.1501
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 63,
+            "rate": 0.0317,
+            "ci95": [
+              0.0039,
+              0.11
+            ]
+          }
+        },
+        "E_all": {
+          "detected": 418,
+          "detectionFailures": 3,
+          "openMissDetectedOnly": {
+            "k": 5,
+            "n": 418,
+            "rate": 0.012,
+            "ci95": [
+              0.0039,
+              0.0277
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 8,
+            "n": 421,
+            "rate": 0.019,
+            "ci95": [
+              0.0082,
+              0.0371
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 5,
+            "n": 418,
+            "rate": 0.012,
+            "ci95": [
+              0.0039,
+              0.0277
+            ]
+          }
+        },
+        "LFAU_all": {
+          "detected": 1435,
+          "detectionFailures": 8,
+          "openMissDetectedOnly": {
+            "k": 16,
+            "n": 1435,
+            "rate": 0.0111,
+            "ci95": [
+              0.0064,
+              0.018
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 24,
+            "n": 1443,
+            "rate": 0.0166,
+            "ci95": [
+              0.0107,
+              0.0246
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 16,
+            "n": 1435,
+            "rate": 0.0111,
+            "ci95": [
+              0.0064,
+              0.018
+            ]
+          }
+        },
+        "UFAU_all": {
+          "detected": 397,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 397,
+            "rate": 0.005,
+            "ci95": [
+              0.0006,
+              0.0181
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 7,
+            "n": 402,
+            "rate": 0.0174,
+            "ci95": [
+              0.007,
+              0.0355
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 397,
+            "rate": 0.005,
+            "ci95": [
+              0.0006,
+              0.0181
+            ]
+          }
+        },
+        "CAU_all": {
+          "detected": 159,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          }
+        },
+        "YR_le30": {
+          "detected": 293,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.0034,
+            "ci95": [
+              0.0001,
+              0.0188
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          }
+        },
+        "YR_45": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 195,
+            "rate": 0.0051,
+            "ci95": [
+              0.0001,
+              0.0282
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.0102,
+            "ci95": [
+              0.0012,
+              0.0364
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 195,
+            "rate": 0.0051,
+            "ci95": [
+              0.0001,
+              0.0282
+            ]
+          }
+        },
+        "YR_90": {
+          "detected": 187,
+          "detectionFailures": 9,
+          "openMissDetectedOnly": {
+            "k": 81,
+            "n": 187,
+            "rate": 0.4332,
+            "ci95": [
+              0.361,
+              0.5074
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 90,
+            "n": 196,
+            "rate": 0.4592,
+            "ci95": [
+              0.388,
+              0.5317
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 81,
+            "n": 187,
+            "rate": 0.4332,
+            "ci95": [
+              0.361,
+              0.5074
+            ]
+          }
+        },
+        "PR_slight": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.0153,
+            "ci95": [
+              0.0032,
+              0.0441
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          }
+        },
+        "PR_full": {
+          "detected": 191,
+          "detectionFailures": 4,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 191,
+            "rate": 0.0105,
+            "ci95": [
+              0.0013,
+              0.0373
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 195,
+            "rate": 0.0308,
+            "ci95": [
+              0.0114,
+              0.0658
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 191,
+            "rate": 0.0105,
+            "ci95": [
+              0.0013,
+              0.0373
+            ]
+          }
+        },
+        "CR_all": {
+          "detected": 196,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.0102,
+            "ci95": [
+              0.0012,
+              0.0364
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 3,
+            "n": 197,
+            "rate": 0.0152,
+            "ci95": [
+              0.0032,
+              0.0439
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.0102,
+            "ci95": [
+              0.0012,
+              0.0364
+            ]
+          }
+        },
+        "N_repeat_control": {
+          "detected": 187,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          }
+        },
+        "ATTENDED_pooled": {
+          "detected": 3247,
+          "detectionFailures": 26,
+          "openMissIncludingFailures": {
+            "k": 58,
+            "n": 3273,
+            "rate": 0.0177,
+            "ci95": [
+              0.0135,
+              0.0228
+            ]
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 2,
+        "n": 187,
+        "rate": 0.0107,
+        "ci95": [
+          0.0013,
+          0.0381
+        ],
+        "gallerySize": 97
+      }
+    },
+    "FMR<=1e-05": {
+      "tau": 3162706,
+      "cosineEquivalent": 0.7548,
+      "groups": {
+        "O_EYE": {
+          "detected": 93,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.0612,
+            "ci95": [
+              0.0228,
+              0.1285
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          }
+        },
+        "O_MOUTH": {
+          "detected": 98,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.0714,
+            "ci95": [
+              0.0292,
+              0.1416
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.0714,
+            "ci95": [
+              0.0292,
+              0.1416
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.0714,
+            "ci95": [
+              0.0292,
+              0.1416
+            ]
+          }
+        },
+        "O_GLASSES": {
+          "detected": 96,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 7,
+            "n": 96,
+            "rate": 0.0729,
+            "ci95": [
+              0.0298,
+              0.1445
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 8,
+            "n": 97,
+            "rate": 0.0825,
+            "ci95": [
+              0.0363,
+              0.1561
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 7,
+            "n": 96,
+            "rate": 0.0729,
+            "ci95": [
+              0.0298,
+              0.1445
+            ]
+          }
+        },
+        "O_HAIR": {
+          "detected": 63,
+          "detectionFailures": 2,
+          "openMissDetectedOnly": {
+            "k": 9,
+            "n": 63,
+            "rate": 0.1429,
+            "ci95": [
+              0.0675,
+              0.2539
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 11,
+            "n": 65,
+            "rate": 0.1692,
+            "ci95": [
+              0.0876,
+              0.2827
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 9,
+            "n": 63,
+            "rate": 0.1429,
+            "ci95": [
+              0.0675,
+              0.2539
+            ]
+          }
+        },
+        "E_all": {
+          "detected": 418,
+          "detectionFailures": 3,
+          "openMissDetectedOnly": {
+            "k": 33,
+            "n": 418,
+            "rate": 0.0789,
+            "ci95": [
+              0.055,
+              0.1091
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 36,
+            "n": 421,
+            "rate": 0.0855,
+            "ci95": [
+              0.0606,
+              0.1164
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 33,
+            "n": 418,
+            "rate": 0.0789,
+            "ci95": [
+              0.055,
+              0.1091
+            ]
+          }
+        },
+        "LFAU_all": {
+          "detected": 1435,
+          "detectionFailures": 8,
+          "openMissDetectedOnly": {
+            "k": 57,
+            "n": 1435,
+            "rate": 0.0397,
+            "ci95": [
+              0.0302,
+              0.0512
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 65,
+            "n": 1443,
+            "rate": 0.045,
+            "ci95": [
+              0.0349,
+              0.0571
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 57,
+            "n": 1435,
+            "rate": 0.0397,
+            "ci95": [
+              0.0302,
+              0.0512
+            ]
+          }
+        },
+        "UFAU_all": {
+          "detected": 397,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 8,
+            "n": 397,
+            "rate": 0.0202,
+            "ci95": [
+              0.0087,
+              0.0393
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 13,
+            "n": 402,
+            "rate": 0.0323,
+            "ci95": [
+              0.0173,
+              0.0547
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 8,
+            "n": 397,
+            "rate": 0.0202,
+            "ci95": [
+              0.0087,
+              0.0393
+            ]
+          }
+        },
+        "CAU_all": {
+          "detected": 159,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          }
+        },
+        "YR_le30": {
+          "detected": 293,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 293,
+            "rate": 0.0034,
+            "ci95": [
+              0.0001,
+              0.0189
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 2,
+            "n": 294,
+            "rate": 0.0068,
+            "ci95": [
+              0.0008,
+              0.0244
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 293,
+            "rate": 0.0034,
+            "ci95": [
+              0.0001,
+              0.0189
+            ]
+          }
+        },
+        "YR_45": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 18,
+            "n": 195,
+            "rate": 0.0923,
+            "ci95": [
+              0.0556,
+              0.142
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 19,
+            "n": 196,
+            "rate": 0.0969,
+            "ci95": [
+              0.0594,
+              0.1472
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 18,
+            "n": 195,
+            "rate": 0.0923,
+            "ci95": [
+              0.0556,
+              0.142
+            ]
+          }
+        },
+        "YR_90": {
+          "detected": 187,
+          "detectionFailures": 9,
+          "openMissDetectedOnly": {
+            "k": 154,
+            "n": 187,
+            "rate": 0.8235,
+            "ci95": [
+              0.7612,
+              0.8753
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 163,
+            "n": 196,
+            "rate": 0.8316,
+            "ci95": [
+              0.7718,
+              0.8812
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 154,
+            "n": 187,
+            "rate": 0.8235,
+            "ci95": [
+              0.7612,
+              0.8753
+            ]
+          }
+        },
+        "PR_slight": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.0153,
+            "ci95": [
+              0.0032,
+              0.0441
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          }
+        },
+        "PR_full": {
+          "detected": 191,
+          "detectionFailures": 4,
+          "openMissDetectedOnly": {
+            "k": 6,
+            "n": 191,
+            "rate": 0.0314,
+            "ci95": [
+              0.0116,
+              0.0671
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 10,
+            "n": 195,
+            "rate": 0.0513,
+            "ci95": [
+              0.0249,
+              0.0923
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 6,
+            "n": 191,
+            "rate": 0.0314,
+            "ci95": [
+              0.0116,
+              0.0671
+            ]
+          }
+        },
+        "CR_all": {
+          "detected": 196,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 15,
+            "n": 196,
+            "rate": 0.0765,
+            "ci95": [
+              0.0435,
+              0.1231
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 16,
+            "n": 197,
+            "rate": 0.0812,
+            "ci95": [
+              0.0471,
+              0.1285
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 15,
+            "n": 196,
+            "rate": 0.0765,
+            "ci95": [
+              0.0435,
+              0.1231
+            ]
+          }
+        },
+        "N_repeat_control": {
+          "detected": 187,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          }
+        },
+        "ATTENDED_pooled": {
+          "detected": 3247,
+          "detectionFailures": 26,
+          "openMissIncludingFailures": {
+            "k": 151,
+            "n": 3273,
+            "rate": 0.0461,
+            "ci95": [
+              0.0392,
+              0.0539
+            ]
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 0,
+        "n": 187,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0195
+        ],
+        "gallerySize": 97
+      }
+    },
+    "FMR<=1e-06": {
+      "tau": 3406345,
+      "cosineEquivalent": 0.8129,
+      "groups": {
+        "O_EYE": {
+          "detected": 93,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 3,
+            "n": 93,
+            "rate": 0.0323,
+            "ci95": [
+              0.0067,
+              0.0914
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 8,
+            "n": 98,
+            "rate": 0.0816,
+            "ci95": [
+              0.0359,
+              0.1545
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 3,
+            "n": 93,
+            "rate": 0.0323,
+            "ci95": [
+              0.0067,
+              0.0914
+            ]
+          }
+        },
+        "O_MOUTH": {
+          "detected": 98,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 24,
+            "n": 98,
+            "rate": 0.2449,
+            "ci95": [
+              0.1636,
+              0.3421
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 24,
+            "n": 98,
+            "rate": 0.2449,
+            "ci95": [
+              0.1636,
+              0.3421
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 24,
+            "n": 98,
+            "rate": 0.2449,
+            "ci95": [
+              0.1636,
+              0.3421
+            ]
+          }
+        },
+        "O_GLASSES": {
+          "detected": 96,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 16,
+            "n": 96,
+            "rate": 0.1667,
+            "ci95": [
+              0.0984,
+              0.2565
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 17,
+            "n": 97,
+            "rate": 0.1753,
+            "ci95": [
+              0.1055,
+              0.2657
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 16,
+            "n": 96,
+            "rate": 0.1667,
+            "ci95": [
+              0.0984,
+              0.2565
+            ]
+          }
+        },
+        "O_HAIR": {
+          "detected": 63,
+          "detectionFailures": 2,
+          "openMissDetectedOnly": {
+            "k": 19,
+            "n": 63,
+            "rate": 0.3016,
+            "ci95": [
+              0.1923,
+              0.4302
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 21,
+            "n": 65,
+            "rate": 0.3231,
+            "ci95": [
+              0.2123,
+              0.4505
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 19,
+            "n": 63,
+            "rate": 0.3016,
+            "ci95": [
+              0.1923,
+              0.4302
+            ]
+          }
+        },
+        "E_all": {
+          "detected": 418,
+          "detectionFailures": 3,
+          "openMissDetectedOnly": {
+            "k": 64,
+            "n": 418,
+            "rate": 0.1531,
+            "ci95": [
+              0.12,
+              0.1913
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 67,
+            "n": 421,
+            "rate": 0.1591,
+            "ci95": [
+              0.1255,
+              0.1977
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 64,
+            "n": 418,
+            "rate": 0.1531,
+            "ci95": [
+              0.12,
+              0.1913
+            ]
+          }
+        },
+        "LFAU_all": {
+          "detected": 1435,
+          "detectionFailures": 8,
+          "openMissDetectedOnly": {
+            "k": 161,
+            "n": 1435,
+            "rate": 0.1122,
+            "ci95": [
+              0.0963,
+              0.1297
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 169,
+            "n": 1443,
+            "rate": 0.1171,
+            "ci95": [
+              0.101,
+              0.1348
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 161,
+            "n": 1435,
+            "rate": 0.1122,
+            "ci95": [
+              0.0963,
+              0.1297
+            ]
+          }
+        },
+        "UFAU_all": {
+          "detected": 397,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 20,
+            "n": 397,
+            "rate": 0.0504,
+            "ci95": [
+              0.031,
+              0.0767
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 25,
+            "n": 402,
+            "rate": 0.0622,
+            "ci95": [
+              0.0406,
+              0.0904
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 20,
+            "n": 397,
+            "rate": 0.0504,
+            "ci95": [
+              0.031,
+              0.0767
+            ]
+          }
+        },
+        "CAU_all": {
+          "detected": 159,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 5,
+            "n": 159,
+            "rate": 0.0314,
+            "ci95": [
+              0.0103,
+              0.0719
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 5,
+            "n": 159,
+            "rate": 0.0314,
+            "ci95": [
+              0.0103,
+              0.0719
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 5,
+            "n": 159,
+            "rate": 0.0314,
+            "ci95": [
+              0.0103,
+              0.0719
+            ]
+          }
+        },
+        "YR_le30": {
+          "detected": 293,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 12,
+            "n": 293,
+            "rate": 0.041,
+            "ci95": [
+              0.0213,
+              0.0704
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 13,
+            "n": 294,
+            "rate": 0.0442,
+            "ci95": [
+              0.0238,
+              0.0744
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 12,
+            "n": 293,
+            "rate": 0.041,
+            "ci95": [
+              0.0213,
+              0.0704
+            ]
+          }
+        },
+        "YR_45": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 48,
+            "n": 195,
+            "rate": 0.2462,
+            "ci95": [
+              0.1874,
+              0.3128
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 49,
+            "n": 196,
+            "rate": 0.25,
+            "ci95": [
+              0.191,
+              0.3167
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 48,
+            "n": 195,
+            "rate": 0.2462,
+            "ci95": [
+              0.1874,
+              0.3128
+            ]
+          }
+        },
+        "YR_90": {
+          "detected": 187,
+          "detectionFailures": 9,
+          "openMissDetectedOnly": {
+            "k": 181,
+            "n": 187,
+            "rate": 0.9679,
+            "ci95": [
+              0.9315,
+              0.9881
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 190,
+            "n": 196,
+            "rate": 0.9694,
+            "ci95": [
+              0.9346,
+              0.9887
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 181,
+            "n": 187,
+            "rate": 0.9679,
+            "ci95": [
+              0.9315,
+              0.9881
+            ]
+          }
+        },
+        "PR_slight": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 3,
+            "n": 195,
+            "rate": 0.0154,
+            "ci95": [
+              0.0032,
+              0.0443
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 4,
+            "n": 196,
+            "rate": 0.0204,
+            "ci95": [
+              0.0056,
+              0.0514
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 3,
+            "n": 195,
+            "rate": 0.0154,
+            "ci95": [
+              0.0032,
+              0.0443
+            ]
+          }
+        },
+        "PR_full": {
+          "detected": 191,
+          "detectionFailures": 4,
+          "openMissDetectedOnly": {
+            "k": 15,
+            "n": 191,
+            "rate": 0.0785,
+            "ci95": [
+              0.0446,
+              0.1262
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 19,
+            "n": 195,
+            "rate": 0.0974,
+            "ci95": [
+              0.0597,
+              0.148
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 15,
+            "n": 191,
+            "rate": 0.0785,
+            "ci95": [
+              0.0446,
+              0.1262
+            ]
+          }
+        },
+        "CR_all": {
+          "detected": 196,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 45,
+            "n": 196,
+            "rate": 0.2296,
+            "ci95": [
+              0.1727,
+              0.2949
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 46,
+            "n": 197,
+            "rate": 0.2335,
+            "ci95": [
+              0.1763,
+              0.2989
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 45,
+            "n": 196,
+            "rate": 0.2296,
+            "ci95": [
+              0.1727,
+              0.2949
+            ]
+          }
+        },
+        "N_repeat_control": {
+          "detected": 187,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          }
+        },
+        "ATTENDED_pooled": {
+          "detected": 3247,
+          "detectionFailures": 26,
+          "openMissIncludingFailures": {
+            "k": 353,
+            "n": 3273,
+            "rate": 0.1079,
+            "ci95": [
+              0.0974,
+              0.119
+            ]
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 0,
+        "n": 187,
+        "rate": 0.0,
+        "ci95": [
+          0.0,
+          0.0195
+        ],
+        "gallerySize": 97
+      }
+    },
+    "current Gamma^2/2": {
+      "tau": 2095104,
+      "cosineEquivalent": 0.5,
+      "groups": {
+        "O_EYE": {
+          "detected": 93,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.0612,
+            "ci95": [
+              0.0228,
+              0.1285
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.0108,
+            "ci95": [
+              0.0003,
+              0.0585
+            ]
+          }
+        },
+        "O_MOUTH": {
+          "detected": 98,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0369
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0369
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0369
+            ]
+          }
+        },
+        "O_GLASSES": {
+          "detected": 96,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 96,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0377
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.0103,
+            "ci95": [
+              0.0003,
+              0.0561
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 96,
+            "rate": 0.0104,
+            "ci95": [
+              0.0003,
+              0.0567
+            ]
+          }
+        },
+        "O_HAIR": {
+          "detected": 63,
+          "detectionFailures": 2,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 63,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0569
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.0308,
+            "ci95": [
+              0.0037,
+              0.1068
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 63,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0569
+            ]
+          }
+        },
+        "E_all": {
+          "detected": 418,
+          "detectionFailures": 3,
+          "openMissDetectedOnly": {
+            "k": 3,
+            "n": 418,
+            "rate": 0.0072,
+            "ci95": [
+              0.0015,
+              0.0208
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 6,
+            "n": 421,
+            "rate": 0.0143,
+            "ci95": [
+              0.0052,
+              0.0308
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 3,
+            "n": 418,
+            "rate": 0.0072,
+            "ci95": [
+              0.0015,
+              0.0208
+            ]
+          }
+        },
+        "LFAU_all": {
+          "detected": 1435,
+          "detectionFailures": 8,
+          "openMissDetectedOnly": {
+            "k": 4,
+            "n": 1435,
+            "rate": 0.0028,
+            "ci95": [
+              0.0008,
+              0.0071
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 12,
+            "n": 1443,
+            "rate": 0.0083,
+            "ci95": [
+              0.0043,
+              0.0145
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 4,
+            "n": 1435,
+            "rate": 0.0028,
+            "ci95": [
+              0.0008,
+              0.0071
+            ]
+          }
+        },
+        "UFAU_all": {
+          "detected": 397,
+          "detectionFailures": 5,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 397,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0092
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.0124,
+            "ci95": [
+              0.0041,
+              0.0288
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 397,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0092
+            ]
+          }
+        },
+        "CAU_all": {
+          "detected": 159,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0229
+            ]
+          }
+        },
+        "YR_le30": {
+          "detected": 293,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.0034,
+            "ci95": [
+              0.0001,
+              0.0188
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0125
+            ]
+          }
+        },
+        "YR_45": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 195,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0187
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.0051,
+            "ci95": [
+              0.0001,
+              0.0281
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 195,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0187
+            ]
+          }
+        },
+        "YR_90": {
+          "detected": 187,
+          "detectionFailures": 9,
+          "openMissDetectedOnly": {
+            "k": 7,
+            "n": 187,
+            "rate": 0.0374,
+            "ci95": [
+              0.0152,
+              0.0756
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 16,
+            "n": 196,
+            "rate": 0.0816,
+            "ci95": [
+              0.0474,
+              0.1292
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 9,
+            "n": 187,
+            "rate": 0.0481,
+            "ci95": [
+              0.0222,
+              0.0894
+            ]
+          }
+        },
+        "PR_slight": {
+          "detected": 195,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.0153,
+            "ci95": [
+              0.0032,
+              0.0441
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.0103,
+            "ci95": [
+              0.0012,
+              0.0366
+            ]
+          }
+        },
+        "PR_full": {
+          "detected": 191,
+          "detectionFailures": 4,
+          "openMissDetectedOnly": {
+            "k": 1,
+            "n": 191,
+            "rate": 0.0052,
+            "ci95": [
+              0.0001,
+              0.0288
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 5,
+            "n": 195,
+            "rate": 0.0256,
+            "ci95": [
+              0.0084,
+              0.0588
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 1,
+            "n": 191,
+            "rate": 0.0052,
+            "ci95": [
+              0.0001,
+              0.0288
+            ]
+          }
+        },
+        "CR_all": {
+          "detected": 196,
+          "detectionFailures": 1,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0186
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.0051,
+            "ci95": [
+              0.0001,
+              0.028
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0186
+            ]
+          }
+        },
+        "N_repeat_control": {
+          "detected": 187,
+          "detectionFailures": 0,
+          "openMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "openMissIncludingFailures": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          },
+          "pairwiseMissDetectedOnly": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "ci95": [
+              0.0,
+              0.0195
+            ]
+          }
+        },
+        "ATTENDED_pooled": {
+          "detected": 3247,
+          "detectionFailures": 26,
+          "openMissIncludingFailures": {
+            "k": 36,
+            "n": 3273,
+            "rate": 0.011,
+            "ci95": [
+              0.0077,
+              0.0152
+            ]
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 103,
+        "n": 187,
+        "rate": 0.5508,
+        "ci95": [
+          0.4765,
+          0.6235
+        ],
+        "gallerySize": 97
+      }
+    }
+  }
+}

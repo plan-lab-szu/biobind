@@ -1,0 +1,113 @@
+CMake Warning:
+  Ignoring extra path from command line:
+
+   ".5"
+
+
+CMake Error at CMakeLists.txt:4 (cmake_minimum_required):
+  Invalid CMAKE_POLICY_VERSION_MINIMUM value "3".  A numeric
+  major.minor[.patch[.tweak]] must be given.
+
+
+-- Build type (CMAKE_BUILD_TYPE): Release
+-- The CXX compiler identification is GNU 16.2.0
+-- The C compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/cc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Microsoft SEAL debug mode: OFF
+-- SEAL_USE_CXX17: ON
+-- SEAL_BUILD_DEPS: ON
+CMake Error at C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/FetchContent.cmake:1144 (cmake_policy):
+  Invalid CMAKE_POLICY_VERSION_MINIMUM value "3".  A numeric
+  major.minor[.patch[.tweak]] must be given.
+Call Stack (most recent call first):
+  CMakeLists.txt:135 (include)
+
+
+CMake Error at C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/ExternalProject/shared_internal_commands.cmake:1 (cmake_policy):
+  Invalid CMAKE_POLICY_VERSION_MINIMUM value "3".  A numeric
+  major.minor[.patch[.tweak]] must be given.
+Call Stack (most recent call first):
+  C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/FetchContent.cmake:1146 (include)
+  CMakeLists.txt:135 (include)
+
+
+-- SEAL_USE_MSGSL: OFF
+-- SEAL_USE_ZLIB: OFF
+-- SEAL_USE_ZSTD: ON
+-- Zstandard: download ...
+CMake Warning (author) at C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/FetchContent.cmake:1968 (message):
+  Calling FetchContent_Populate(zstd) is deprecated, call
+  FetchContent_MakeAvailable(zstd) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(zstd) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  cmake/ExternalZSTD.cmake:11 (FetchContent_Populate)
+  cmake/SEALMacros.cmake:17 (include)
+  CMakeLists.txt:190 (seal_fetch_thirdparty_content)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+CMake Error at C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/build/cmake/CMakeLists.txt:10 (cmake_minimum_required):
+  Invalid CMAKE_POLICY_VERSION_MINIMUM value "3".  A numeric
+  major.minor[.patch[.tweak]] must be given.
+
+
+CMake Error at C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/build/cmake/CMakeLists.txt:22 (cmake_policy):
+  Invalid CMAKE_POLICY_VERSION_MINIMUM value "3".  A numeric
+  major.minor[.patch[.tweak]] must be given.
+
+
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/cc.exe
+-- ZSTD VERSION: 1.5.7
+-- Performing Test C_FLAG_WALL
+-- Performing Test C_FLAG_WALL - Success
+-- Performing Test CXX_FLAG_WALL
+-- Performing Test CXX_FLAG_WALL - Success
+-- Performing Test C_FLAG_WEXTRA
+-- Performing Test C_FLAG_WEXTRA - Success
+-- Performing Test CXX_FLAG_WEXTRA
+-- Performing Test CXX_FLAG_WEXTRA - Success
+-- Performing Test C_FLAG_WUNDEF
+-- Performing Test C_FLAG_WUNDEF - Success
+-- Performing Test CXX_FLAG_WUNDEF
+-- Performing Test CXX_FLAG_WUNDEF - Success
+-- Performing Test C_FLAG_WSHADOW
+-- Performing Test C_FLAG_WSHADOW - Success
+-- Performing Test CXX_FLAG_WSHADOW
+-- Performing Test CXX_FLAG_WSHADOW - Success
+-- Performing Test C_FLAG_WCAST_ALIGN
+-- Performing Test C_FLAG_WCAST_ALIGN - Success
+-- Performing Test CXX_FLAG_WCAST_ALIGN
+-- Performing Test CXX_FLAG_WCAST_ALIGN - Success
+-- Performing Test C_FLAG_WCAST_QUAL
+-- Performing Test C_FLAG_WCAST_QUAL - Success
+-- Performing Test CXX_FLAG_WCAST_QUAL
+-- Performing Test CXX_FLAG_WCAST_QUAL - Success
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES - Success
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK - Failed
+-- Performing Test C_FLAG_QUNUSED_ARGUMENTS
+CMake Error: This should not have happened. If you see this message, you are probably using a broken CMakeLists.txt file or a problematic release of CMake
+CMake Error: This should not have happened. If you see this message, you are probably using a broken CMakeLists.txt file or a problematic release of CMake
+CMake Error at C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/Internal/CheckSourceCompiles.cmake:81 (try_compile):
+  Failed to configure test project build system.
+Call Stack (most recent call first):
+  C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)
+  C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/CheckCCompilerFlag.cmake:105 (cmake_check_compiler_flag)
+  C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/build/cmake/CMakeModules/AddZstdCompilationFlags.cmake:19 (CHECK_C_COMPILER_FLAG)
+  C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/build/cmake/CMakeModules/AddZstdCompilationFlags.cmake:84 (EnableCompilerFlag)
+  C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/build/cmake/CMakeLists.txt:61 (ADD_ZSTD_COMPILATION_FLAGS)
+
+
+-- Configuring incomplete, errors occurred!

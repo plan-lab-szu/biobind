@@ -1,0 +1,144 @@
+{
+  "scope": "local benchmark artifacts only; single-machine setup is not a production ceremony",
+  "compiler": {
+    "version": "0.8.36+commit.8a079791.Emscripten.clang",
+    "optimizerRuns": 200,
+    "evmVersion": "shanghai",
+    "bytecodeHash": "none"
+  },
+  "node": "v24.22.1",
+  "powersOfTau": {
+    "path": "build/proving/local-benchmark-setup/pot15_final.ptau",
+    "bytes": 37750208,
+    "sha256": "0x0313e8c5c2646ed7b8130311adadb5c73f57f0e1f12e945ee5838a45d6475cfe"
+  },
+  "pinnedGatewaySource": {
+    "path": "contracts/BioZEROPinnedGateway.sol",
+    "bytes": 2203,
+    "sha256": "0x5aaa2b52b4a31ed59a7a7caeb04963760ae562c2c534f6b7d28ab4a312348001"
+  },
+  "gatewaySource": {
+    "path": "contracts/UBCAAuthGateway.sol",
+    "bytes": 26309,
+    "sha256": "0xcd0db64c2d34b6a8779be7a04991741796e6324e6916bede8bff686b117123b0"
+  },
+  "lifecycleSource": {
+    "path": "contracts/UBCALifecycle.sol",
+    "bytes": 20958,
+    "sha256": "0x5b8503e3459b4e7f1f9954478f2fabf0cde0e769a9dc283967cdab88d1d021d1"
+  },
+  "profiles": [
+    {
+      "dimension": 128,
+      "r1csSha256": "0x02ec476683bc75358db02aa216c8a02b5da4545049f8cf1a9d130fa1eada7dea",
+      "verifierRuntimeCodeHash": "0x2f53d382abcb18f4ce04cf591304bb4819c11ea43f6a50f2cbce657102f4f26b",
+      "verifierRuntimeBytes": 1683,
+      "zkeyVerifiedAgainstR1csAndPtau": true,
+      "exportedVerificationKeyMatches": true,
+      "exportedSolidityVerifierMatches": true,
+      "files": [
+        {
+          "path": "circuits/auth_distance_128.circom",
+          "bytes": 183,
+          "sha256": "0x70b9be47643013fc2dede30846edf00aba3f77ef85b1e6d7dccefd1436cfb801"
+        },
+        {
+          "path": "circuits/auth_distance.circom",
+          "bytes": 2810,
+          "sha256": "0xd5753e82d75e7a41eb04920485c1c1de101eb4c3e4bc624e36f7ffa16a4e378b"
+        },
+        {
+          "path": "circuits/lib/poseidon_chain.circom",
+          "bytes": 1074,
+          "sha256": "0x94fa269638bdf7b628920a6c95555ad60900aa0ce8ae2abdccc39e8cd29d2e16"
+        },
+        {
+          "path": "circuits/lib/vector_packing.circom",
+          "bytes": 2103,
+          "sha256": "0xdb83ac4dbc3f4f5eb210946f39c89d90a3fe1d5cff6dd4ee03bd7fa6532b2ce2"
+        },
+        {
+          "path": "build/auth_distance_128/auth_distance_128.r1cs",
+          "bytes": 2847216,
+          "sha256": "0x02ec476683bc75358db02aa216c8a02b5da4545049f8cf1a9d130fa1eada7dea"
+        },
+        {
+          "path": "build/auth_distance_128/auth_distance_128_js/auth_distance_128.wasm",
+          "bytes": 2770726,
+          "sha256": "0x1773ca549a1d64ed2ae86c57dc8a5b261f06b2e8503332b2a891049ec65dced1"
+        },
+        {
+          "path": "build/proving/auth_distance_128/auth_distance_128_benchmark_final.zkey",
+          "bytes": 5255367,
+          "sha256": "0xa51dee7e965091b2e6cab116a056e00882804e5a00f36e07c8c5f8f4fdfcc4ae"
+        },
+        {
+          "path": "build/proving/auth_distance_128/verification_key.json",
+          "bytes": 3659,
+          "sha256": "0x2717e304feae169caffa963a308ef992b14c235e0998a3f578993e1a13cd392a"
+        },
+        {
+          "path": "contracts/generated/Groth16Verifier128.sol",
+          "bytes": 8614,
+          "sha256": "0x48890afa34e2be69d35636bfdccbd06e1fc7164e99e397a92a028d6454588657"
+        }
+      ]
+    },
+    {
+      "dimension": 512,
+      "r1csSha256": "0xc214cefdd0bbbdbd9f18f5f8d98db9812741b245e050eec187525cd48abf4bb3",
+      "verifierRuntimeCodeHash": "0x58d747996cfbab413e6d802b592e58ce48c4daa7acdd05b903377e9a6940f537",
+      "verifierRuntimeBytes": 1683,
+      "zkeyVerifiedAgainstR1csAndPtau": true,
+      "exportedVerificationKeyMatches": true,
+      "exportedSolidityVerifierMatches": true,
+      "files": [
+        {
+          "path": "circuits/auth_distance_512.circom",
+          "bytes": 184,
+          "sha256": "0xeba0c05ee6192ebaf9a50b973a6ba6b861521e89dcfe63a379381fc155ee1cd5"
+        },
+        {
+          "path": "circuits/auth_distance.circom",
+          "bytes": 2810,
+          "sha256": "0xd5753e82d75e7a41eb04920485c1c1de101eb4c3e4bc624e36f7ffa16a4e378b"
+        },
+        {
+          "path": "circuits/lib/poseidon_chain.circom",
+          "bytes": 1074,
+          "sha256": "0x94fa269638bdf7b628920a6c95555ad60900aa0ce8ae2abdccc39e8cd29d2e16"
+        },
+        {
+          "path": "circuits/lib/vector_packing.circom",
+          "bytes": 2103,
+          "sha256": "0xdb83ac4dbc3f4f5eb210946f39c89d90a3fe1d5cff6dd4ee03bd7fa6532b2ce2"
+        },
+        {
+          "path": "build/auth_distance_512/auth_distance_512.r1cs",
+          "bytes": 8720004,
+          "sha256": "0xc214cefdd0bbbdbd9f18f5f8d98db9812741b245e050eec187525cd48abf4bb3"
+        },
+        {
+          "path": "build/auth_distance_512/auth_distance_512_js/auth_distance_512.wasm",
+          "bytes": 2931928,
+          "sha256": "0x13e46ed92aeae02db925163780c2836db55ca7544eba809e057f456617b2b918"
+        },
+        {
+          "path": "build/proving/auth_distance_512/auth_distance_512_benchmark_final.zkey",
+          "bytes": 17302639,
+          "sha256": "0xf86b2abee2072153d0f1908dea04aab0f56ff6dff2584cdc1d3a5a80aefc5e6a"
+        },
+        {
+          "path": "build/proving/auth_distance_512/verification_key.json",
+          "bytes": 3655,
+          "sha256": "0x982ac3cd16acbb8d83e2ce643d1dd0f44483aa71401a24295718ac5aea3c7476"
+        },
+        {
+          "path": "contracts/generated/Groth16Verifier512.sol",
+          "bytes": 8610,
+          "sha256": "0xef5d0ad9d39c214fa37aac014502cc76d9704ba74d155701ab33fc64cc99e190"
+        }
+      ]
+    }
+  ]
+}

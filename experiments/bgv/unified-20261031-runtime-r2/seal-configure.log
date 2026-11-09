@@ -1,0 +1,102 @@
+-- Build type (CMAKE_BUILD_TYPE): Release
+-- The CXX compiler identification is GNU 16.2.0
+-- The C compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/cc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Microsoft SEAL debug mode: OFF
+-- SEAL_USE_CXX17: OFF
+-- SEAL_BUILD_DEPS: ON
+-- SEAL_USE_MSGSL: OFF
+-- SEAL_USE_ZLIB: OFF
+-- SEAL_USE_ZSTD: ON
+-- Zstandard: download ...
+CMake Warning (author) at C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/FetchContent.cmake:1968 (message):
+  Calling FetchContent_Populate(zstd) is deprecated, call
+  FetchContent_MakeAvailable(zstd) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(zstd) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  cmake/ExternalZSTD.cmake:11 (FetchContent_Populate)
+  cmake/SEALMacros.cmake:17 (include)
+  CMakeLists.txt:190 (seal_fetch_thirdparty_content)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+-- The ASM compiler identification is GNU
+-- Found assembler: C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/cc.exe
+-- ZSTD VERSION: 1.5.7
+-- Performing Test C_FLAG_WALL
+-- Performing Test C_FLAG_WALL - Success
+-- Performing Test CXX_FLAG_WALL
+-- Performing Test CXX_FLAG_WALL - Success
+-- Performing Test C_FLAG_WEXTRA
+-- Performing Test C_FLAG_WEXTRA - Success
+-- Performing Test CXX_FLAG_WEXTRA
+-- Performing Test CXX_FLAG_WEXTRA - Success
+-- Performing Test C_FLAG_WUNDEF
+-- Performing Test C_FLAG_WUNDEF - Success
+-- Performing Test CXX_FLAG_WUNDEF
+-- Performing Test CXX_FLAG_WUNDEF - Success
+-- Performing Test C_FLAG_WSHADOW
+-- Performing Test C_FLAG_WSHADOW - Success
+-- Performing Test CXX_FLAG_WSHADOW
+-- Performing Test CXX_FLAG_WSHADOW - Success
+-- Performing Test C_FLAG_WCAST_ALIGN
+-- Performing Test C_FLAG_WCAST_ALIGN - Success
+-- Performing Test CXX_FLAG_WCAST_ALIGN
+-- Performing Test CXX_FLAG_WCAST_ALIGN - Success
+-- Performing Test C_FLAG_WCAST_QUAL
+-- Performing Test C_FLAG_WCAST_QUAL - Success
+-- Performing Test CXX_FLAG_WCAST_QUAL
+-- Performing Test CXX_FLAG_WCAST_QUAL - Success
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES
+-- Performing Test C_FLAG_WSTRICT_PROTOTYPES - Success
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK
+-- Performing Test LD_FLAG_WL_Z_NOEXECSTACK - Failed
+-- Performing Test C_FLAG_QUNUSED_ARGUMENTS
+-- Performing Test C_FLAG_QUNUSED_ARGUMENTS - Failed
+-- Performing Test CXX_FLAG_QUNUSED_ARGUMENTS
+-- Performing Test CXX_FLAG_QUNUSED_ARGUMENTS - Failed
+-- Performing Test C_FLAG_WA_NOEXECSTACK
+-- Performing Test C_FLAG_WA_NOEXECSTACK - Failed
+-- Performing Test CXX_FLAG_WA_NOEXECSTACK
+-- Performing Test CXX_FLAG_WA_NOEXECSTACK - Failed
+-- CMAKE_INSTALL_PREFIX: C:/Program Files (x86)/SEAL
+-- CMAKE_INSTALL_LIBDIR: lib
+-- ZSTD_LEGACY_SUPPORT defined!
+-- ZSTD_MULTITHREAD_SUPPORT is disabled
+-- SEAL_USE_INTEL_HEXL: OFF
+-- BUILD_SHARED_LIBS: OFF
+-- SEAL_THROW_ON_TRANSPARENT_CIPHERTEXT: ON
+-- SEAL_USE_GAUSSIAN_NOISE: OFF
+-- SEAL_DEFAULT_PRNG: Blake2xb
+-- SEAL_AVOID_BRANCHING: OFF
+-- x86intrin.h - found
+-- SEAL_USE_INTRIN: ON
+-- Performing Test SEAL_MEMSET_S_FOUND
+-- Performing Test SEAL_MEMSET_S_FOUND - Failed
+-- Looking for explicit_bzero
+-- Looking for explicit_bzero - not found
+-- Looking for explicit_memset
+-- Looking for explicit_memset - not found
+-- SEAL_USE_MEMSET_S: OFF
+-- SEAL_USE_EXPLICIT_BZERO: OFF
+-- SEAL_USE_EXPLICIT_MEMSET: OFF
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- SEAL_BUILD_SEAL_C: OFF
+-- SEAL_BUILD_EXAMPLES: OFF
+-- SEAL_BUILD_TESTS: OFF
+-- SEAL_BUILD_BENCH: OFF
+-- Configuring done (28.3s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Users/wangt/AppData/Local/BioBindResearchTools/seal-runtime-r2-build

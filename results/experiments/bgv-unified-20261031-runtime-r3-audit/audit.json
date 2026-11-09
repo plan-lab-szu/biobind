@@ -1,0 +1,374 @@
+{
+  "auditedAt": "2026-10-31T11:12:49.184237+00:00",
+  "scope": "completed component-run evidence audit; no manuscript refill",
+  "status": "passed",
+  "controller": {
+    "state": "passed",
+    "completed": [
+      "smoke128",
+      "measure",
+      "full-r2",
+      "full-r1",
+      "full-r3"
+    ],
+    "fullCapacityVerified": true
+  },
+  "parameters": {
+    "model": "Unified512",
+    "n": 2,
+    "L": 512,
+    "d": 8192,
+    "Gamma": 2047,
+    "T": 8473312,
+    "plain_modulus": 281474976694273,
+    "coeff_modulus": [
+      1152921504606830593,
+      1125899905744897,
+      1125899906629633,
+      1125899906826241
+    ],
+    "key_parms_id": "67cf148966c85f1259eddc0d4045074854f0deae85bf61d4bd2e9af8612edaad",
+    "data_parms_id": "5b2ed3da11834f31e01913147aa6b86e17e7821bf58bd71c80ec08254320b928",
+    "data_modulus_bits": 160,
+    "security_level": "tc128",
+    "seal": "4.1.2",
+    "default_compression": 2
+  },
+  "runs": [
+    {
+      "run": "smoke128",
+      "seed": 20261031,
+      "checkpoints": 8,
+      "registered": 128,
+      "final": {
+        "enrollments": 128,
+        "merges": 127,
+        "capacity": 16384,
+        "row_noise_min": 98,
+        "query_noise": 25,
+        "wrong_slots": 0,
+        "wrong_packed_slots": 0,
+        "wrong_row_slots": 0,
+        "fresh_query_noise": 32,
+        "fresh_wrong_slots": 0,
+        "fresh_wrong_packed_slots": 0,
+        "process_handles": 86,
+        "elapsed_ms": 138365.5011
+      },
+      "maxHandles": 86,
+      "minQueryNoiseBits": 25,
+      "completedAt": "2026-10-31T05:36:12.526496+00:00"
+    },
+    {
+      "run": "full-r1",
+      "seed": 20261031,
+      "checkpoints": 16,
+      "registered": 16384,
+      "final": {
+        "enrollments": 16384,
+        "merges": 16383,
+        "capacity": 16384,
+        "row_noise_min": 90,
+        "query_noise": 17,
+        "wrong_slots": 0,
+        "wrong_packed_slots": 0,
+        "wrong_row_slots": 0,
+        "fresh_query_noise": 31,
+        "fresh_wrong_slots": 0,
+        "fresh_wrong_packed_slots": 0,
+        "process_handles": 90,
+        "elapsed_ms": 19677673.6384
+      },
+      "maxHandles": 90,
+      "minQueryNoiseBits": 17,
+      "completedAt": "2026-10-31T11:05:27.581261+00:00"
+    },
+    {
+      "run": "full-r2",
+      "seed": 20261032,
+      "checkpoints": 16,
+      "registered": 16384,
+      "final": {
+        "enrollments": 16384,
+        "merges": 16383,
+        "capacity": 16384,
+        "row_noise_min": 90,
+        "query_noise": 17,
+        "wrong_slots": 0,
+        "wrong_packed_slots": 0,
+        "wrong_row_slots": 0,
+        "fresh_query_noise": 31,
+        "fresh_wrong_slots": 0,
+        "fresh_wrong_packed_slots": 0,
+        "process_handles": 90,
+        "elapsed_ms": 19673597.5951
+      },
+      "maxHandles": 90,
+      "minQueryNoiseBits": 17,
+      "completedAt": "2026-10-31T11:05:22.945640+00:00"
+    },
+    {
+      "run": "full-r3",
+      "seed": 20261033,
+      "checkpoints": 16,
+      "registered": 16384,
+      "final": {
+        "enrollments": 16384,
+        "merges": 16383,
+        "capacity": 16384,
+        "row_noise_min": 90,
+        "query_noise": 15,
+        "wrong_slots": 0,
+        "wrong_packed_slots": 0,
+        "wrong_row_slots": 0,
+        "fresh_query_noise": 29,
+        "fresh_wrong_slots": 0,
+        "fresh_wrong_packed_slots": 0,
+        "process_handles": 89,
+        "elapsed_ms": 19686604.1165
+      },
+      "maxHandles": 89,
+      "minQueryNoiseBits": 15,
+      "completedAt": "2026-10-31T11:05:37.186578+00:00"
+    }
+  ],
+  "fullCapacityCheckpoints": 48,
+  "fullCapacityRowSlotComparisons": 201326592,
+  "fullCapacityPackedQuerySlotComparisons": 393216,
+  "allFiveDecodingErrorCountersZero": true,
+  "staticArithmetic": {
+    "plainModulus": 281474976694273,
+    "normSquaredBound": "4236655.3225948436090383529090953160314693138932623458032926826147786724701345911",
+    "integerNormSquaredMax": 4236655,
+    "C1_T_gt_twice_normBound": true,
+    "C1_p_gt_twice_packedScoreBound": true,
+    "dataModulusProduct": 1461501635629472912097222353132967185229959380993,
+    "freshPhaseBound": 2306687434143825920,
+    "queryPhaseBound": 365643067275768933643758375524286005426677350400,
+    "strictNoWrap": true,
+    "Q_over_twice_bound": "1.9985359581933556147775191621951391198682267236881184817998214924115260852869944",
+    "independentMathematicalReview": false
+  },
+  "measurement": {
+    "warmups": 1,
+    "measuredRounds": 5,
+    "medians": {
+      "enroll_construct_ms": 1.5114,
+      "enroll_encode_ms": 51.9348,
+      "enroll_encrypt_ms": 2258.6381,
+      "query_construct_ms": 1.2888,
+      "query_encode_ms": 48.8421,
+      "query_encrypt_ms": 2153.9612,
+      "save_none_ms": 188.6385,
+      "save_default_ms": 678.7713,
+      "load_two_ms": 268.7578,
+      "add_ms": 31.884,
+      "save_merge_ms": 186.0512,
+      "query_evaluation_ms": 266.1964,
+      "none_bytes": 201388584,
+      "default_bytes": 188625019,
+      "framing_bytes": 4136,
+      "enroll_total_ms": 2312.1165,
+      "query_encrypt_total_ms": 2204.0921000000003
+    },
+    "scope": "serial single merge into a freshly encrypted almost-full gallery; not accumulated full-history timing"
+  },
+  "buildFiles": [
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-build-unified-20261031-runtime-r2\\bgv-measure.exe",
+      "sha256": "1ddd5138581e237e66e1e80fe85bee26495a5be2f9574067dbca99f37fe35574",
+      "bytes": 5113483,
+      "archive": "build-evidence/bgv-measure.exe",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\lib\\libseal-4.1.a",
+      "sha256": "e6f550229fdd342309849bb6326c73e719cf8374c69bdd2cf96fe6f9f70d883a",
+      "bytes": 1555438,
+      "archive": "build-evidence/libseal-4.1.a",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\lib\\libzstd.a",
+      "sha256": "b9e83baf381cce9eda25bec4f78991d8946c5000bf2c6d604fcfd01030c94fb1",
+      "bytes": 1320190,
+      "archive": "build-evidence/libzstd.a",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\native\\src\\seal\\util\\config.h",
+      "sha256": "a67b05ca44ce2e50c5551fa6a928967513ea22914fe3416ec702eb4efd49e14a",
+      "bytes": 1251,
+      "archive": "build-evidence/config.h",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\CMakeCache.txt",
+      "sha256": "ba1bb759179cd5dfa1e12d735d96f3efbb383defc807257da6a1f63ca1b2007f",
+      "bytes": 33664,
+      "archive": "build-evidence/CMakeCache.txt",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\SEAL-4.1.2\\native\\src\\seal\\util\\locks.h",
+      "sha256": "a34a283b6545662bc6d36a2c68e594c7da5aeb2799ec56680c9e08e67233863f",
+      "bytes": 8074,
+      "archive": "build-evidence/locks.h",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\SEAL-4.1.2\\native\\src\\seal\\randomgen.cpp",
+      "sha256": "5f34ee389338dc204479ed869da9c1a196df169a50e03964fb2513fc26b2146f",
+      "bytes": 6800,
+      "archive": "build-evidence/randomgen.cpp",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\SEAL-4.1.2\\native\\src\\seal\\util\\rlwe.cpp",
+      "sha256": "93eedac214990633c3ef3795ca151fd67d5b26702d9462e04db8da5b6df20b3c",
+      "bytes": 18406,
+      "archive": "build-evidence/rlwe.cpp",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r3\\bgv-measure.cpp",
+      "sha256": "54709fb74b2f5f12ee92ae4866e97635d93b3fcbe718a112a4885dfc093ccfc7",
+      "bytes": 17104,
+      "archive": "build-evidence/bgv-measure.cpp",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r3\\run.py",
+      "sha256": "7540b474540dcc79c0c9c6e8cac56c688d3392bb14f5750c4c33dc1f2357eed9",
+      "bytes": 8998,
+      "archive": "build-evidence/run.py",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r3\\run-full.py",
+      "sha256": "d4c443c80669a8c9b1462c0ac4aa989deb529133f238a57633bc3bcc1c75684b",
+      "bytes": 2743,
+      "archive": "build-evidence/run-full.py",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r3\\CMakeLists.txt",
+      "sha256": "797aadcbcf20e5f5029f12da8c6a5de534ee4aaefc9407d978c5b7cb692a1100",
+      "bytes": 510,
+      "archive": "build-evidence/CMakeLists.txt",
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r3\\vendor\\scmv_e3_benchmark.cpp",
+      "sha256": "220a712a49a8c1e79c9a57d4ed2c10bf1363589fb0a73ee7f07c4005e499d65d",
+      "bytes": 26021,
+      "archive": "build-evidence/scmv_e3_benchmark.cpp",
+      "verified": true
+    }
+  ],
+  "noiseBoundSources": [
+    {
+      "source": "native/src/seal/util/rlwe.cpp",
+      "sha256": "93eedac214990633c3ef3795ca151fd67d5b26702d9462e04db8da5b6df20b3c",
+      "matchesFrozenSource": true
+    },
+    {
+      "source": "native/src/seal/util/rns.cpp",
+      "sha256": "a01c930b43bd9b6bacd673dd264cc8e1f1bdf6472c407c28200f1b59a04ea952",
+      "matchesFrozenSource": true
+    },
+    {
+      "source": "native/src/seal/encryptor.cpp",
+      "sha256": "2fb326c0526adb937093f40af52f92651bef8a865fb013faf631de169216036d",
+      "matchesFrozenSource": true
+    },
+    {
+      "source": "native/src/seal/keygenerator.cpp",
+      "sha256": "be678f60ad5093ed43dcb17bfffd43811d26c9f5511046edfb19556bfc33bb99",
+      "matchesFrozenSource": true
+    },
+    {
+      "source": "native/src/seal/evaluator.cpp",
+      "sha256": "df89d4e9621fa748ed16f818d15524c0d95a2b0c7e82e56b13134e15f4878772",
+      "matchesFrozenSource": true
+    },
+    {
+      "source": "native/src/seal/modulus.cpp",
+      "sha256": "e8426f6a905432421b8ef4e578b956f96680dc473d7082fc1dc7f8551276d76a",
+      "matchesFrozenSource": true
+    },
+    {
+      "source": "native/src/seal/util/defines.h",
+      "sha256": "2343f39780268b8e2c812367c4c5aa8b64d853ae789fdfdf20a096cbb1217191",
+      "matchesFrozenSource": true
+    },
+    {
+      "source": "LICENSE",
+      "sha256": "27ebda9d51f0a56b7e281ccd8230a27236dcb51c05f64b07869ecf6e965d68b0",
+      "matchesFrozenSource": true
+    }
+  ],
+  "binaryEvidence": [
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-unified-20261031-runtime-r3\\measure\\Unified512-2\\tail.bin",
+      "file": "tail.bin",
+      "bytes": 201388584,
+      "sha256": "8c2314f8af33fe455dc92332286b5be41f59833af50d567b6fe813273f891278",
+      "keccak256": "947229f21519294df481d42a59eacb18e94eb741fe9c5dd73b911705b55cb0a8",
+      "keccak_ms_with_warmup": [
+        986.5602999998373,
+        855.9026000002632,
+        888.5174000006373,
+        1039.8086000004696,
+        1004.8019000005297,
+        1076.4307999997982
+      ],
+      "median_keccak_ms": 1004.8019000005297,
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-unified-20261031-runtime-r3\\measure\\Unified512-2\\enrollment.bin",
+      "file": "enrollment.bin",
+      "bytes": 201388584,
+      "sha256": "b5a70a778becc33b757bf568dbf84cc8cc1bcedfd04af15dffc690dcac49b3e3",
+      "keccak256": "1d8c86f3da64cfc5f532939dbe1886cec0803d5103334eb29aed546a58a8d4c1",
+      "keccak_ms_with_warmup": [
+        1036.9140999991941,
+        946.4814000002661,
+        1049.9982000001182,
+        1058.3088000003045,
+        867.3159999998461,
+        799.3898000004265
+      ],
+      "median_keccak_ms": 946.4814000002661,
+      "verified": true
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-unified-20261031-runtime-r3\\measure\\Unified512-2\\merged.bin",
+      "file": "merged.bin",
+      "bytes": 201388584,
+      "sha256": "6f4b8d6aee11fe96f99bf37da58280cf54b6b20a5ad2d9056ed61ba3b8dc71a2",
+      "keccak256": "9498759d711d58aff3a5e61fe3d782203f5702445d72dad5458b00968670a1fb",
+      "keccak_ms_with_warmup": [
+        777.5998000015534,
+        872.499400000379,
+        804.6204000002035,
+        788.4890000004816,
+        842.0280999998795,
+        813.7511000004451
+      ],
+      "median_keccak_ms": 813.7511000004451,
+      "verified": true
+    }
+  ],
+  "manuscriptComparedFiles": 80,
+  "manuscriptChangesSinceCitationSnapshot": [],
+  "limitations": [
+    "One fixed synthetic query per full history; finite input/key coverage.",
+    "Independent keys follow separate KeyGenerator processes and OS entropy; key fingerprints were not exported.",
+    "Parameter IDs identify parameters, not keys.",
+    "Static bound remains conditional and awaiting independent mathematical review.",
+    "No PVSC, threshold decryption, real capture, or complete protocol integration.",
+    "Full measurement ciphertexts stay in external local scratch; hashes are portable."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "generatedAt": "2026-09-08T10:49:14.209Z",
+  "mode": "cold-workers-4",
+  "singleThread": false,
+  "workerConcurrency": 4,
+  "requestedWorkers": 4,
+  "workerLimitMethod": "os.cpus() limited before importing snarkjs/ffjavascript in an isolated process",
+  "repetitions": 1,
+  "nodeHardwareConcurrency": 16,
+  "scope": "groth16.prove only, using an existing .wtns and zkey; proof verification is performed by the parent benchmark outside the measured process",
+  "runs": [
+    {
+      "run": 1,
+      "elapsedMs": 1163.9,
+      "before": {
+        "rssMiB": 57.5,
+        "heapUsedMiB": 9.37,
+        "externalMiB": 2.49,
+        "arrayBuffersMiB": 0.14
+      },
+      "sampledPeakRssMiB": 406.73,
+      "after": {
+        "rssMiB": 224.31,
+        "heapUsedMiB": 11.99,
+        "externalMiB": 32.3,
+        "arrayBuffersMiB": 28.66
+      },
+      "afterGc": {
+        "rssMiB": 194.18,
+        "heapUsedMiB": 10.89,
+        "externalMiB": 32.3,
+        "arrayBuffersMiB": 0.31
+      }
+    }
+  ]
+}

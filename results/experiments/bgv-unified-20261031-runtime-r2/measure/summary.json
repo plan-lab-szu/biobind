@@ -1,0 +1,78 @@
+{
+  "completedAt": "2026-10-31T05:27:08.074349+00:00",
+  "profiles": [
+    {
+      "profile": "Unified512-2",
+      "samples": 5,
+      "allChecksPass": true,
+      "medians": {
+        "enroll_construct_ms": 2.0982,
+        "enroll_encode_ms": 56.6286,
+        "enroll_encrypt_ms": 2397.2743,
+        "query_construct_ms": 2.1558,
+        "query_encode_ms": 55.8107,
+        "query_encrypt_ms": 2358.6004,
+        "save_none_ms": 203.8501,
+        "save_default_ms": 726.6395,
+        "load_two_ms": 300.9911,
+        "add_ms": 34.313,
+        "save_merge_ms": 201.0037,
+        "query_evaluation_ms": 283.8881,
+        "none_bytes": 201388584,
+        "default_bytes": 188622748,
+        "framing_bytes": 4136,
+        "enroll_total_ms": 2455.7977,
+        "query_encrypt_total_ms": 2416.3055
+      },
+      "minimumQueryNoiseBits": 31,
+      "binaryEvidence": [
+        {
+          "file": "tail.bin",
+          "bytes": 201388584,
+          "sha256": "95725ccffe3055db577f4c59ea87bc886ad314933f6b8f28fbb3fb3119039b87",
+          "keccak256": "c4e0d602b5bff9408fc0e07d9df636cdd51ee45454b8b2fd03d8069a535f5b25",
+          "keccak_ms_with_warmup": [
+            777.7136000004248,
+            770.9348999997019,
+            739.6848999997019,
+            750.3700999986904,
+            771.0007000005135,
+            753.0951999997342
+          ],
+          "median_keccak_ms": 753.0951999997342
+        },
+        {
+          "file": "enrollment.bin",
+          "bytes": 201388584,
+          "sha256": "0a3014037dd845f5a9d44759b9aaa1c9b2a412ce552588dba1bcf234b470b896",
+          "keccak256": "16fafbf4c462a4a6ab2d93f0bc7230145e27ee2039121d130566bdf965a7d3c5",
+          "keccak_ms_with_warmup": [
+            752.892200000133,
+            734.0686000006826,
+            782.6437000003352,
+            804.0535000000091,
+            776.5490999991016,
+            783.1697000001441
+          ],
+          "median_keccak_ms": 782.6437000003352
+        },
+        {
+          "file": "merged.bin",
+          "bytes": 201388584,
+          "sha256": "53dc598662b8c44f5226caf8634dda072ebe3af7eec5310d30bf714013a6bba3",
+          "keccak256": "7c4c6ed7a3f1bfcedbb5ec5a23d7e58def99e31f178afe1f7230505f4a4b7ff2",
+          "keccak_ms_with_warmup": [
+            868.5403000017686,
+            897.1338000010292,
+            788.3418999990681,
+            787.2111999986373,
+            799.2286999997305,
+            791.5313000012247
+          ],
+          "median_keccak_ms": 791.5313000012247
+        }
+      ],
+      "binaryRetention": "Full ciphertexts retained in local external binary-dir; hashes portable. No keys exported."
+    }
+  ]
+}

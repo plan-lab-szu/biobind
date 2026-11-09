@@ -1,0 +1,85 @@
+{
+  "generatedAt": "2026-10-27T15:59:08.610Z",
+  "scope": "512-D auth_private circuits at 16/12/8-bit coordinates with real LFW features (InceptionResnetV1 VGGFace2); benchmark-only Groth16 setup on local pot16",
+  "securityWarning": "Benchmark-only single-contributor setup; software keys; never deploy.",
+  "demoSelection": {
+    "personA": "Aaron_Peirsol",
+    "personB": "Abdullah",
+    "images": {
+      "A_enroll": "Aaron_Peirsol/Aaron_Peirsol_0001.jpg",
+      "A_probe": "Aaron_Peirsol/Aaron_Peirsol_0003.jpg",
+      "A_reenroll": "Aaron_Peirsol/Aaron_Peirsol_0004.jpg",
+      "B_enroll": "Abdullah/Abdullah_0001.jpg",
+      "B_probe": "Abdullah/Abdullah_0002.jpg"
+    },
+    "cosine": {
+      "A_enroll~A_probe": 0.8579316138621169,
+      "A_enroll~A_reenroll": 0.6160637911911921,
+      "A_enroll~B_probe": -0.27879906401448173,
+      "B_enroll~B_probe": 0.7738307980353045
+    },
+    "rule": "Export real LFW feature vectors for the 512-D private-circuit demos.\n\nSelection rule (fixed, deterministic; this is a demonstration, not an accuracy\nestimate -- accuracy comes from the View 2 protocol in score_and_analyze.py):\n  * candidates are identities with >= 3 images among the extracted View 2 images;\n  * person A: alphabetically first candidate whose three first images have all\n    pairwise cosine similarities >= 0.6 (enrollment, probe, re-enrollment);\n  * person B: next candidate with the same property and cosine < 0.2 to A's images."
+  },
+  "results": [
+    {
+      "profile": "b16",
+      "circuit": "auth_private_512",
+      "bits": 16,
+      "packSize": 15,
+      "gamma": 512,
+      "offset": 32768,
+      "constraints": 40205,
+      "epsilon": "319949",
+      "genuineDistance": "74166",
+      "impostorDistance": "669897",
+      "verified": true,
+      "impostorRejected": true,
+      "proveMs": [
+        2652,
+        2178,
+        2091
+      ],
+      "setupSeconds": 56
+    },
+    {
+      "profile": "b12",
+      "circuit": "auth_private_512_b12",
+      "bits": 12,
+      "packSize": 20,
+      "gamma": 2047,
+      "offset": 2048,
+      "constraints": 33463,
+      "epsilon": "5253245",
+      "genuineDistance": "1191545",
+      "impostorDistance": "10717782",
+      "verified": true,
+      "impostorRejected": true,
+      "proveMs": [
+        2096,
+        2157,
+        2075
+      ],
+      "setupSeconds": 56
+    },
+    {
+      "profile": "b8",
+      "circuit": "auth_private_512_b8",
+      "bits": 8,
+      "packSize": 30,
+      "gamma": 127,
+      "offset": 128,
+      "constraints": 27252,
+      "epsilon": "20233",
+      "genuineDistance": "4765",
+      "impostorDistance": "41421",
+      "verified": true,
+      "impostorRejected": true,
+      "proveMs": [
+        1447,
+        1432,
+        1457
+      ],
+      "setupSeconds": 51
+    }
+  ]
+}

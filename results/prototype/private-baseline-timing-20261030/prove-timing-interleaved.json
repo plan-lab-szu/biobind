@@ -1,0 +1,57 @@
+{
+  "generatedAt": "2026-10-30T04:48:11.167Z",
+  "node": "v24.19.0",
+  "rounds": 5,
+  "warmupDiscarded": 1,
+  "scope": "Private baseline, same public inputs, alternating execution order; CPU times exclude capture, matching/opening checks in the TCB, signing and network.",
+  "allProofsVerified": true,
+  "publicSignalsIdentical": true,
+  "results": [
+    {
+      "circuit": "auth_private_v2_512_b12_dev20",
+      "wide": true,
+      "devDepth": 20,
+      "attested": false,
+      "witnessMs": [
+        392,
+        382,
+        388,
+        474,
+        487
+      ],
+      "proveMs": [
+        1463,
+        1422,
+        1678,
+        1518,
+        1502
+      ],
+      "witnessMedianMs": 392,
+      "proveMedianMs": 1502,
+      "totalMedianMs": 1989
+    },
+    {
+      "circuit": "auth_private_attested_dev20",
+      "wide": true,
+      "devDepth": 20,
+      "attested": true,
+      "witnessMs": [
+        265,
+        282,
+        249,
+        239,
+        275
+      ],
+      "proveMs": [
+        891,
+        833,
+        829,
+        880,
+        891
+      ],
+      "witnessMedianMs": 265,
+      "proveMedianMs": 880,
+      "totalMedianMs": 1119
+    }
+  ]
+}

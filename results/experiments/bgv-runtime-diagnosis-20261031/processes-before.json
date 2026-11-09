@@ -1,0 +1,38 @@
+[
+  {
+    "Id": 8792,
+    "ProcessName": "bgv-measure",
+    "CPU": 45499.21875,
+    "HandleCount": 16711680,
+    "WorkingSet64": 918687744,
+    "PrivateMemorySize64": 3882577920,
+    "StartTime": "2026-10-31T09:36:28.8342983+08:00"
+  },
+  {
+    "Id": 10784,
+    "ProcessName": "bgv-measure",
+    "CPU": 40221.0625,
+    "HandleCount": 16711680,
+    "WorkingSet64": 443232256,
+    "PrivateMemorySize64": 3881107456,
+    "StartTime": "2026-10-31T09:36:28.8335784+08:00"
+  },
+  {
+    "Id": 19100,
+    "ProcessName": "bgv-measure",
+    "CPU": 45677.34375,
+    "HandleCount": 16711680,
+    "WorkingSet64": 913711104,
+    "PrivateMemorySize64": 3883261952,
+    "StartTime": "2026-10-31T09:36:28.830005+08:00"
+  },
+  {
+    "Id": 25568,
+    "ProcessName": "python",
+    "CPU": 0.15625,
+    "HandleCount": 164,
+    "WorkingSet64": 10248192,
+    "PrivateMemorySize64": 10764288,
+    "StartTime": "2026-10-31T09:33:08.9267021+08:00"
+  }
+]

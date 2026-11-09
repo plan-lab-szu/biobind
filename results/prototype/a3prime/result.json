@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-10-27T12:01:30.459Z",
+  "scope": "A3' snapshot race on the SCMV plaintext model; synthetic vectors; honest ciphertext content; slot from count at write time",
+  "params": {
+    "L": 128,
+    "d": 4,
+    "n": 3,
+    "gamma": 128,
+    "T": "35729",
+    "tau": "8192"
+  },
+  "results": {
+    "current": {
+      "first": "Finalized",
+      "second": "Duplicate",
+      "uniquenessResultsForA": 1,
+      "controlDistinctPeople": {
+        "B": "Finalized",
+        "C": "Finalized"
+      },
+      "galleryCount": 13
+    },
+    "snapshot": {
+      "first": "Finalized",
+      "second": "Finalized",
+      "uniquenessResultsForA": 2,
+      "controlDistinctPeople": {
+        "B": "Finalized",
+        "C": "Finalized"
+      },
+      "galleryCount": 14
+    },
+    "snapshot+stale": {
+      "first": "Finalized",
+      "second": "AbortedStaleSlot",
+      "uniquenessResultsForA": 1,
+      "retry": "Duplicate",
+      "controlDistinctPeople": {
+        "B": "Finalized",
+        "C": "AbortedStaleSlot -> retry Finalized"
+      },
+      "galleryCount": 13
+    }
+  }
+}

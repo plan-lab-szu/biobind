@@ -1,0 +1,197 @@
+{
+  "generatedAt": "2026-09-08T15:30:57.6448811+08:00",
+  "warning": "Local single-machine phase-1 and phase-2 contributions; benchmark only; never use these keys in production.",
+  "setup": {
+    "curve": "bn128",
+    "power": 15,
+    "maxConstraints": 32768,
+    "transcriptVerified": true,
+    "productionCeremony": false
+  },
+  "host": {
+    "os": "Microsoft Windows 11 专业版",
+    "cpu": "Intel(R) Core(TM) i9-9900T CPU @ 2.10GHz",
+    "logicalProcessors": 16,
+    "totalMemoryGiB": 31.79,
+    "node": "v24.19.0",
+    "snarkjs": "0.7.6"
+  },
+  "results": [
+    {
+      "circuit": "auth_distance_128",
+      "constraints": 7660,
+      "publicInputs": 5,
+      "repetitions": 5,
+      "witness": {
+        "elapsedMs": [
+          99.74,
+          99.89,
+          101.89,
+          99.46,
+          98.73
+        ],
+        "medianElapsedMs": 99.74,
+        "peakWorkingSetMiB": [
+          70.38,
+          71.54,
+          69.79,
+          70.33,
+          69.71
+        ],
+        "medianPeakWorkingSetMiB": 70.33,
+        "baselineRssMiB": [
+          58.15,
+          57.82,
+          57.66,
+          57.86,
+          58.06
+        ]
+      },
+      "proof": {
+        "elapsedMs": [
+          777.93,
+          820.62,
+          768.4,
+          798.05,
+          842.55
+        ],
+        "medianElapsedMs": 798.05,
+        "peakWorkingSetMiB": [
+          580.77,
+          584.57,
+          580.0,
+          576.26,
+          582.14
+        ],
+        "medianPeakWorkingSetMiB": 580.77,
+        "baselineRssMiB": [
+          57.6,
+          58.08,
+          57.48,
+          57.66,
+          57.67
+        ],
+        "canonicalUncompressedBytes": 256,
+        "jsonBytes": 853
+      },
+      "verification": {
+        "elapsedMs": [
+          437.99,
+          416.04,
+          421.65,
+          410.33,
+          421.27
+        ],
+        "medianElapsedMs": 421.27,
+        "peakWorkingSetMiB": [
+          273.49,
+          271.95,
+          270.79,
+          266.42,
+          266.76
+        ],
+        "medianPeakWorkingSetMiB": 270.79,
+        "baselineRssMiB": [
+          57.28,
+          57.58,
+          57.84,
+          58.11,
+          57.58
+        ]
+      },
+      "artifacts": {
+        "provingKeyBytes": 5255367,
+        "verificationKeyJsonBytes": 3659,
+        "publicSignalsJsonBytes": 228
+      }
+    },
+    {
+      "circuit": "auth_distance_512",
+      "constraints": 27118,
+      "publicInputs": 5,
+      "repetitions": 5,
+      "witness": {
+        "elapsedMs": [
+          139.22,
+          147.13,
+          143.18,
+          145.45,
+          145.71
+        ],
+        "medianElapsedMs": 145.45,
+        "peakWorkingSetMiB": [
+          76.84,
+          77.03,
+          74.52,
+          75.67,
+          75.18
+        ],
+        "medianPeakWorkingSetMiB": 75.67,
+        "baselineRssMiB": [
+          57.83,
+          57.57,
+          57.33,
+          57.68,
+          57.27
+        ]
+      },
+      "proof": {
+        "elapsedMs": [
+          1510.29,
+          1469.53,
+          1542.37,
+          1688.63,
+          1530.08
+        ],
+        "medianElapsedMs": 1530.08,
+        "peakWorkingSetMiB": [
+          1087.78,
+          1089.04,
+          1087.41,
+          1086.7,
+          1089.48
+        ],
+        "medianPeakWorkingSetMiB": 1087.78,
+        "baselineRssMiB": [
+          58.0,
+          57.32,
+          58.18,
+          57.89,
+          57.74
+        ],
+        "canonicalUncompressedBytes": 256,
+        "jsonBytes": 857
+      },
+      "verification": {
+        "elapsedMs": [
+          415.93,
+          422.04,
+          463.43,
+          415.86,
+          429.61
+        ],
+        "medianElapsedMs": 422.04,
+        "peakWorkingSetMiB": [
+          269.89,
+          270.29,
+          273.05,
+          272.32,
+          269.95
+        ],
+        "medianPeakWorkingSetMiB": 270.29,
+        "baselineRssMiB": [
+          57.15,
+          57.6,
+          57.67,
+          57.54,
+          57.75
+        ]
+      },
+      "artifacts": {
+        "provingKeyBytes": 17302639,
+        "verificationKeyJsonBytes": 3655,
+        "publicSignalsJsonBytes": 229
+      }
+    }
+  ]
+}

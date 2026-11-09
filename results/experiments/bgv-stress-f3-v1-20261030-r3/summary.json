@@ -1,0 +1,20 @@
+{
+  "completedAt": "2026-10-30T05:55:10.403094+00:00",
+  "profiles": [
+    {
+      "profile": "FaceNet-3",
+      "last": {
+        "enrollments": 8,
+        "merges": 7,
+        "capacity": 24576,
+        "row_noise_min": 68,
+        "query_noise": 0,
+        "wrong_slots": 8192,
+        "wrong_packed_slots": 8192,
+        "elapsed_ms": 6304.0056
+      },
+      "checkpoints": 4,
+      "correctAtAllCheckpoints": false
+    }
+  ]
+}

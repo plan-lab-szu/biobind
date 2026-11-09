@@ -1,0 +1,33 @@
+{
+  "runs": [
+    {
+      "run": "bgv-measure-20261030",
+      "unavailableInputHashes": []
+    },
+    {
+      "run": "bgv-stress-f3-20261030",
+      "unavailableInputHashes": []
+    },
+    {
+      "run": "bgv-stress-f3-v1-20261030-r2",
+      "unavailableInputHashes": []
+    },
+    {
+      "run": "bgv-stress-f3-v1-20261030-r3",
+      "unavailableInputHashes": []
+    },
+    {
+      "run": "bgv-stress-m2-20261030",
+      "unavailableInputHashes": []
+    },
+    {
+      "run": "bgv-stress-m2-v1-20261030-r2",
+      "unavailableInputHashes": []
+    },
+    {
+      "run": "bgv-stress-m2-v1-20261030-r3",
+      "unavailableInputHashes": []
+    }
+  ],
+  "checkedSourcesAndExecutableHashes": true
+}

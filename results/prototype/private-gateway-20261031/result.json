@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-10-30T17:55:34.053Z",
+  "scope": "PrivateAuthGateway on local Ganache 7.9.2 (Shanghai), solc 0.8.36+commit.8a079791.Emscripten.clang; credential tree depth 20, device tree depth 10, root history 64; trees hash with the internal PoseidonT3 library (generated assembly), credential leaf with the circomlibjs 5-input Poseidon contract; real auth_private_128 Groth16 proofs",
+  "securityWarning": "Benchmark-only single-contributor Groth16 setup; software EdDSA and station keys; local fixture finalization source; synthetic vectors; never deploy.",
+  "gas": {
+    "poseidon2CallTx": 51081,
+    "gatewayDeployment": 12128702,
+    "registerDevice": [
+      444638,
+      388095,
+      388131
+    ],
+    "issue": [
+      912678,
+      856147,
+      856135,
+      850952,
+      856171,
+      850940,
+      850940,
+      845757,
+      856159
+    ],
+    "revokeCredential": [
+      1042342,
+      1042308
+    ],
+    "revokeDevice": 554550,
+    "authenticate": [
+      {
+        "case": "oneTime",
+        "gas": 327152
+      },
+      {
+        "case": "appScoped",
+        "gas": 304700
+      },
+      {
+        "case": "appScopedAfterRevocation",
+        "gas": 304760
+      },
+      {
+        "case": "appScopedAfterDeviceRevocation",
+        "gas": 304736
+      }
+    ],
+    "issueChallenge": 140314
+  },
+  "checks": {
+    "poseidonMatchesCircomlibjs": true,
+    "deviceRootMatchesMirror": true,
+    "substitutedIdcRejected": "InvalidLink",
+    "receiptConsumedOnce": "InvalidSourceSession",
+    "credentialRootMatchesMirror": true,
+    "nonBeneficiarySenderRejected": "InvalidChallenge",
+    "sameScopeReplayRejected": "NullifierUsed",
+    "appPseudonymStable": true,
+    "oneTimeAndAppNullifiersDiffer": true,
+    "proofOnPreInsertionRootAccepted": true,
+    "preRevocationRootRejected": "InvalidRoot",
+    "unaffectedHolderReprovesOnNewRoot": true,
+    "credentialRootMatchesMirrorAfterRevocation": true,
+    "revokedHolderOldProofRejected": "InvalidRoot",
+    "revokedHolderCannotProveOnNewRoot": true,
+    "preDeviceRevocationRootRejected": "InvalidRoot",
+    "reissueKeepsAppPseudonym": true,
+    "mismatchedScopeRejected": "InvalidStatement",
+    "alteredNullifierRejected": "ProofRejected"
+  },
+  "proveMs": [
+    2045,
+    1585,
+    1489,
+    1448,
+    1514,
+    1526,
+    1481,
+    1480,
+    1508,
+    1591,
+    1451
+  ],
+  "runtimeBytes": {
+    "gateway": 7680,
+    "tree": 18925
+  }
+}

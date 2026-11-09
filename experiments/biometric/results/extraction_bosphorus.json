@@ -1,0 +1,67 @@
+{
+  "images": 4342,
+  "embedded": 4301,
+  "detectionFailures": 41,
+  "failedByCategory": {
+    "CR_RD": 1,
+    "E_FEAR": 1,
+    "E_HAPPY": 1,
+    "E_SADNESS": 1,
+    "LFAU_10": 1,
+    "LFAU_12LW": 1,
+    "LFAU_12R": 1,
+    "LFAU_14": 1,
+    "LFAU_16": 1,
+    "LFAU_18": 1,
+    "LFAU_20": 1,
+    "LFAU_34": 1,
+    "O_EYE": 5,
+    "O_GLASSES": 1,
+    "O_HAIR": 2,
+    "PR_D": 4,
+    "PR_SD": 1,
+    "UFAU_1": 2,
+    "UFAU_2": 1,
+    "UFAU_43": 2,
+    "YR_L90": 3,
+    "YR_R10": 1,
+    "YR_R45": 1,
+    "YR_R90": 6
+  },
+  "subjects": 98,
+  "excludedUnpublishableSubjects": [
+    "bs006",
+    "bs019",
+    "bs021",
+    "bs039",
+    "bs041",
+    "bs059",
+    "bs079"
+  ],
+  "embeddingDimension": 512,
+  "normRange": [
+    0.9999998807907104,
+    1.0000001192092896
+  ],
+  "seconds": 1080.8,
+  "pipeline": {
+    "detector": "facenet_pytorch.MTCNN(image_size=160, margin=0, post_process=True, select_largest=False, selection_method='center_weighted_size')",
+    "fallback": "none; detection failures are recorded",
+    "model": "facenet_pytorch.InceptionResnetV1(pretrained='vggface2').eval()"
+  },
+  "weights": [
+    {
+      "file": "C:\\biobind-data\\torch\\checkpoints\\20180402-114759-vggface2.pt",
+      "sha256": "281cebca8662831adb987a874bdcb36e73f5b1c6dc5ee5878f305e985625d99b",
+      "bytes": 111898327
+    }
+  ],
+  "versions": {
+    "python": "3.11.15",
+    "torch": "2.2.2+cpu",
+    "facenet_pytorch": "2.6.0",
+    "numpy": "1.26.4"
+  },
+  "embeddingsFile": "F:\\data-store\\bosphorus-results\\bosphorus_embeddings.npz",
+  "embeddingsSha256": "f9c021a75a8f396e9de1b75eeb173cd6f31ff762540caf6233bcae05e05e4e8e"
+}

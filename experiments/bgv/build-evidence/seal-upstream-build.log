@@ -1,0 +1,104 @@
+[1/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/debug.c.obj
+[2/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/threading.c.obj
+[3/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/error_private.c.obj
+[4/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/pool.c.obj
+[5/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/zstd_common.c.obj
+[6/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/entropy_common.c.obj
+[7/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/xxhash.c.obj
+[8/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/hist.c.obj
+[9/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress_literals.c.obj
+[10/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/fse_compress.c.obj
+[11/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/fse_decompress.c.obj
+[12/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress_superblock.c.obj
+[13/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress_sequences.c.obj
+[14/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_preSplit.c.obj
+[15/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_ldm.c.obj
+[16/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/huf_compress.c.obj
+[17/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstdmt_compress.c.obj
+[18/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_ddict.c.obj
+[19/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress.c.obj
+[20/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/cover.c.obj
+[21/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress.c.obj
+[22/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/fastcover.c.obj
+[23/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_fast.c.obj
+[24/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_opt.c.obj
+[25/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/huf_decompress.c.obj
+[26/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_double_fast.c.obj
+[27/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress_block.c.obj
+[28/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/zdict.c.obj
+[29/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v01.c.obj
+[30/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/divsufsort.c.obj
+[31/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v03.c.obj
+[32/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v04.c.obj
+[33/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v02.c.obj
+[34/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v05.c.obj
+[35/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v06.c.obj
+[36/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v07.c.obj
+[37/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/batchencoder.cpp.obj
+[38/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/encryptionparams.cpp.obj
+[39/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/ckks.cpp.obj
+[40/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/ciphertext.cpp.obj
+[41/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/context.cpp.obj
+[42/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/decryptor.cpp.obj
+[43/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/encryptor.cpp.obj
+[44/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/memorymanager.cpp.obj
+[45/78] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_lazy.c.obj
+[46/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/kswitchkeys.cpp.obj
+[47/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/modulus.cpp.obj
+[48/78] Building C object CMakeFiles/seal.dir/native/src/seal/util/blake2xb.c.obj
+[49/78] Building C object CMakeFiles/seal.dir/native/src/seal/util/blake2b.c.obj
+[50/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/plaintext.cpp.obj
+[51/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/keygenerator.cpp.obj
+[52/78] Building C object CMakeFiles/seal.dir/native/src/seal/util/fips202.c.obj
+[53/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/serialization.cpp.obj
+[54/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/randomgen.cpp.obj
+[55/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/clipnormal.cpp.obj
+[56/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/valcheck.cpp.obj
+[57/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/common.cpp.obj
+[58/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/evaluator.cpp.obj
+[59/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/croots.cpp.obj
+[60/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/hash.cpp.obj
+[61/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/globals.cpp.obj
+[62/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/galois.cpp.obj
+[63/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/mempool.cpp.obj
+FAILED: [code=1] CMakeFiles/seal.dir/native/src/seal/util/mempool.cpp.obj 
+C:\Users\wangt\AppData\Local\BioBindResearchTools\w64devkit\bin\c++.exe  -IC:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src -IC:/Users/wangt/AppData/Local/BioBindResearchTools/seal-upstream-build/native/src -IC:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib -IC:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common -O3 -DNDEBUG -MD -MT CMakeFiles/seal.dir/native/src/seal/util/mempool.cpp.obj -MF CMakeFiles\seal.dir\native\src\seal\util\mempool.cpp.obj.d -o CMakeFiles/seal.dir/native/src/seal/util/mempool.cpp.obj -c C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp
+In file included from C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/defines.h:109,
+                 from C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/common.h:6,
+                 from C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp:4:
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp: In constructor 'seal::util::MemoryPoolHeadMT::MemoryPoolHeadMT(size_t, bool)':
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/gcc.h:25:53: error: '::aligned_alloc' has not been declared; did you mean '_aligned_malloc'?
+   25 |     static_cast<seal_byte *>((((size)&63) == 0) ? ::aligned_alloc(64, (size)) : std::malloc((size)))
+      |                                                     ^~~~~~~~~~~~~
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp:43:38: note: in expansion of macro 'SEAL_MALLOC'
+   43 |                 new_alloc.data_ptr = SEAL_MALLOC(mul_safe(MemoryPool::first_alloc_count, item_byte_count_));
+      |                                      ^~~~~~~~~~~
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp: In member function 'virtual seal::util::MemoryPoolItem* seal::util::MemoryPoolHeadMT::get()':
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/gcc.h:25:53: error: '::aligned_alloc' has not been declared; did you mean '_aligned_malloc'?
+   25 |     static_cast<seal_byte *>((((size)&63) == 0) ? ::aligned_alloc(64, (size)) : std::malloc((size)))
+      |                                                     ^~~~~~~~~~~~~
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp:145:46: note: in expansion of macro 'SEAL_MALLOC'
+  145 |                         new_alloc.data_ptr = SEAL_MALLOC(new_alloc_byte_count);
+      |                                              ^~~~~~~~~~~
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp: In constructor 'seal::util::MemoryPoolHeadST::MemoryPoolHeadST(size_t, bool)':
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/gcc.h:25:53: error: '::aligned_alloc' has not been declared; did you mean '_aligned_malloc'?
+   25 |     static_cast<seal_byte *>((((size)&63) == 0) ? ::aligned_alloc(64, (size)) : std::malloc((size)))
+      |                                                     ^~~~~~~~~~~~~
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp:191:38: note: in expansion of macro 'SEAL_MALLOC'
+  191 |                 new_alloc.data_ptr = SEAL_MALLOC(mul_safe(MemoryPool::first_alloc_count, item_byte_count_));
+      |                                      ^~~~~~~~~~~
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp: In member function 'virtual seal::util::MemoryPoolItem* seal::util::MemoryPoolHeadST::get()':
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/gcc.h:25:53: error: '::aligned_alloc' has not been declared; did you mean '_aligned_malloc'?
+   25 |     static_cast<seal_byte *>((((size)&63) == 0) ? ::aligned_alloc(64, (size)) : std::malloc((size)))
+      |                                                     ^~~~~~~~~~~~~
+C:/Users/wangt/AppData/Local/BioBindResearchTools/SEAL-4.1.2/native/src/seal/util/mempool.cpp:282:46: note: in expansion of macro 'SEAL_MALLOC'
+  282 |                         new_alloc.data_ptr = SEAL_MALLOC(new_alloc_byte_count);
+      |                                              ^~~~~~~~~~~
+[64/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/iterator.cpp.obj
+[65/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/numth.cpp.obj
+[66/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/polyarithsmallmod.cpp.obj
+[67/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/rlwe.cpp.obj
+[68/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/ntt.cpp.obj
+[69/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/scalingvariant.cpp.obj
+[70/78] Building CXX object CMakeFiles/seal.dir/native/src/seal/util/rns.cpp.obj
+ninja: build stopped: subcommand failed.

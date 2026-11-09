@@ -1,0 +1,42 @@
+{
+  "name": "biozero-route-a-prototype",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Route A full-vector biometric matching and Poseidon commitment prototype",
+  "scripts": {
+    "evaluate:provenance": "node scripts/provenance-security-evaluation.mjs",
+    "evaluate:ubca-integration": "node scripts/ubca-integration-evaluation.mjs",
+    "verify:pinned-profile": "node scripts/verify-pinned-artifacts.mjs",
+    "baseline:pedersen": "node scripts/pedersen-sampling-baseline.mjs",
+    "benchmark:pedersen": "node scripts/pedersen-gas-benchmark.mjs",
+    "benchmark:gas": "node scripts/gas-benchmark.mjs",
+    "benchmark:gateway": "node scripts/gateway-benchmark.mjs",
+    "benchmark:prover-ablation": "powershell -ExecutionPolicy Bypass -File ./prover-ablation.ps1",
+    "vectors": "node scripts/generate-inputs.mjs",
+    "test:commitment": "node --test test/commitment.test.mjs",
+    "test:atomic-issuance": "node --test test/atomic-receipt-issuance.test.mjs",
+    "test:source-adapter": "node --test test/source-finalization-adapter.test.mjs",
+    "test:ubca-auth": "node --test test/ubca-auth-gateway.test.mjs",
+    "test:budgeted-signer": "node --test test/eip712-budgeted-signer.test.mjs",
+    "test:pinned-profile": "node --test test/pinned-policy-profile.test.mjs",
+    "test:trusted-wire": "node --test test/trusted-capture-wire.test.mjs",
+    "test:lifecycle": "node --test test/lifecycle.test.mjs",
+    "test:prover-ablation": "node scripts/verify-prover-ablation.mjs",
+    "test:sampling": "node --test test/pedersen-sampling.test.mjs"
+  },
+  "dependencies": {
+    "circomlib": "2.0.5",
+    "circomlibjs": "0.1.7",
+    "snarkjs": "0.7.6"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "ethers": "5.8.0",
+    "ffjavascript": "0.2.63",
+    "ganache": "7.9.2",
+    "solc": "0.8.36"
+  }
+}

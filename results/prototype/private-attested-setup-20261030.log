@@ -1,0 +1,67 @@
+[32mtemplate instances[0m: 397
+non-linear constraints: 18856
+linear constraints: 14488
+public inputs: 9
+private inputs: 91
+public outputs: 0
+wires: 33394
+labels: 59479
+[32mWritten successfully:[0m C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\auth_private_attested_dev20.r1cs
+[32mWritten successfully:[0m C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\auth_private_attested_dev20.sym
+[32mWritten successfully:[0m C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\auth_private_attested_dev20_js\auth_private_attested_dev20.wasm
+[32mEverything went okay[0m
+
+[32;22m[INFO]  [39;1msnarkJS[0m: Curve: bn-128
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Wires: 33394
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 33344
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Private Inputs: 91
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 9
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Labels: 59479
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Outputs: 0
+
+node:internal/errors:985
+  const err = new Error(message);
+              ^
+
+Error: Command failed: C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\.toolchain\node-v24.19.0-win-x64\node.exe C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\snarkjs\build\cli.cjs zkey contribute C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\initial.zkey C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\auth_private_attested_dev20_final.zkey --name=benchmark-only -e=3a3a15c95b829e00b3ef8e520000b6a1b21a39380ec0377cb343f7da9fbcf886
+    at genericNodeError (node:internal/errors:985:15)
+    at wrappedFn (node:internal/errors:539:14)
+    at checkExecSyncError (node:child_process:942:11)
+    at execFileSync (node:child_process:978:15)
+    at run (file:///C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/prototype/route-a/scripts/setup-private-attested.mjs:12:22)
+    at file:///C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/prototype/route-a/scripts/setup-private-attested.mjs:21:1 {
+  status: 1,
+  signal: null,
+  output: [
+    null,
+    Buffer(779) [Uint8Array] [
+       27,  91,  51,  49,  59,  50,  50, 109,  91,  69,  82,  82,
+       79,  82,  93,  32,  27,  91,  51,  57,  59,  49, 109, 115,
+      110,  97, 114, 107,  74,  83,  27,  91,  48, 109,  58,  32,
+       69, 114, 114, 111, 114,  58,  32,  67,  58,  92,  85, 115,
+      101, 114, 115,  92, 119,  97, 110, 103, 116,  92,  68, 114,
+      111, 112,  98, 111, 120,  92,  80, 114, 111, 106, 101,  99,
+      116, 115,  87, 111, 114, 107, 105, 110, 103,  83, 112,  97,
+       99, 101,  92,  66, 105, 111,  90,  69,  82,  79,  92, 112,
+      114, 111, 116, 111,
+      ... 679 more items
+    ],
+    Buffer(0) [Uint8Array] []
+  ],
+  pid: 4300,
+  stdout: Buffer(779) [Uint8Array] [
+     27,  91,  51,  49,  59,  50,  50, 109,  91,  69,  82,  82,
+     79,  82,  93,  32,  27,  91,  51,  57,  59,  49, 109, 115,
+    110,  97, 114, 107,  74,  83,  27,  91,  48, 109,  58,  32,
+     69, 114, 114, 111, 114,  58,  32,  67,  58,  92,  85, 115,
+    101, 114, 115,  92, 119,  97, 110, 103, 116,  92,  68, 114,
+    111, 112,  98, 111, 120,  92,  80, 114, 111, 106, 101,  99,
+    116, 115,  87, 111, 114, 107, 105, 110, 103,  83, 112,  97,
+     99, 101,  92,  66, 105, 111,  90,  69,  82,  79,  92, 112,
+    114, 111, 116, 111,
+    ... 679 more items
+  ],
+  stderr: Buffer(0) [Uint8Array] []
+}
+
+Node.js v24.19.0

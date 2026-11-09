@@ -1,0 +1,2 @@
+Running MobileFaceNet-2 stress
+{"profile": "MobileFaceNet-2", "last": {"enrollments": 32, "merges": 31, "capacity": 16384, "row_noise_min": 63, "query_noise": 0, "wrong_slots": 8192, "wrong_packed_slots": 8192, "elapsed_ms": 100686.6993}, "checkpoints": 6, "correctAtAllCheckpoints": false}

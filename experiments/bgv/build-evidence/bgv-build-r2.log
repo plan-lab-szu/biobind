@@ -1,0 +1,7 @@
+[0/1] Re-running CMake...
+-- Microsoft SEAL -> Version 4.1.2 detected
+-- Microsoft SEAL -> Targets available: SEAL::seal
+-- Configuring done (0.1s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/wangt/AppData/Local/BioBindResearchTools/bgv-build
+[1/2] Linking CXX executable bgv-measure.exe

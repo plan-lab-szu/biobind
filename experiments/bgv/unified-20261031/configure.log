@@ -1,0 +1,16 @@
+-- The CXX compiler identification is GNU 16.2.0
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/c++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Microsoft SEAL -> Version 4.1.2 detected
+-- Microsoft SEAL -> Targets available: SEAL::seal
+-- Found OpenMP_CXX: -fopenmp (found version "5.2")
+-- Found OpenMP: TRUE (found version "5.2")
+-- Configuring done (8.0s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/wangt/AppData/Local/BioBindResearchTools/bgv-build-unified-20261031

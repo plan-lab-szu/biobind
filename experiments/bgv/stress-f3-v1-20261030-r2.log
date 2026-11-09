@@ -1,0 +1,2 @@
+Running FaceNet-3 stress
+{"profile": "FaceNet-3", "last": {"enrollments": 16, "merges": 15, "capacity": 24576, "row_noise_min": 67, "query_noise": 0, "wrong_slots": 8192, "wrong_packed_slots": 8192, "elapsed_ms": 12017.1974}, "checkpoints": 5, "correctAtAllCheckpoints": false}

@@ -1,0 +1,13 @@
+{
+  "generatedAt": "2026-10-27T13:52:41.826Z",
+  "scope": "PoseidonT3 (generated inline assembly, internal library) vs circomlibjs Poseidon(2) and the circomlibjs-generated contract; solc 0.8.36+commit.8a079791.Emscripten.clang, optimizer 200, Shanghai, Ganache 7.9.2",
+  "cases": 69,
+  "mismatches": 0,
+  "libraryHashGasMedian": 21560,
+  "libraryHashGasRange": [
+    21560,
+    21560
+  ],
+  "circomlibjsExternalCallGasMedian": 32183,
+  "harnessRuntimeBytes": 17151
+}

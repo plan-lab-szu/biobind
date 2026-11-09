@@ -1,0 +1,15 @@
+Running MobileFaceNet-2 stress
+Traceback (most recent call last):
+  File "C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\dev-workspace\experiments\bgv\run.py", line 103, in <module>
+    main()
+  File "C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\dev-workspace\experiments\bgv\run.py", line 62, in main
+    subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, check=True)
+  File "C:\Users\wangt\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 548, in run
+    with Popen(*popenargs, **kwargs) as process:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wangt\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1026, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "C:\Users\wangt\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 1538, in _execute_child
+    hp, ht, pid, tid = _winapi.CreateProcess(executable, args,
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+OSError: [WinError 4551] Ӧ�ó�����Ʋ�������ֹ���ļ���

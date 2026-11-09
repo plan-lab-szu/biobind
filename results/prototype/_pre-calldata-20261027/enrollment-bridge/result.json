@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-10-25T14:02:46.043Z",
+  "node": "v24.22.1",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "params": {
+    "L": 128,
+    "d": 4,
+    "n": 3,
+    "gamma": 128,
+    "T": "35729",
+    "tau": "8192",
+    "epsilon": 2000
+  },
+  "scope": "local synthetic; SCMV plaintext semantics (no BGV); software bridge/TEE model; fixture source; benchmark-only proving key",
+  "partA_paperSemantics": {
+    "A0_honest": {
+      "enrolled": 30,
+      "blocks": 3,
+      "recaptureRejected": 30,
+      "loginCorrect": 30
+    },
+    "A1_divergence_paper": {
+      "firstAccepted": true,
+      "sameIdentitySecondAccepted": true,
+      "uniquenessReceiptsForOnePerson": 2
+    },
+    "A2_wrong_slot_paper": {
+      "accepted": true,
+      "intendedIndex": 10,
+      "attackerLoginIndex": 1,
+      "victimLoginIndex": 1,
+      "galleryCount": 11
+    },
+    "A3_concurrent_paper": {
+      "bothAccepted": true,
+      "preparedAtSameN": true,
+      "loginB": 10,
+      "loginC": 10,
+      "expected": {
+        "B": 10,
+        "C": 11
+      }
+    }
+  },
+  "B": {
+    "B9_identicalRetrySameSignature": true,
+    "B9_differentRequestAfterLink": "SESSION_ALREADY_LINKED",
+    "B11_rollbackToPreLinkState": "ROLLBACK_DETECTED",
+    "B11_tamperedSeal": "SEAL_INVALID",
+    "B1_sessionMixAtPrepare": "SESSION_BINDING_MISMATCH",
+    "B2_galleryCountLie": "SOURCE_CONTEXT_MISMATCH",
+    "B5_outOfProfileVector": "VECTOR_OUT_OF_PROFILE",
+    "B3_secondCaptureSameSession": "SESSION_ALREADY_USED",
+    "B4_staleCaptureCounter": "STALE_CAPTURE_COUNTER",
+    "B6_substitutedEnrollCiphertext": "RECEIPT_MISMATCH",
+    "B6_paperSourceStillAccepted": true,
+    "B6_personMissingFromPaperGallery": true,
+    "B6_boundSourceRejectsSubstitution": "UnregisteredBridge",
+    "B7_requestFromOtherSession": "REQUEST_MISMATCH",
+    "B7_receiptFieldsSpliced": "RECEIPT_MISMATCH",
+    "B8_otherCommitment": "REQUEST_MISMATCH",
+    "B8_otherHolder": "REQUEST_MISMATCH",
+    "B8_otherLineage": "REQUEST_MISMATCH",
+    "B8_otherGateway": "REQUEST_MISMATCH",
+    "B8_onChainSignatureReuseForOtherCommitment": "InvalidEnrollmentLink",
+    "B10_duplicateRejectedBySource": true,
+    "B10_adapterRefusesNonUnique": "InvalidSourceSession",
+    "B10_linkAfterAbort": "SESSION_NOT_LINKABLE",
+    "B10_rollbackToPreAbortState": "ROLLBACK_DETECTED",
+    "B10_reprepareAbortedSession": "SESSION_ALREADY_USED"
+  },
+  "C": {
+    "localEip712MatchesContract": true,
+    "canonicalIdsMatchAdapter": true,
+    "issuanceGas": 466752,
+    "issued": true,
+    "boundGalleryCount": 4,
+    "boundLoginCorrect": true,
+    "genuineSquaredDistance": "974",
+    "authenticationGas": 336147,
+    "impostorSquaredDistance": "30793",
+    "impostorWitnessRejected": true,
+    "impostorFailingConstraint": "line: 83"
+  },
+  "A3_bound": {
+    "firstFinalized": "Finalized",
+    "secondStatus": "AbortedStaleSlot",
+    "retryStatus": "Finalized",
+    "retryIssuedOnChain": true
+  },
+  "sourceSha256": {
+    "scripts/lib/scmv-model.mjs": "11bf3587ecfcdc104a5717bb97c364c9f63b72fdac0fe52abcbab38c7189aacb",
+    "scripts/lib/biozkfhe-source-model.mjs": "2b617b2dafe4573623b95f1c402d6c9c6b8da65e1227305510143c609c7aced5",
+    "scripts/lib/enrollment-bridge.mjs": "d4db9526f9c672c342cd4304c3ea18c248dfa9d45bf5bc5fec03b71e17c0f28c",
+    "scripts/enrollment-bridge-evaluation.mjs": "1a98761d64b3031bf416ec885aa5a60a6199cdebd1e1ba0640a4f48252b68cf0",
+    "contracts/UBCAAuthGateway.sol": "cd0db64c2d34b6a8779be7a04991741796e6324e6916bede8bff686b117123b0"
+  },
+  "limits": [
+    "No real BGV, PVSC, committee, TEE, MCU, or BioZKFHE contract was run",
+    "Paper-mode A1/A2 require a malicious enrollment client, which BioZKFHE's model excludes; they are composition obligations, not BioZKFHE vulnerabilities",
+    "A3 depends on whether the real source serializes enrollment sessions; the paper text does not say",
+    "SCMV d=4 is far below a real BGV slot count; layout semantics are unchanged",
+    "Sealed-state rollback relies on a modelled hardware monotonic counter"
+  ]
+}

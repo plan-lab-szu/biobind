@@ -1,0 +1,89 @@
+{
+  "generatedAt": "2026-09-08T09:43:46.600Z",
+  "warning": "Verifier keys come from the local benchmark-only ceremony and must not be deployed.",
+  "chain": "Ganache 7.9.2, chain id 31337, Shanghai hardfork",
+  "results": [
+    {
+      "dimension": 128,
+      "publicInputs": 5,
+      "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+      "optimizerRuns": 200,
+      "evmVersion": "shanghai",
+      "repetitions": 5,
+      "deployment": {
+        "gasUsed": 425948,
+        "initCodeBytes": 1752,
+        "runtimeCodeBytes": 1724
+      },
+      "verification": {
+        "accepted": true,
+        "modifiedContextRejected": true,
+        "gasUsed": [
+          241694,
+          241694,
+          241694,
+          241694,
+          241694
+        ],
+        "medianGasUsed": 241694,
+        "gasEstimated": [
+          244504,
+          244504,
+          244504,
+          244504,
+          244504
+        ],
+        "medianGasEstimated": 244504,
+        "intrinsicGas": 26748,
+        "medianExecutionGasAfterIntrinsic": 214946
+      },
+      "calldata": {
+        "bytes": 420,
+        "zeroBytes": 81,
+        "nonzeroBytes": 339,
+        "gas": 5748
+      }
+    },
+    {
+      "dimension": 512,
+      "publicInputs": 5,
+      "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+      "optimizerRuns": 200,
+      "evmVersion": "shanghai",
+      "repetitions": 5,
+      "deployment": {
+        "gasUsed": 425924,
+        "initCodeBytes": 1752,
+        "runtimeCodeBytes": 1724
+      },
+      "verification": {
+        "accepted": true,
+        "modifiedContextRejected": true,
+        "gasUsed": [
+          241694,
+          241694,
+          241694,
+          241694,
+          241694
+        ],
+        "medianGasUsed": 241694,
+        "gasEstimated": [
+          244504,
+          244504,
+          244504,
+          244504,
+          244504
+        ],
+        "medianGasEstimated": 244504,
+        "intrinsicGas": 26748,
+        "medianExecutionGasAfterIntrinsic": 214946
+      },
+      "calldata": {
+        "bytes": 420,
+        "zeroBytes": 81,
+        "nonzeroBytes": 339,
+        "gas": 5748
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+[32mtemplate instances[0m: 397
+non-linear constraints: 15534
+linear constraints: 0
+public inputs: 9
+private inputs: 91
+public outputs: 0
+wires: 15588
+labels: 59479
+[32mWritten successfully:[0m C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\auth_private_attested_dev20.r1cs
+[32mWritten successfully:[0m C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\auth_private_attested_dev20.sym
+[32mWritten successfully:[0m C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\build\auth_private_attested_dev20\auth_private_attested_dev20_js\auth_private_attested_dev20.wasm
+[32mEverything went okay[0m
+
+[32;22m[INFO]  [39;1msnarkJS[0m: Curve: bn-128
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Wires: 15588
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Constraints: 15534
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Private Inputs: 91
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Public Inputs: 9
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Labels: 59479
+[32;22m[INFO]  [39;1msnarkJS[0m: # of Outputs: 0
+

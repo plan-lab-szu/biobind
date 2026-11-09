@@ -1,0 +1,398 @@
+{
+  "gamma": 2047,
+  "identities": {
+    "calibration": 2112,
+    "test": 2169,
+    "testGalleryPool": 1645,
+    "testNewcomers": 524
+  },
+  "pairs": {
+    "calibrationGenuine": 4334,
+    "calibrationImpostor": 7335862,
+    "testGenuine": 3767,
+    "testImpostor": 7478879
+  },
+  "thresholds": {
+    "FMR<=0.001": {
+      "tau": 2322295,
+      "cosineEquivalent": 0.5542,
+      "testFMR": 0.0008275304360452951,
+      "testFMR95": [
+        0.0008070487594916652,
+        0.0008484001298579365
+      ],
+      "testFalseMatches": 6189,
+      "testFNMR": 0.05469,
+      "testFNMR95": [
+        0.04764,
+        0.06243
+      ],
+      "openSet": [
+        {
+          "gallerySize": 100,
+          "falseDuplicateRate": 0.08691,
+          "falseDuplicates": 85,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.06667,
+          "missedDuplicates": 2,
+          "matedProbes": 30
+        },
+        {
+          "gallerySize": 250,
+          "falseDuplicateRate": 0.16258,
+          "falseDuplicates": 159,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.02532,
+          "missedDuplicates": 2,
+          "matedProbes": 79
+        },
+        {
+          "gallerySize": 500,
+          "falseDuplicateRate": 0.28221,
+          "falseDuplicates": 276,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.01796,
+          "missedDuplicates": 3,
+          "matedProbes": 167
+        },
+        {
+          "gallerySize": 1000,
+          "falseDuplicateRate": 0.40593,
+          "falseDuplicates": 397,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.0339,
+          "missedDuplicates": 12,
+          "matedProbes": 354
+        },
+        {
+          "gallerySize": 1645,
+          "falseDuplicateRate": 0.53681,
+          "falseDuplicates": 525,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.03885,
+          "missedDuplicates": 23,
+          "matedProbes": 592
+        }
+      ],
+      "extrapolatedFalseDuplicate": {
+        "10000": {
+          "pointEstimate": 0.99975,
+          "upper95": 0.99979
+        },
+        "100000": {
+          "pointEstimate": 1.0,
+          "upper95": 1.0
+        },
+        "1000000": {
+          "pointEstimate": 1.0,
+          "upper95": 1.0
+        }
+      }
+    },
+    "FMR<=0.0001": {
+      "tau": 2777020,
+      "cosineEquivalent": 0.6627,
+      "testFMR": 7.260446385079904e-05,
+      "testFMR95": [
+        6.662550277271911e-05,
+        7.897595330132588e-05
+      ],
+      "testFalseMatches": 543,
+      "testFNMR": 0.18397,
+      "testFNMR95": [
+        0.17171,
+        0.19672
+      ],
+      "openSet": [
+        {
+          "gallerySize": 100,
+          "falseDuplicateRate": 0.01022,
+          "falseDuplicates": 10,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.13333,
+          "missedDuplicates": 4,
+          "matedProbes": 30
+        },
+        {
+          "gallerySize": 250,
+          "falseDuplicateRate": 0.01329,
+          "falseDuplicates": 13,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.16456,
+          "missedDuplicates": 13,
+          "matedProbes": 79
+        },
+        {
+          "gallerySize": 500,
+          "falseDuplicateRate": 0.02454,
+          "falseDuplicates": 24,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.17365,
+          "missedDuplicates": 29,
+          "matedProbes": 167
+        },
+        {
+          "gallerySize": 1000,
+          "falseDuplicateRate": 0.0409,
+          "falseDuplicates": 40,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.18079,
+          "missedDuplicates": 64,
+          "matedProbes": 354
+        },
+        {
+          "gallerySize": 1645,
+          "falseDuplicateRate": 0.06544,
+          "falseDuplicates": 64,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.17061,
+          "missedDuplicates": 101,
+          "matedProbes": 592
+        }
+      ],
+      "extrapolatedFalseDuplicate": {
+        "10000": {
+          "pointEstimate": 0.51619,
+          "upper95": 0.54606
+        },
+        "100000": {
+          "pointEstimate": 0.9993,
+          "upper95": 0.99963
+        },
+        "1000000": {
+          "pointEstimate": 1.0,
+          "upper95": 1.0
+        }
+      }
+    },
+    "FMR<=1e-05": {
+      "tau": 3162706,
+      "cosineEquivalent": 0.7548,
+      "testFMR": 3.6101667108132113e-06,
+      "testFMR95": [
+        2.3791239160714855e-06,
+        5.2525987097883765e-06
+      ],
+      "testFalseMatches": 27,
+      "testFNMR": 0.43828,
+      "testFNMR95": [
+        0.42236,
+        0.4543
+      ],
+      "openSet": [
+        {
+          "gallerySize": 100,
+          "falseDuplicateRate": 0.0,
+          "falseDuplicates": 0,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.46667,
+          "missedDuplicates": 14,
+          "matedProbes": 30
+        },
+        {
+          "gallerySize": 250,
+          "falseDuplicateRate": 0.00102,
+          "falseDuplicates": 1,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.43038,
+          "missedDuplicates": 34,
+          "matedProbes": 79
+        },
+        {
+          "gallerySize": 500,
+          "falseDuplicateRate": 0.00102,
+          "falseDuplicates": 1,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.38922,
+          "missedDuplicates": 65,
+          "matedProbes": 167
+        },
+        {
+          "gallerySize": 1000,
+          "falseDuplicateRate": 0.00409,
+          "falseDuplicates": 4,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.41243,
+          "missedDuplicates": 146,
+          "matedProbes": 354
+        },
+        {
+          "gallerySize": 1645,
+          "falseDuplicateRate": 0.00409,
+          "falseDuplicates": 4,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.40034,
+          "missedDuplicates": 237,
+          "matedProbes": 592
+        }
+      ],
+      "extrapolatedFalseDuplicate": {
+        "10000": {
+          "pointEstimate": 0.03546,
+          "upper95": 0.05117
+        },
+        "100000": {
+          "pointEstimate": 0.30303,
+          "upper95": 0.4086
+        },
+        "1000000": {
+          "pointEstimate": 0.97295,
+          "upper95": 0.99477
+        }
+      }
+    },
+    "FMR<=1e-06": {
+      "tau": 3406345,
+      "cosineEquivalent": 0.8129,
+      "testFMR": 6.685493908913355e-07,
+      "testFMR95": [
+        2.1707620193624277e-07,
+        1.5601705654280769e-06
+      ],
+      "testFalseMatches": 5,
+      "testFNMR": 0.67268,
+      "testFNMR95": [
+        0.65744,
+        0.68766
+      ],
+      "openSet": [
+        {
+          "gallerySize": 100,
+          "falseDuplicateRate": 0.0,
+          "falseDuplicates": 0,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.63333,
+          "missedDuplicates": 19,
+          "matedProbes": 30
+        },
+        {
+          "gallerySize": 250,
+          "falseDuplicateRate": 0.0,
+          "falseDuplicates": 0,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.63291,
+          "missedDuplicates": 50,
+          "matedProbes": 79
+        },
+        {
+          "gallerySize": 500,
+          "falseDuplicateRate": 0.0,
+          "falseDuplicates": 0,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.62275,
+          "missedDuplicates": 104,
+          "matedProbes": 167
+        },
+        {
+          "gallerySize": 1000,
+          "falseDuplicateRate": 0.00102,
+          "falseDuplicates": 1,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.62712,
+          "missedDuplicates": 222,
+          "matedProbes": 354
+        },
+        {
+          "gallerySize": 1645,
+          "falseDuplicateRate": 0.00102,
+          "falseDuplicates": 1,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.60811,
+          "missedDuplicates": 360,
+          "matedProbes": 592
+        }
+      ],
+      "extrapolatedFalseDuplicate": {
+        "10000": {
+          "pointEstimate": 0.00666,
+          "upper95": 0.01548
+        },
+        "100000": {
+          "pointEstimate": 0.06467,
+          "upper95": 0.14446
+        },
+        "1000000": {
+          "pointEstimate": 0.48755,
+          "upper95": 0.7899
+        }
+      }
+    },
+    "current Gamma^2/2": {
+      "tau": 2095104,
+      "cosineEquivalent": 0.5,
+      "testFMR": 0.002314384281387625,
+      "testFMR95": [
+        0.002280071694148652,
+        0.002349083065967196
+      ],
+      "testFalseMatches": 17309,
+      "testFNMR": 0.02575,
+      "testFNMR95": [
+        0.02093,
+        0.03132
+      ],
+      "openSet": [
+        {
+          "gallerySize": 100,
+          "falseDuplicateRate": 0.20552,
+          "falseDuplicates": 201,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.03333,
+          "missedDuplicates": 1,
+          "matedProbes": 30
+        },
+        {
+          "gallerySize": 250,
+          "falseDuplicateRate": 0.38037,
+          "falseDuplicates": 372,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.0,
+          "missedDuplicates": 0,
+          "matedProbes": 79
+        },
+        {
+          "gallerySize": 500,
+          "falseDuplicateRate": 0.56237,
+          "falseDuplicates": 550,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.0,
+          "missedDuplicates": 0,
+          "matedProbes": 167
+        },
+        {
+          "gallerySize": 1000,
+          "falseDuplicateRate": 0.74029,
+          "falseDuplicates": 724,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.00282,
+          "missedDuplicates": 1,
+          "matedProbes": 354
+        },
+        {
+          "gallerySize": 1645,
+          "falseDuplicateRate": 0.83333,
+          "falseDuplicates": 815,
+          "newcomerProbes": 978,
+          "missedDuplicateRate": 0.00507,
+          "missedDuplicates": 3,
+          "matedProbes": 592
+        }
+      ],
+      "extrapolatedFalseDuplicate": {
+        "10000": {
+          "pointEstimate": 1.0,
+          "upper95": 1.0
+        },
+        "100000": {
+          "pointEstimate": 1.0,
+          "upper95": 1.0
+        },
+        "1000000": {
+          "pointEstimate": 1.0,
+          "upper95": 1.0
+        }
+      }
+    }
+  },
+  "notes": "Extrapolation assumes independent comparisons and an LFW-like population; LFW identities are celebrities with dependent images. Per-comparison FMR below about 3/testImpostor pairs cannot be resolved on this data. Missed-duplicate rates are non-adversarial; they are not the adversarial-presentation miss rate f_nm of the security model."
+}

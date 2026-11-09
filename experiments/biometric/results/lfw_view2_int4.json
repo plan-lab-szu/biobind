@@ -1,0 +1,115 @@
+{
+  "thresholdRule": "max training balanced accuracy; smaller threshold on ties",
+  "acceptRule": "squared_distance <= threshold",
+  "folds": [
+    {
+      "fold": 0,
+      "threshold": 87,
+      "tp": 294,
+      "fn": 6,
+      "tn": 299,
+      "fp": 1,
+      "tar": 0.98,
+      "far": 0.0033333333333333335
+    },
+    {
+      "fold": 1,
+      "threshold": 87,
+      "tp": 296,
+      "fn": 4,
+      "tn": 292,
+      "fp": 8,
+      "tar": 0.9866666666666667,
+      "far": 0.02666666666666667
+    },
+    {
+      "fold": 2,
+      "threshold": 87,
+      "tp": 287,
+      "fn": 13,
+      "tn": 294,
+      "fp": 6,
+      "tar": 0.9566666666666667,
+      "far": 0.02
+    },
+    {
+      "fold": 3,
+      "threshold": 87,
+      "tp": 289,
+      "fn": 11,
+      "tn": 295,
+      "fp": 5,
+      "tar": 0.9633333333333334,
+      "far": 0.016666666666666666
+    },
+    {
+      "fold": 4,
+      "threshold": 87,
+      "tp": 286,
+      "fn": 14,
+      "tn": 294,
+      "fp": 6,
+      "tar": 0.9533333333333334,
+      "far": 0.02
+    },
+    {
+      "fold": 5,
+      "threshold": 87,
+      "tp": 291,
+      "fn": 9,
+      "tn": 294,
+      "fp": 6,
+      "tar": 0.97,
+      "far": 0.02
+    },
+    {
+      "fold": 6,
+      "threshold": 87,
+      "fn": 11,
+      "tp": 289,
+      "tn": 292,
+      "fp": 8,
+      "tar": 0.9633333333333334,
+      "far": 0.02666666666666667
+    },
+    {
+      "fold": 7,
+      "threshold": 87,
+      "tp": 294,
+      "fn": 6,
+      "tn": 293,
+      "fp": 7,
+      "tar": 0.98,
+      "far": 0.023333333333333334
+    },
+    {
+      "fold": 8,
+      "threshold": 87,
+      "tp": 299,
+      "fn": 1,
+      "tn": 295,
+      "fp": 5,
+      "tar": 0.9966666666666667,
+      "far": 0.016666666666666666
+    },
+    {
+      "fold": 9,
+      "threshold": 87,
+      "tp": 295,
+      "fn": 5,
+      "tn": 296,
+      "fp": 4,
+      "tar": 0.9833333333333333,
+      "far": 0.013333333333333334
+    }
+  ],
+  "pooledHeldOutCounts": {
+    "tp": 2920,
+    "fn": 80,
+    "tn": 2944,
+    "fp": 56
+  },
+  "pooledTar": 0.9733333333333334,
+  "pooledFar": 0.018666666666666668,
+  "warning": "Descriptive View 2 cross-validation only; paired images/identities are dependent. No low-FAR extrapolation."
+}

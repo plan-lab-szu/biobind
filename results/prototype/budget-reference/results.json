@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-10-25T14:52:58.234478+00:00",
+  "scope": "local SQLite and HMAC software reference; no protected device or EVM signer",
+  "python": "3.12.10",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "testsRun": 11,
+  "failures": [],
+  "errors": [],
+  "passed": true,
+  "sourceSha256": {
+    "attempt_budget.py": "6da102feebd63366cea394a17922334430cf66612401bc48de079942a4f834df",
+    "budgeted_capture.py": "8126e1ec184d956db3cc28940a7385fe830871d4c24d7ede79ca0758bf12792d",
+    "test_attempt_budget.py": "2812e0498f532c9de0777d701ec0d2a506a94af85d3716a0eea0558dd5737f49",
+    "test_budgeted_capture.py": "9bf5f38da47005ee923dc044565c026209fae73f2d060c61cdc06f72b1c6ff97"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "completedAt": "2026-10-30T06:19:47.162423+00:00",
+  "profiles": [
+    {
+      "profile": "MobileFaceNet-2",
+      "last": {
+        "enrollments": 64,
+        "merges": 63,
+        "capacity": 16384,
+        "row_noise_min": 106,
+        "query_noise": 40,
+        "wrong_slots": 0,
+        "wrong_packed_slots": 0,
+        "wrong_row_slots": 0,
+        "fresh_query_noise": 46,
+        "fresh_wrong_slots": 0,
+        "fresh_wrong_packed_slots": 0,
+        "elapsed_ms": 218519.3199
+      },
+      "checkpoints": 7,
+      "correctAtAllCheckpoints": true,
+      "completedCapacity": false,
+      "processReturnCode": 0
+    }
+  ]
+}

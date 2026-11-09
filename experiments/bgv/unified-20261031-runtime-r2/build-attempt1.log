@@ -1,0 +1,1 @@
+ninja: error: 'C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/libzstd.a', needed by 'bgv-measure.exe', missing and no known rule to make it

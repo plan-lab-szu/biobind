@@ -1,0 +1,41 @@
+# Node toolchain and dependencies (recreated by prototype/toolchain.ps1 or npm ci)
+prototype/node_modules/
+prototype/.toolchain/
+
+# Local outputs of the prototype scripts. Archived outputs used in the paper
+# are in results/prototype/.
+prototype/build/
+prototype/inputs/generated/
+
+# Proving material and witnesses: large and regenerable, and the local
+# single-party setups must never be shipped as deployable keys.
+*.ptau
+*.zkey
+*.wtns
+*.r1cs
+*.sym
+*_js/
+*_cpp/
+
+# BGV build outputs and ciphertext buffers
+experiments/bgv/**/build/
+*.exe
+*.a
+*.o
+*.obj
+*.dll
+*.seal
+*.bin.zst
+
+# Biometric data and models are not redistributed (see experiments/biometric/README.md)
+*.npz
+*.pt
+*.pth
+lfw/
+lfw.tgz
+
+# Python and OS noise
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

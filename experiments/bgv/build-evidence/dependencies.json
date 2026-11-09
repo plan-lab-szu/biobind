@@ -1,0 +1,30 @@
+{
+  "archives": [
+    {
+      "file": "w64devkit-x64-2.11.0.7z.exe",
+      "url": "https://github.com/skeeto/w64devkit/releases/download/v2.11.0/w64devkit-x64-2.11.0.7z.exe",
+      "sha256": "54c2bb9962e8a30c8270e34c5efc3d5fee579f53087fa7d435b95fbba2af7b2b",
+      "bytes": 68801240
+    },
+    {
+      "file": "SEAL-v4.1.2.zip",
+      "url": "https://codeload.github.com/microsoft/SEAL/zip/refs/tags/v4.1.2",
+      "sha256": "605fa968d946b625b6ad6d2e8b62051fb46266289bad18433b0e946d51ff7545",
+      "bytes": 798423
+    },
+    {
+      "file": "zstd-1.5.7.zip",
+      "url": "https://codeload.github.com/facebook/zstd/zip/f8745da6ff1ad1e7bab384bd1f9d742439278e99",
+      "sha256": "e3b677f3edf60df600b1cc56f629e8cac93d5f2bd421d8f71c33d88abd3bff46",
+      "bytes": 2805412
+    }
+  ],
+  "versions": {
+    "g++": "g++.exe (GCC) 16.2.0",
+    "cmake": "cmake version 4.4.4",
+    "ninja": "1.13.2"
+  },
+  "sealTagCommit": "119dc32e135cb89c1062076a69310d4413ebc824",
+  "authorCommit": "76ffb9f1885a2cbdef3f34c73971fc262db1bd60",
+  "windowsPatch": "../seal-mingw-build.patch"
+}

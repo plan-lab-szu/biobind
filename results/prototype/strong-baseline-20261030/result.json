@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-10-30T04:45:24.163Z",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "node": "v24.19.0",
+  "scope": "local synthetic comparison; software capture/matcher; fixture upstream; benchmark-only proving key",
+  "sourceSha256": {
+    "UBCALifecycle.sol": "5b8503e3459b4e7f1f9954478f2fabf0cde0e769a9dc283967cdab88d1d021d1",
+    "UBCAAuthGateway.sol": "b793744d18766e4291eb4923cbb05728a8df1f6f43b8b3ac47d1539f94eb8024",
+    "interfaces/IBioZKFHEUniquenessAdapter.sol": "93383cffd103c8785182c62417f92f04a088694afe21e8763b71f52c083b70e8",
+    "interfaces/IBioZKFHEFinalizationSource.sol": "16003814422902dfd6e1efaa798ccbf020030421ff538b5ec95453ae44b274ef",
+    "BioZKFHEFinalizationAdapter.sol": "ad45d276120078db888155787582c1397528157adb0422cd5a400deab1a348c2",
+    "test/LocalBioZKFHEFinalizationSource.sol": "22fa20f176e4e64486a6f3d21cbe0a7d8325b6349da0492b6cbd20eff13df63c",
+    "test/AttestedMatchVerifier.sol": "609b0d55b6c9fc000b2e0eec204142868e814cfb3cabbc9005367268318ec7d4",
+    "test/MergedAttestedMatchGateway.sol": "03cd56b8322498767f9691694f9dd9c4af5e265175e2934e0867f8d83fc7c623",
+    "generated/Groth16Verifier128.sol": "48890afa34e2be69d35636bfdccbd06e1fc7164e99e397a92a028d6454588657",
+    "UnboundThresholdGateway.sol": "4ab35c7af5cf6fa8e671ac148e800555e1a77194093e77bc5b7027593b752d99"
+  },
+  "profiles": [
+    {
+      "profile": "zk-unbound-control",
+      "controls": {
+        "enrollmentSubstitutionRejected": true,
+        "outsideCaptureSignerRejected": true,
+        "contextTransplantRejected": true,
+        "credentialRevocationRejected": true,
+        "deviceRevocationRejected": true,
+        "policyRevocationRejected": true,
+        "validMatchAccepted": true,
+        "replayRejected": true
+      },
+      "mismatch": {
+        "squaredDistance": "1000251",
+        "authorizedEpsilon": "271",
+        "raisedEpsilon": "1000267",
+        "raisedThresholdProofValid": true,
+        "raisedThresholdAccepted": true,
+        "invalidPolicyAcceptanceCommitted": true
+      },
+      "challengeGas": 108121,
+      "authenticationGas": 333949
+    },
+    {
+      "profile": "zk-bound",
+      "controls": {
+        "enrollmentSubstitutionRejected": true,
+        "outsideCaptureSignerRejected": true,
+        "contextTransplantRejected": true,
+        "credentialRevocationRejected": true,
+        "deviceRevocationRejected": true,
+        "policyRevocationRejected": true,
+        "validMatchAccepted": true,
+        "replayRejected": true
+      },
+      "mismatch": {
+        "squaredDistance": "1000251",
+        "authorizedEpsilon": "271",
+        "raisedEpsilon": "1000267",
+        "raisedThresholdProofValid": true,
+        "raisedThresholdRejected": true,
+        "challengePreserved": true,
+        "relabelledProofRejected": true
+      },
+      "challengeGas": 108121,
+      "authenticationGas": 336239
+    },
+    {
+      "profile": "attested-bound",
+      "controls": {
+        "enrollmentSubstitutionRejected": true,
+        "outsideMatcherSignerRejected": true,
+        "outsideCaptureSignerRejected": true,
+        "contextTransplantRejected": true,
+        "credentialRevocationRejected": true,
+        "deviceRevocationRejected": true,
+        "policyRevocationRejected": true,
+        "validMatchAccepted": true,
+        "replayRejected": true
+      },
+      "mismatch": {
+        "squaredDistance": "1000251",
+        "authorizedEpsilon": "271",
+        "honestMatcherRefusesCertificate": true,
+        "matchOnlyFaultAccepted": true
+      },
+      "challengeGas": 108121,
+      "authenticationGas": 123102
+    },
+    {
+      "profile": "attested-merged",
+      "controls": {
+        "enrollmentSubstitutionRejected": true,
+        "outsideCaptureSignerRejected": true,
+        "captureOnlySignatureRejected": true,
+        "contextTransplantRejected": true,
+        "credentialRevocationRejected": true,
+        "deviceRevocationRejected": true,
+        "policyRevocationRejected": true,
+        "validMatchAccepted": true,
+        "replayRejected": true
+      },
+      "mismatch": {
+        "squaredDistance": "1000251",
+        "authorizedEpsilon": "271",
+        "honestCaptureTcbRefusesAttestation": true,
+        "raisedEpsilon": "1000267",
+        "raisedThresholdRejected": true,
+        "challengePreserved": true,
+        "matcherOnlyFault": "not applicable: matcher shares the capture TCB and key"
+      },
+      "challengeGas": 108121,
+      "authenticationGas": 103440,
+      "publishesCProbe": false
+    }
+  ],
+  "limits": [
+    "No real TEE, sensor, or BioZKFHE upstream run",
+    "Matcher-only fault is outside the honest trusted-matcher model; not a full TEE-compromise claim",
+    "attested-bound keeps two signatures and a padded verifier ABI; attested-merged (B1') uses one capture-TCB signature and omits C_probe; neither is a proven gas lower bound",
+    "Unbound variant is a documented guard ablation, not a proposed baseline",
+    "No empirical novelty claim or named-system vulnerability follows"
+  ]
+}

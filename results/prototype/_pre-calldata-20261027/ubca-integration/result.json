@@ -1,0 +1,149 @@
+{
+  "generatedAt": "2026-10-25T15:46:55.268Z",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "node": "v24.22.1",
+  "researchScope": {
+    "authorization": "authorized defensive academic evaluation",
+    "environment": "in-process Ganache chain ID 31337",
+    "data": "synthetic vectors only",
+    "externalTargets": false,
+    "purpose": "validate the integrated uniqueness-receipt, enrollment-link, capture-provenance, full-vector proof, and atomic-lifecycle chain"
+  },
+  "systemProfile": {
+    "dimension": 128,
+    "gatewayProfile": "BioZEROPinnedGateway; solc 0.8.36 Shanghai; metadata.bytecodeHash=none",
+    "circuitR1csSha256": "0x02ec476683bc75358db02aa216c8a02b5da4545049f8cf1a9d130fa1eada7dea",
+    "verifierRuntimeCodeHash": "0x2f53d382abcb18f4ce04cf591304bb4819c11ea43f6a50f2cbce657102f4f26b",
+    "freshness": "stateful challenge",
+    "receiptVerifier": "same-chain terminal-state adapter over local immutable BioZKFHE source fixture",
+    "captureRoot": "software-wallet device mock",
+    "captureBudget": "SQLite-backed EIP-712 signature budget; host supplies cProbe; not pre-sensor accounting",
+    "provingKey": "benchmark-only",
+    "padInScope": false
+  },
+  "signingBudget": {
+    "oldScopeId": "4a0b413e907965c564939d468d9a2dc577766114b690f5e20e92cc5fff155e3a",
+    "successorScopeId": "e0aeee1797189bd6374e42d2d436e4959738a188bc7d032bc0c92c57903db313",
+    "oldUsage": {
+      "used": 1,
+      "maxExposures": 1,
+      "active": false
+    },
+    "successorUsage": {
+      "used": 1,
+      "maxExposures": 1,
+      "active": true
+    }
+  },
+  "observerView": {
+    "source": "decoded public gateway events and credential getters only",
+    "gateway": "0x254dffcd3277C0b1660F6d42EFbB754edaBAbC2B",
+    "old": {
+      "applicationId": "0xbf6f5aed0eaae9426dc0939e0f66875229c24e38350ca491c25632a6c7f38acb",
+      "policyHash": "0x78a457176e816db73155d7ffe06554bb0d34e316f79752b00324a34bb04dda4d",
+      "credentialId": "0xd479c297e4f71235fe5dcf6a2a5000c76a1ee6e83bf0728662d5b19d043fb7f2",
+      "lineageId": "0xf4656c8f30d9ee0cd530f56cda0a38c188170b43db4d9b7bf1bfa3ab4156c5a6",
+      "holder": "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+      "deviceVersionId": "0xd9a33ba2e3b0b7dc02ba349b582ae2f21a4faa675756bec4baf4a4ed93635969",
+      "deviceSigningKey": "0xFFcf8FDEE72ac11b5c542428B35EEF5769C409f0",
+      "cEnroll": "11015621733004316122964485171989349981423311779500498914936591789850607501097"
+    },
+    "successor": {
+      "applicationId": "0x5397c826304e18f5f31a4ed19089f7bf59bc3c4521ea3430ffc8a0f2da2cac82",
+      "policyHash": "0x596839dabb18cbbbc83c255994671e3ace723c7cc77ff300f183667a38dbbc6d",
+      "credentialId": "0x09f3460cd65671d28f1416896af4d484efa5a60f3923995eebb017d1ae08c35e",
+      "lineageId": "0xf4656c8f30d9ee0cd530f56cda0a38c188170b43db4d9b7bf1bfa3ab4156c5a6",
+      "holder": "0x22d491Bde2303f2f43325b2108D26f1eAbA1e32b",
+      "deviceVersionId": "0x478ce37e25c19792c1cdad4929da6065972a9fe63dd89c0b59cffad49b8012ad",
+      "deviceSigningKey": "0xE11BA2b4D45Eaed5996Cd0823791E0C93114882d",
+      "cEnroll": "1317371203144970904615137380554032440743526343399706060423010538831834081701"
+    },
+    "explicitSupersession": {
+      "oldCredentialId": "0xd479c297e4f71235fe5dcf6a2a5000c76a1ee6e83bf0728662d5b19d043fb7f2",
+      "newCredentialId": "0x09f3460cd65671d28f1416896af4d484efa5a60f3923995eebb017d1ae08c35e"
+    },
+    "controls": {
+      "differentApplicationIds": true,
+      "differentPolicyHashes": true,
+      "differentCommitments": true,
+      "differentDeviceKeys": true,
+      "sameHolder": true,
+      "sameLineage": true,
+      "supersessionLinksCredentials": true,
+      "issuedCredentialIdsMatchRun": true
+    }
+  },
+  "migration": {
+    "oldPolicyHash": "0x78a457176e816db73155d7ffe06554bb0d34e316f79752b00324a34bb04dda4d",
+    "successorPolicyHash": "0x596839dabb18cbbbc83c255994671e3ace723c7cc77ff300f183667a38dbbc6d",
+    "successorApplicationId": "0x5397c826304e18f5f31a4ed19089f7bf59bc3c4521ea3430ffc8a0f2da2cac82",
+    "oldCredentialId": "0xd479c297e4f71235fe5dcf6a2a5000c76a1ee6e83bf0728662d5b19d043fb7f2",
+    "successorCredentialId": "0x09f3460cd65671d28f1416896af4d484efa5a60f3923995eebb017d1ae08c35e",
+    "oldEnrollmentCommitment": "11015621733004316122964485171989349981423311779500498914936591789850607501097",
+    "successorEnrollmentCommitment": "1317371203144970904615137380554032440743526343399706060423010538831834081701",
+    "enrollmentSaltChanged": true,
+    "successorSourceSessionId": "0x0f52c8ddfb734933358050fd20e42019130701ed26ff29a4cc04b18425cbf508",
+    "successorReceiptId": "0x96ffa06b3adf8898645120742cf515efba147e09e7f08b5e3ce500a834883dd2"
+  },
+  "securityControls": {
+    "uniqueReceiptConsumed": true,
+    "sourceTerminalStateVerified": true,
+    "sourceSessionConsumedAtomically": true,
+    "legacyReceiptPathDisabled": true,
+    "offlineGroth16Verified": true,
+    "outsideCaptureSignerRejected": true,
+    "deviceRevokedBeforeSubmitRejected": true,
+    "credentialRevokedBeforeSubmitRejected": true,
+    "policyRevokedBeforeSubmitRejected": true,
+    "rejectionsPreservedChallenge": true,
+    "integratedAuthenticationAccepted": true,
+    "atomicConsumptionAndReplayRejection": true,
+    "oldPolicyChallengeRejected": true,
+    "invalidSuccessorSignatureRejected": true,
+    "successorReceiptPreservedOnFailure": true,
+    "oldCredentialSuperseded": true,
+    "successorReceiptConsumed": true,
+    "migrationProofVerified": true,
+    "oldProofRejectedForSuccessor": true,
+    "oldCommitmentCannotOpenUnderSuccessor": true,
+    "successorAuthenticationAccepted": true,
+    "successorChallengeConsumed": true,
+    "initialBudgetReplayIdentical": true,
+    "initialBudgetExhaustionRejected": true,
+    "oldBudgetReplayRejected": true,
+    "successorBudgetReplayIdentical": true,
+    "successorBudgetExhaustionRejected": true,
+    "initialLocalCaptureDigestMatchesGateway": true,
+    "successorLocalCaptureDigestMatchesGateway": true
+  },
+  "measurements": {
+    "gatewayRuntimeBytes": 20360,
+    "gatewayDeploymentGas": 4463077,
+    "adapterRuntimeBytes": 4035,
+    "adapterDeploymentGas": 929036,
+    "sourceDeploymentGas": 411994,
+    "registerCanonicalPolicyGas": 327676,
+    "registerDeviceGas": 190137,
+    "configureGatewayAdapterGas": 48079,
+    "configureAdapterConsumerGas": 47956,
+    "disableLegacyReceiptPathGas": 46504,
+    "recordSourceFinalizationGas": 250487,
+    "atomicIssuanceGas": 466811,
+    "issueChallengeGas": 108086,
+    "authenticationGas": 336260,
+    "provingElapsedMs": 869.5019,
+    "replaceCanonicalPolicyGas": 320191,
+    "successorIssuanceGas": 448512,
+    "successorAuthenticationGas": 336284,
+    "migrationProvingElapsedMs": 560.1428,
+    "squaredDistance": "255"
+  },
+  "limitations": [
+    "local source fixture does not execute BioZKFHE PVSC, threshold decryption, or committee confirmation",
+    "actual BioZKFHE contract does not yet expose the frozen finalization view",
+    "capture key is not hardware-isolated",
+    "EIP-712 budget limits only this software signer; cProbe was computed before reservation and host can bypass the signer",
+    "sensor-to-commitment path is not yet physically evaluated",
+    "PAD/liveness is out of scope"
+  ]
+}

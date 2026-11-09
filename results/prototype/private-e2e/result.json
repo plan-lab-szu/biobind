@@ -1,0 +1,76 @@
+{
+  "generatedAt": "2026-10-27T14:08:08.803Z",
+  "scope": "BioBind private profile end to end on local Ganache 7.9.2 (Shanghai), solc 0.8.36+commit.8a079791.Emscripten.clang: MCU packet, R1 bridge, BioZKFHEEnrollmentSourceCompact (t=3 of 5 simulated committee), adapter, PrivateAuthGateway (PoseidonT3 trees), auth_private_128 proofs; epsilon 2000",
+  "securityWarning": "Simulated committee (PVSC, coverage, threshold decryption not executed and not in gas); software MCU/bridge/AFE keys; benchmark-only Groth16 setup; synthetic vectors; never deploy.",
+  "enrollments": [
+    {
+      "person": "P1",
+      "status": "Finalized",
+      "createSession": 78385,
+      "bindRequest": 47643,
+      "finalize": 153692,
+      "merge": false,
+      "issue": 913030,
+      "total": 1192750
+    },
+    {
+      "person": "P2",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48087,
+      "finalize": 119398,
+      "merge": true,
+      "issue": 856547,
+      "total": 1085317
+    },
+    {
+      "person": "P1",
+      "status": "Duplicate",
+      "createSession": 61285,
+      "bindRequest": 48051,
+      "finalize": 76156,
+      "merge": true
+    }
+  ],
+  "checks": {
+    "idcSubstitutionRejected": "rejected",
+    "hostChosenCommitmentRejected": "rejected",
+    "sameIdentityDuplicateNotIssued": true,
+    "credentialRootMatchesMirror": true,
+    "genuineAccepted": true,
+    "appPseudonymStableForA": true,
+    "pseudonymsDifferAcrossHolders": true,
+    "impostorRejectedAtWitness": true
+  },
+  "authentications": {
+    "A1": {
+      "accepted": true,
+      "gas": 305012,
+      "challengeGas": 140577,
+      "proveMs": 1677,
+      "distance": "1013",
+      "nullifier": "4240893276905647621128492312329672627533181339187874252860086386829914970714"
+    },
+    "A2": {
+      "accepted": true,
+      "gas": 305048,
+      "challengeGas": 123477,
+      "proveMs": 1362,
+      "distance": "1079",
+      "nullifier": "4240893276905647621128492312329672627533181339187874252860086386829914970714"
+    },
+    "B": {
+      "accepted": true,
+      "gas": 305036,
+      "challengeGas": 123477,
+      "proveMs": 1445,
+      "distance": "625",
+      "nullifier": "21432096154444725201277447391010121673496464391226996906528854373223497796867"
+    },
+    "impostorOnA": {
+      "accepted": false,
+      "witness": "rejected",
+      "distance": "31678"
+    }
+  }
+}

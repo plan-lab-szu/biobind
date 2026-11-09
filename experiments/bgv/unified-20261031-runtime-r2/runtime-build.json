@@ -1,0 +1,72 @@
+{
+  "builtAt": "2026-10-31T05:23:33.614140+00:00",
+  "libraryConfiguration": "SEAL_USE_CXX17=OFF; stock atomic ReaderWriterLocker; driver remains C++17/OpenMP",
+  "scope": "runtime resource repair; numeric parameters, randomness source, noise distribution and accumulation semantics unchanged",
+  "files": [
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-build-unified-20261031-runtime-r2\\bgv-measure.exe",
+      "sha256": "1ddd5138581e237e66e1e80fe85bee26495a5be2f9574067dbca99f37fe35574",
+      "bytes": 5113483
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\lib\\libseal-4.1.a",
+      "sha256": "e6f550229fdd342309849bb6326c73e719cf8374c69bdd2cf96fe6f9f70d883a",
+      "bytes": 1555438
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\lib\\libzstd.a",
+      "sha256": "b9e83baf381cce9eda25bec4f78991d8946c5000bf2c6d604fcfd01030c94fb1",
+      "bytes": 1320190
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\native\\src\\seal\\util\\config.h",
+      "sha256": "a67b05ca44ce2e50c5551fa6a928967513ea22914fe3416ec702eb4efd49e14a",
+      "bytes": 1251
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-runtime-r2-build\\CMakeCache.txt",
+      "sha256": "ba1bb759179cd5dfa1e12d735d96f3efbb383defc807257da6a1f63ca1b2007f",
+      "bytes": 33664
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\SEAL-4.1.2\\native\\src\\seal\\util\\locks.h",
+      "sha256": "a34a283b6545662bc6d36a2c68e594c7da5aeb2799ec56680c9e08e67233863f",
+      "bytes": 8074
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\SEAL-4.1.2\\native\\src\\seal\\randomgen.cpp",
+      "sha256": "5f34ee389338dc204479ed869da9c1a196df169a50e03964fb2513fc26b2146f",
+      "bytes": 6800
+    },
+    {
+      "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\SEAL-4.1.2\\native\\src\\seal\\util\\rlwe.cpp",
+      "sha256": "93eedac214990633c3ef3795ca151fd67d5b26702d9462e04db8da5b6df20b3c",
+      "bytes": 18406
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r2\\bgv-measure.cpp",
+      "sha256": "54709fb74b2f5f12ee92ae4866e97635d93b3fcbe718a112a4885dfc093ccfc7",
+      "bytes": 17104
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r2\\run.py",
+      "sha256": "392dd90fa4731b4cc30bff86dbea788e47049fed4c908e61a66a8c4fba790438",
+      "bytes": 8891
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r2\\run-full.py",
+      "sha256": "a7e076c89c0de5197109c870ccc20c6815c458821d62165cebef6334c75891d5",
+      "bytes": 2590
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r2\\CMakeLists.txt",
+      "sha256": "797aadcbcf20e5f5029f12da8c6a5de534ee4aaefc9407d978c5b7cb692a1100",
+      "bytes": 510
+    },
+    {
+      "path": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r2\\vendor\\scmv_e3_benchmark.cpp",
+      "sha256": "220a712a49a8c1e79c9a57d4ed2c10bf1363589fb0a73ee7f07c4005e499d65d",
+      "bytes": 26021
+    }
+  ]
+}

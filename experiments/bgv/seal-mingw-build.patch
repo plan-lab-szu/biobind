@@ -1,0 +1,13 @@
+--- cmake/SEALMacros.cmake
++++ cmake/SEALMacros.cmake
+@@ -69,7 +69,9 @@
+ 
+ # Manually combine archives, using ${CMAKE_LIBRARY_OUTPUT_DIRECTORY} to keep temporary files.
+ macro(seal_combine_archives target dependency)
+-    if(MSVC)
++    if(MINGW)
++        # BioBind Windows build: link dependency archive explicitly in the driver.
++    elseif(MSVC)
+         add_custom_command(TARGET ${target} POST_BUILD
+             COMMAND lib.exe /OUT:$<TARGET_FILE:${target}> $<TARGET_FILE:${target}> $<TARGET_FILE:${dependency}>
+             DEPENDS $<TARGET_FILE:${target}> $<TARGET_FILE:${dependency}>

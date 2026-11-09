@@ -1,0 +1,108 @@
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+Running zk-unbound-control
+{
+  "profile": "zk-unbound-control",
+  "controls": {
+    "enrollmentSubstitutionRejected": true,
+    "outsideCaptureSignerRejected": true,
+    "contextTransplantRejected": true,
+    "credentialRevocationRejected": true,
+    "deviceRevocationRejected": true,
+    "policyRevocationRejected": true,
+    "validMatchAccepted": true,
+    "replayRejected": true
+  },
+  "mismatch": {
+    "squaredDistance": "1000251",
+    "authorizedEpsilon": "271",
+    "raisedEpsilon": "1000267",
+    "raisedThresholdProofValid": true,
+    "raisedThresholdAccepted": true,
+    "invalidPolicyAcceptanceCommitted": true
+  },
+  "challengeGas": 108121,
+  "authenticationGas": 333949
+}
+Running zk-bound
+{
+  "profile": "zk-bound",
+  "controls": {
+    "enrollmentSubstitutionRejected": true,
+    "outsideCaptureSignerRejected": true,
+    "contextTransplantRejected": true,
+    "credentialRevocationRejected": true,
+    "deviceRevocationRejected": true,
+    "policyRevocationRejected": true,
+    "validMatchAccepted": true,
+    "replayRejected": true
+  },
+  "mismatch": {
+    "squaredDistance": "1000251",
+    "authorizedEpsilon": "271",
+    "raisedEpsilon": "1000267",
+    "raisedThresholdProofValid": true,
+    "raisedThresholdRejected": true,
+    "challengePreserved": true,
+    "relabelledProofRejected": true
+  },
+  "challengeGas": 108121,
+  "authenticationGas": 336239
+}
+Running attested-bound
+{
+  "profile": "attested-bound",
+  "controls": {
+    "enrollmentSubstitutionRejected": true,
+    "outsideMatcherSignerRejected": true,
+    "outsideCaptureSignerRejected": true,
+    "contextTransplantRejected": true,
+    "credentialRevocationRejected": true,
+    "deviceRevocationRejected": true,
+    "policyRevocationRejected": true,
+    "validMatchAccepted": true,
+    "replayRejected": true
+  },
+  "mismatch": {
+    "squaredDistance": "1000251",
+    "authorizedEpsilon": "271",
+    "honestMatcherRefusesCertificate": true,
+    "matchOnlyFaultAccepted": true
+  },
+  "challengeGas": 108121,
+  "authenticationGas": 123102
+}
+Running attested-merged
+{
+  "profile": "attested-merged",
+  "controls": {
+    "enrollmentSubstitutionRejected": true,
+    "outsideCaptureSignerRejected": true,
+    "captureOnlySignatureRejected": true,
+    "contextTransplantRejected": true,
+    "credentialRevocationRejected": true,
+    "deviceRevocationRejected": true,
+    "policyRevocationRejected": true,
+    "validMatchAccepted": true,
+    "replayRejected": true
+  },
+  "mismatch": {
+    "squaredDistance": "1000251",
+    "authorizedEpsilon": "271",
+    "honestCaptureTcbRefusesAttestation": true,
+    "raisedEpsilon": "1000267",
+    "raisedThresholdRejected": true,
+    "challengePreserved": true,
+    "matcherOnlyFault": "not applicable: matcher shares the capture TCB and key"
+  },
+  "challengeGas": 108121,
+  "authenticationGas": 103440,
+  "publishesCProbe": false
+}

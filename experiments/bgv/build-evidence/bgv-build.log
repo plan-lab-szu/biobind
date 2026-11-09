@@ -1,0 +1,7 @@
+[1/2] Building CXX object CMakeFiles/bgv-measure.dir/bgv-measure.cpp.obj
+[2/2] Linking CXX executable bgv-measure.exe
+FAILED: [code=1] bgv-measure.exe 
+C:\WINDOWS\system32\cmd.exe /C "cd . && C:\Users\wangt\AppData\Local\BioBindResearchTools\w64devkit\bin\c++.exe -O3 -DNDEBUG  CMakeFiles/bgv-measure.dir/bgv-measure.cpp.obj -o bgv-measure.exe -Wl,--out-implib,libbgv-measure.dll.a -Wl,--major-image-version,0,--minor-image-version,0  C:/Users/wangt/AppData/Local/BioBindResearchTools/seal-upstream-build/lib/libseal-4.1.a  C:/Users/wangt/AppData/Local/BioBindResearchTools/seal-upstream-build/lib/libzstd.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32 && cd ."
+C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/bin/ld.exe: C:/Users/wangt/AppData/Local/BioBindResearchTools/seal-upstream-build/lib/libseal-4.1.a(randomgen.cpp.obj):randomgen.cpp:(.text+0x146): undefined reference to `BCryptGenRandom'
+collect2.exe: error: ld returned 1 exit status
+ninja: build stopped: subcommand failed.

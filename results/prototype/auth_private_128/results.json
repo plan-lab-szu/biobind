@@ -1,0 +1,40 @@
+{
+  "generatedAt": "2026-10-27T13:41:59.046Z",
+  "scope": "auth_private_128: AuthDistance(128) + credential tree (depth 20) + device tree (depth 10) + in-circuit EdDSA-Poseidon capture signature + scope nullifier",
+  "securityWarning": "Benchmark-only single-contributor Groth16 setup on local pot15; software EdDSA keys; synthetic vectors; never deploy.",
+  "constraints": 20747,
+  "publicInputs": 9,
+  "r1csInfo": [
+    "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: Curve: bn-128",
+    "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: # of Wires: 20788",
+    "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: # of Constraints: 20747",
+    "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: # of Private Inputs: 329",
+    "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: # of Public Inputs: 9",
+    "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: # of Labels: 70120",
+    "\u001b[32;22m[INFO]  \u001b[39;1msnarkJS\u001b[0m: # of Outputs: 0"
+  ],
+  "negatives": {
+    "credentialNotInTree": "rejected",
+    "identitySecretMismatch": "rejected",
+    "nullifierForOtherScope": "rejected",
+    "deviceNotInTree": "rejected",
+    "signatureOverOtherProbe": "rejected",
+    "thresholdFail": "rejected",
+    "probeCommitmentMismatch": "rejected"
+  },
+  "verified": true,
+  "tamperedNullifierRejected": true,
+  "proveMs": [
+    1948,
+    1461,
+    1499,
+    1476,
+    1488
+  ],
+  "proveMedianMs": 1488,
+  "gas": {
+    "privateVerifierAccepts": true,
+    "privateVerifierTxGas": 270018,
+    "existing128VerifierTxGasRecorded": 241694
+  }
+}

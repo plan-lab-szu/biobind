@@ -1,0 +1,128 @@
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+ERROR:  4 Error in template AuthPrivateAttested_396 line: 59
+
+(node:37556) Warning: Closing file descriptor 3 on garbage collection
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:37556) [DEP0137] DeprecationWarning: Closing a FileHandle object on garbage collection is deprecated. Please close FileHandle objects explicitly using FileHandle.prototype.close(). In the future, an error will be thrown if a file descriptor is closed during garbage collection.
+ERROR:  4 Error in template ForceEqualIfEnabled_325 line: 56
+Error in template EdDSAPoseidonVerifier_326 line: 117
+Error in template AuthPrivateAttested_396 line: 97
+
+(node:37556) Warning: Closing file descriptor 3 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_325 line: 56
+Error in template EdDSAPoseidonVerifier_326 line: 117
+Error in template AuthPrivateAttested_396 line: 97
+
+(node:37556) Warning: Closing file descriptor 3 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_325 line: 56
+Error in template EdDSAPoseidonVerifier_326 line: 117
+Error in template AuthPrivateAttested_396 line: 97
+
+(node:37556) Warning: Closing file descriptor 3 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_325 line: 56
+Error in template EdDSAPoseidonVerifier_326 line: 117
+Error in template AuthPrivateAttested_396 line: 97
+
+(node:37556) Warning: Closing file descriptor 3 on garbage collection
+ERROR:  4 Error in template AuthPrivateAttested_396 line: 59
+
+(node:37556) Warning: Closing file descriptor 3 on garbage collection
+ERROR:  4 Error in template AuthPrivateAttested_396 line: 104
+
+(node:37556) Warning: Closing file descriptor 3 on garbage collection
+ERROR:  4 Error in template ForceEqualIfEnabled_325 line: 56
+Error in template EdDSAPoseidonVerifier_326 line: 117
+Error in template AuthPrivateAttested_396 line: 97
+
+{
+  "checks": {
+    "idcSubstitutionRejected": "rejected",
+    "hostChosenCommitmentRejected": "rejected",
+    "reenrollmentOutcomeFollowsThreshold": true,
+    "credentialRootMatchesMirror": true,
+    "genuineAccepted": true,
+    "appPseudonymStableForA": true,
+    "pseudonymsDifferAcrossHolders": true,
+    "impostorRejectedAtWitness": true
+  },
+  "reenrollment": {
+    "innerProduct": "2580826",
+    "tau": "2777020",
+    "status": "Finalized",
+    "outcome": "MISSED duplicate: A holds two credentials"
+  },
+  "enrollments": [
+    {
+      "person": "A",
+      "status": "Finalized",
+      "createSession": 78385,
+      "bindRequest": 47643,
+      "finalize": 153680,
+      "merge": false,
+      "issue": 913054,
+      "total": 1192762
+    },
+    {
+      "person": "B",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48087,
+      "finalize": 119422,
+      "merge": true,
+      "issue": 856559,
+      "total": 1085353
+    },
+    {
+      "person": "A",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48063,
+      "finalize": 119410,
+      "merge": true,
+      "issue": 856523,
+      "total": 1085281
+    }
+  ],
+  "authentications": {
+    "A1": {
+      "accepted": true,
+      "gas": 305048,
+      "challengeGas": 140577,
+      "proveMs": 1523,
+      "distance": "1191545",
+      "nullifier": "21096520852964028386341924028881693059459515345992015627522231410181203486949",
+      "transactionHash": "0x58cc2bcb2393affe0e8ccc41eccb0043947e12c51bc020302a255137d9054ffa"
+    },
+    "A2": {
+      "accepted": true,
+      "gas": 305060,
+      "challengeGas": 123477,
+      "proveMs": 1171,
+      "distance": "3220679",
+      "nullifier": "21096520852964028386341924028881693059459515345992015627522231410181203486949",
+      "transactionHash": "0xb3fe69a87476a6c26ad69392feb2f3c3895e66c417965c0f6212c56a7c41dec1"
+    },
+    "B": {
+      "accepted": true,
+      "gas": 305048,
+      "challengeGas": 123477,
+      "proveMs": 1147,
+      "distance": "1894837",
+      "nullifier": "63663738582145082010780330836003144858437247330730572812190538798762689782",
+      "transactionHash": "0xd6556fd961067b8f92c81fee0ee6474130c70b031050d1cb74cce6ad45cb41f6"
+    },
+    "impostorOnA": {
+      "accepted": false,
+      "matcher": "refused",
+      "distance": "10717782"
+    }
+  }
+}

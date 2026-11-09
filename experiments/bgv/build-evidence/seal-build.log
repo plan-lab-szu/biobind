@@ -1,0 +1,827 @@
+[1/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/debug.c.obj
+[2/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/threading.c.obj
+[3/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/error_private.c.obj
+[4/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/pool.c.obj
+[5/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/zstd_common.c.obj
+[6/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/entropy_common.c.obj
+[7/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/xxhash.c.obj
+[8/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/hist.c.obj
+[9/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress_literals.c.obj
+[10/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/fse_compress.c.obj
+[11/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common/fse_decompress.c.obj
+[12/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress_superblock.c.obj
+[13/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress_sequences.c.obj
+[14/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_preSplit.c.obj
+[15/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_ldm.c.obj
+[16/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/huf_compress.c.obj
+[17/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstdmt_compress.c.obj
+[18/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_ddict.c.obj
+[19/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress.c.obj
+[20/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_compress.c.obj
+[21/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/cover.c.obj
+[22/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_fast.c.obj
+[23/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_opt.c.obj
+[24/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/fastcover.c.obj
+[25/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/huf_decompress.c.obj
+[26/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_double_fast.c.obj
+[27/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/decompress/zstd_decompress_block.c.obj
+[28/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/zdict.c.obj
+[29/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v01.c.obj
+[30/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/dictBuilder/divsufsort.c.obj
+[31/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v03.c.obj
+[32/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v04.c.obj
+[33/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v05.c.obj
+[34/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v02.c.obj
+[35/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v06.c.obj
+[36/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/legacy/zstd_v07.c.obj
+[37/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/batchencoder.cpp.obj
+[38/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/encryptionparams.cpp.obj
+[39/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/decryptor.cpp.obj
+FAILED: [code=1] CMakeFiles/seal.dir/native/src/seal/decryptor.cpp.obj 
+C:\Users\wangt\AppData\Local\BioBindResearchTools\w64devkit\bin\c++.exe  -IC:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src -IC:/Users/wangt/AppData/Local/BioBindResearchTools/seal-build/native/src -IC:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib -IC:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common -O3 -DNDEBUG -MD -MT CMakeFiles/seal.dir/native/src/seal/decryptor.cpp.obj -MF CMakeFiles\seal.dir\native\src\seal\decryptor.cpp.obj.d -o CMakeFiles/seal.dir/native/src/seal/decryptor.cpp.obj -c C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp: In member function 'void seal::Decryptor::bgv_decrypt_128(const seal::Ciphertext&, std::vector<long long unsigned int>&, seal::MemoryPoolHandle)':
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:332:35: error: invalid 'const_cast' from type 'seal::util::RNSIter' to type 'uint64_t*' {aka 'long long unsigned int*'}
+  332 |                 RNSIter curr_iter(const_cast<std::uint64_t*>(curr_coeff_ptr), 1); // 创建一个单系数的迭代器
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:340:42: error: 'seal::util::Pointer<seal::util::BaseConverter> seal::util::RNSTool::base_q_to_t_conv_' is private within this context
+  340 |                 context_data.rns_tool()->base_q_to_t_conv_->exact_convert_array(curr_iter, temp_coeff, pool);
+      |                                          ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/context.h:12,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/ciphertext.h:6,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.h:6,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:4:
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/util/rns.h:366:36: note: declared private here
+  366 |             Pointer<BaseConverter> base_q_to_t_conv_;
+      |                                    ^~~~~~~~~~~~~~~~~
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:43: error: no match for 'operator<<' (operand types are 'std::basic_ostream<char>' and '<unresolved overloaded function type>')
+  376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                      |                                |
+      |                      std::basic_ostream<char>         <unresolved overloaded function type>
+  • there are 76 candidates
+    C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:43:
+      376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+          |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/unique_ptr.h:42,
+                 from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/memory:80,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/util/globals.h:9,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/memorymanager.h:7,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/encryptionparams.h:6,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/context.h:6:
+    • candidate 1: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ostream_type& (*)(__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:116:7:
+        116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:116:36:
+          116 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+              |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+    • candidate 2: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(__ios_type& (*)(__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; __ios_type = std::basic_ios<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:125:7:
+        125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:125:32:
+          125 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+              |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+    • candidate 3: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:135:7:
+        135 |       operator<<(ios_base& (*__pf) (ios_base&))
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'std::ios_base& (*)(std::ios_base&)'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:135:30:
+          135 |       operator<<(ios_base& (*__pf) (ios_base&))
+              |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 4: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:174:7:
+        174 |       operator<<(long __n)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'long int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:174:23:
+          174 |       operator<<(long __n)
+              |                  ~~~~~^~~
+    • candidate 5: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:178:7:
+        178 |       operator<<(unsigned long __n)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'long unsigned int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:178:32:
+          178 |       operator<<(unsigned long __n)
+              |                  ~~~~~~~~~~~~~~^~~
+    • candidate 6: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:182:7:
+        182 |       operator<<(bool __n)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'bool'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:182:23:
+          182 |       operator<<(bool __n)
+              |                  ~~~~~^~~
+In file included from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ostream:215,
+                 from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/iostream:43,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/serialization.h:11,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/modulus.h:6,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/encryptionparams.h:7:
+    • candidate 7: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc:100:5:
+        100 |     basic_ostream<_CharT, _Traits>::
+            |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'short int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc:101:22:
+          101 |     operator<<(short __n)
+              |                ~~~~~~^~~
+    • candidate 8: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:189:7:
+        189 |       operator<<(unsigned short __n)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'short unsigned int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:189:33:
+          189 |       operator<<(unsigned short __n)
+              |                  ~~~~~~~~~~~~~~~^~~
+    • candidate 9: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc:114:5:
+        114 |     basic_ostream<_CharT, _Traits>::
+            |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc:115:20:
+          115 |     operator<<(int __n)
+              |                ~~~~^~~
+    • candidate 10: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:200:7:
+        200 |       operator<<(unsigned int __n)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'unsigned int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:200:31:
+          200 |       operator<<(unsigned int __n)
+              |                  ~~~~~~~~~~~~~^~~
+    • candidate 11: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:211:7:
+        211 |       operator<<(long long __n)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'long long int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:211:28:
+          211 |       operator<<(long long __n)
+              |                  ~~~~~~~~~~^~~
+    • candidate 12: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:215:7:
+        215 |       operator<<(unsigned long long __n)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'long long unsigned int'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:215:37:
+          215 |       operator<<(unsigned long long __n)
+              |                  ~~~~~~~~~~~~~~~~~~~^~~
+    • candidate 13: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:231:7:
+        231 |       operator<<(double __f)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'double'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:231:25:
+          231 |       operator<<(double __f)
+              |                  ~~~~~~~^~~
+    • candidate 14: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:235:7:
+        235 |       operator<<(float __f)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'float'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:235:24:
+          235 |       operator<<(float __f)
+              |                  ~~~~~~^~~
+    • candidate 15: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:243:7:
+        243 |       operator<<(long double __f)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'long double'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:243:30:
+          243 |       operator<<(long double __f)
+              |                  ~~~~~~~~~~~~^~~
+    • candidate 16: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:301:7:
+        301 |       operator<<(const void* __p)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'const void*'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:301:30:
+          301 |       operator<<(const void* __p)
+              |                  ~~~~~~~~~~~~^~~
+    • candidate 17: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; __ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:306:7:
+        306 |       operator<<(nullptr_t)
+            |       ^~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'std::nullptr_t'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:306:18:
+          306 |       operator<<(nullptr_t)
+              |                  ^~~~~~~~~
+    • candidate 18: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; __streambuf_type = std::basic_streambuf<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc:128:5:
+        128 |     basic_ostream<_CharT, _Traits>::
+            |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      • no known conversion for argument 1 from '<unresolved overloaded function type>' to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc:129:34:
+          129 |     operator<<(__streambuf_type* __sbin)
+              |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/util/defines.h:120,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/memorymanager.h:6:
+    • candidate 19: 'template<class _IntegerType> constexpr std::__byte_op_t<_IntegerType> std::operator<<(byte, _IntegerType)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/cstddef:130:5:
+        130 |     operator<<(byte __b, _IntegerType __shift) noexcept
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   couldn't deduce template parameter '_IntegerType'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+In file included from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/basic_string.h:51,
+                 from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/string:58,
+                 from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/locale_classes.h:43,
+                 from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ios_base.h:43,
+                 from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/ios:46,
+                 from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:43:
+    • candidate 20: 'std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, basic_string_view<_CharT, _Traits>) [with _CharT = char; _Traits = char_traits<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/string_view:778:5:
+        778 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • no known conversion for argument 2 from '<unresolved overloaded function type>' to 'std::basic_string_view<char>'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/string_view:779:50:
+          779 |                basic_string_view<_CharT,_Traits> __str)
+              |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+    • candidate 21: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __cxx11::basic_string<_CharT, _Traits, _Alloc>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/basic_string.h:4422:5:
+       4422 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Alloc>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_Alloc'
+In file included from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ios_base.h:48:
+    • candidate 22: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const error_code&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/system_error:341:5:
+        341 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const std::error_code&'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 23: 'std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, _CharT) [with _CharT = char; _Traits = char_traits<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:626:5:
+        626 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+            |     ^~~~~~~~
+      • no known conversion for argument 2 from '<unresolved overloaded function type>' to 'char'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:626:62:
+          626 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+              |                                                       ~~~~~~~^~~
+    • candidate 24: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, char)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:636:5:
+        636 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 25: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:642:5:
+        642 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 26: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, signed char)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:653:5:
+        653 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'signed char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 27: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, unsigned char)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:658:5:
+        658 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'unsigned char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 28: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, wchar_t)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:668:5:
+        668 |     operator<<(basic_ostream<char, _Traits>&, wchar_t) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'wchar_t'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 29: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char8_t)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:673:5:
+        673 |     operator<<(basic_ostream<char, _Traits>&, char8_t) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'char8_t'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 30: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char16_t)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:678:5:
+        678 |     operator<<(basic_ostream<char, _Traits>&, char16_t) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'char16_t'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 31: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, char32_t)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:682:5:
+        682 |     operator<<(basic_ostream<char, _Traits>&, char32_t) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'char32_t'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 32: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char8_t)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:688:5:
+        688 |     operator<<(basic_ostream<wchar_t, _Traits>&, char8_t) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'wchar_t' and 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+    • candidate 33: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char16_t)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:693:5:
+        693 |     operator<<(basic_ostream<wchar_t, _Traits>&, char16_t) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'wchar_t' and 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+    • candidate 34: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, char32_t)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:697:5:
+        697 |     operator<<(basic_ostream<wchar_t, _Traits>&, char32_t) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'wchar_t' and 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+    • candidate 35: 'std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const _CharT*) [with _CharT = char; _Traits = char_traits<char>]'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:717:5:
+        717 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+            |     ^~~~~~~~
+      • no known conversion for argument 2 from '<unresolved overloaded function type>' to 'const char*'
+        C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:717:69:
+          717 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+              |                                                       ~~~~~~~~~~~~~~^~~
+    • candidate 36: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const char*)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.tcc:311:5:
+        311 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const char*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 37: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char*)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:734:5:
+        734 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const char*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 38: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const signed char*)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:747:5:
+        747 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const signed char*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 39: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const unsigned char*)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:752:5:
+        752 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const unsigned char*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 40: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const wchar_t*)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:762:5:
+        762 |     operator<<(basic_ostream<char, _Traits>&, const wchar_t*) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const wchar_t*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 41: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char8_t*)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:767:5:
+        767 |     operator<<(basic_ostream<char, _Traits>&, const char8_t*) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const char8_t*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 42: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char16_t*)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:772:5:
+        772 |     operator<<(basic_ostream<char, _Traits>&, const char16_t*) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const char16_t*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 43: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(basic_ostream<char, _Traits>&, const char32_t*)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:776:5:
+        776 |     operator<<(basic_ostream<char, _Traits>&, const char32_t*) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const char32_t*'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 44: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:782:5:
+        782 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char8_t*) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'wchar_t' and 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+    • candidate 45: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:787:5:
+        787 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char16_t*) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'wchar_t' and 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+    • candidate 46: 'template<class _Traits> std::basic_ostream<wchar_t, _Traits>& std::operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*)' (deleted)
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:791:5:
+        791 |     operator<<(basic_ostream<wchar_t, _Traits>&, const char32_t*) = delete;
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'wchar_t' and 'char'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+    • candidate 47: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/ostream.h:836:5:
+        836 |     operator<<(_Ostream&& __os, const _Tp& __x)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   couldn't deduce template parameter '_Tp'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+    • candidate 48: 'template<class _CharT, class _Traits, class _Tp, class _Dp> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const unique_ptr<_Up, _Ep>&) requires requires{std::operator<<::__os << std::operator<<::__p->get();}'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/unique_ptr.h:1177:5:
+       1177 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::unique_ptr<_Up, _Ep>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::unique_ptr<_Up, _Ep>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_Tp'
+In file included from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/memory:82:
+    • candidate 49: 'template<class _Ch, class _Tr, class _Tp, __gnu_cxx::_Lock_policy _Lp> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const __shared_ptr<_Tp, _Lp>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/shared_ptr.h:70:5:
+         70 |     operator<<(std::basic_ostream<_Ch, _Tr>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::__shared_ptr<_Tp, _Lp>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::__shared_ptr<_Tp, _Lp>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_Tp'
+In file included from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/memorymanager.h:22:
+    • candidate 50: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, thread::id)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/thread:107:5:
+        107 |     operator<<(basic_ostream<_CharT, _Traits>& __out, thread::id __id)
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'std::thread::id'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+In file included from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/random:53,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/secretkey.h:15,
+                 from C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.h:13:
+    • candidate 51: 'template<class _RandomNumberEngine, long long unsigned int __w, class _UIntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const independent_bits_engine<_RandomNumberEngine, __w, _UIntType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.h:1780:5:
+       1780 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::independent_bits_engine<_RandomNumberEngine, __w, _UIntType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RandomNumberEngine'
+In file included from C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/random:55:
+    • candidate 52: 'template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const uniform_int_distribution<_IntType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1039:5:
+       1039 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::uniform_int_distribution<_IntType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::uniform_int_distribution<_IntType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_IntType'
+    • candidate 53: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const uniform_real_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1097:5:
+       1097 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::uniform_real_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::uniform_real_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 54: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const cauchy_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2274:5:
+       2274 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::cauchy_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::cauchy_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 55: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const bernoulli_distribution&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1158:5:
+       1158 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   cannot convert 'encrypted.seal::Ciphertext::correction_factor' (type '<unresolved overloaded function type>') to type 'const std::bernoulli_distribution&'
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                             ~~~~~~~~~~^~~~~~~~~~~~~~~~~
+    • candidate 56: 'template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const geometric_distribution<_IntType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1239:5:
+       1239 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::geometric_distribution<_IntType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::geometric_distribution<_IntType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_IntType'
+    • candidate 57: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const exponential_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1891:5:
+       1891 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::exponential_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::exponential_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 58: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const weibull_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2668:5:
+       2668 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::weibull_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::weibull_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 59: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const extreme_value_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2742:5:
+       2742 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::extreme_value_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::extreme_value_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 60: 'template<class _UIntType, _UIntType __a, _UIntType __c, _UIntType __m, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const linear_congruential_engine<_UIntType, __a, __c, __m>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:156:5:
+        156 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::linear_congruential_engine<_UIntType, __a, __c, __m>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::linear_congruential_engine<_UIntType, __a, __c, __m>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_UIntType'
+    • candidate 61: 'template<class _UIntType1, long long unsigned int __w1, long long unsigned int __n1, long long unsigned int __m1, long long unsigned int __r1, _UIntType1 __a1, long long unsigned int __u1, _UIntType1 __d1, long long unsigned int __s1, _UIntType1 __b1, long long unsigned int __t1, _UIntType1 __c1, long long unsigned int __l1, _UIntType1 __f1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:477:5:
+        477 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::mersenne_twister_engine<_UIntType, __w, __n, __m, __r, __a, __u, __d, __s, __b, __t, __c, __l, __f>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_UIntType1'
+    • candidate 62: 'template<class _UIntType, long long unsigned int __w, long long unsigned int __s, long long unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const subtract_with_carry_engine<_UIntType, __w, __s, __r>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:635:5:
+        635 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::subtract_with_carry_engine<_UIntType, __w, __s, __r>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_UIntType'
+    • candidate 63: 'template<class _RandomNumberEngine, long long unsigned int __p, long long unsigned int __r, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const discard_block_engine<_RandomNumberEngine, __p, __r>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:704:5:
+        704 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::discard_block_engine<_RandomNumberEngine, __p, __r>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::discard_block_engine<_RandomNumberEngine, __p, __r>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RandomNumberEngine'
+    • candidate 64: 'template<class _RandomNumberEngine, long long unsigned int __k, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const shuffle_order_engine<_RandomNumberEngine, __k>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:869:5:
+        869 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::shuffle_order_engine<_RandomNumberEngine, __k>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::shuffle_order_engine<_RandomNumberEngine, __k>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RandomNumberEngine'
+    • candidate 65: 'template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const negative_binomial_distribution<_IntType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1353:5:
+       1353 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::negative_binomial_distribution<_IntType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::negative_binomial_distribution<_IntType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_IntType'
+    • candidate 66: 'template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const poisson_distribution<_IntType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1563:5:
+       1563 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::poisson_distribution<_IntType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::poisson_distribution<_IntType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_IntType'
+    • candidate 67: 'template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const binomial_distribution<_IntType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:1829:5:
+       1829 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::binomial_distribution<_IntType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::binomial_distribution<_IntType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_IntType'
+    • candidate 68: 'template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const normal_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2049:5:
+       2049 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::normal_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::normal_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType1'
+    • candidate 69: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const lognormal_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2116:5:
+       2116 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::lognormal_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::lognormal_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 70: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const chi_squared_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2188:5:
+       2188 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::chi_squared_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::chi_squared_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 71: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const fisher_f_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2349:5:
+       2349 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::fisher_f_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::fisher_f_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 72: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const student_t_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2423:5:
+       2423 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::student_t_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::student_t_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 73: 'template<class _RealType1, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const gamma_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2592:5:
+       2592 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::gamma_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::gamma_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType1'
+    • candidate 74: 'template<class _IntType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const discrete_distribution<_IntType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:2878:5:
+       2878 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::discrete_distribution<_IntType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::discrete_distribution<_IntType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_IntType'
+    • candidate 75: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const piecewise_constant_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:3100:5:
+       3100 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::piecewise_constant_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::piecewise_constant_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+    • candidate 76: 'template<class _RealType, class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(basic_ostream<_CharT, _Traits>&, const piecewise_linear_distribution<_RealType>&)'
+      C:/Users/wangt/AppData/Local/Packages/OpenAI.Codex_2p2nqsd0c76g0/LocalCache/Local/BioBindResearchTools/w64devkit/lib/gcc/x86_64-w64-mingw32/16.2.0/include/c++/bits/random.tcc:3306:5:
+       3306 |     operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+            |     ^~~~~~~~
+      • template argument deduction/substitution failed:
+        •   mismatched types 'const std::piecewise_linear_distribution<_RealType>' and 'const uint64_t& (seal::Ciphertext::*)() const noexcept' {aka 'const long long unsigned int& (seal::Ciphertext::*)() const noexcept'}
+          C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:376:55:
+            376 |             std::cout<<"correction_factor"<<encrypted.correction_factor<<std::endl;
+                |                                                       ^~~~~~~~~~~~~~~~~
+        •   mismatched types 'const std::piecewise_linear_distribution<_RealType>' and 'uint64_t& (seal::Ciphertext::*)() noexcept' {aka 'long long unsigned int& (seal::Ciphertext::*)() noexcept'}
+        •   couldn't deduce template parameter '_RealType'
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/decryptor.cpp:387:21: error: 'class std::vector<long long unsigned int>' has no member named 'parms_id'
+  387 |         destination.parms_id() = parms_id_zero;
+      |                     ^~~~~~~~
+[40/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/ciphertext.cpp.obj
+[41/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/ckks.cpp.obj
+[42/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/encryptor.cpp.obj
+FAILED: [code=1] CMakeFiles/seal.dir/native/src/seal/encryptor.cpp.obj 
+C:\Users\wangt\AppData\Local\BioBindResearchTools\w64devkit\bin\c++.exe  -IC:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src -IC:/Users/wangt/AppData/Local/BioBindResearchTools/seal-build/native/src -IC:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib -IC:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/common -O3 -DNDEBUG -MD -MT CMakeFiles/seal.dir/native/src/seal/encryptor.cpp.obj -MF CMakeFiles\seal.dir\native\src\seal\encryptor.cpp.obj.d -o CMakeFiles/seal.dir/native/src/seal/encryptor.cpp.obj -c C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/encryptor.cpp
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/encryptor.cpp: In member function 'void seal::Encryptor::encrypt_internal_bgv(const std::vector<long long unsigned int>&, const std::vector<bool>&, seal::Ciphertext&, seal::MemoryPoolHandle) const':
+C:/Users/wangt/Dropbox/ProjectsWorkingSpace/BioZERO/_archive/tmp/BioZKFHE/source/biozkFHE/SEAL/native/src/seal/encryptor.cpp:357:127: error: expected ')' before ';' token
+  357 |         sub_uint(total_coeff_modulus, big_plain_modulus_expanded.data(), coeff_modulus_size, plain_upper_half_increment.data();
+      |                 ~                                                                                                             ^
+      |                                                                                                                               )
+[43/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/context.cpp.obj
+[44/80] Building C object C:/Users/wangt/AppData/Local/BioBindResearchTools/zstd-build/lib/CMakeFiles/libzstd_static.dir/C_/Users/wangt/AppData/Local/BioBindResearchTools/zstd-f8745da6ff1ad1e7bab384bd1f9d742439278e99/lib/compress/zstd_lazy.c.obj
+[45/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/keygenerator.cpp.obj
+[46/80] Building CXX object CMakeFiles/seal.dir/native/src/seal/evaluator.cpp.obj
+ninja: build stopped: subcommand failed.

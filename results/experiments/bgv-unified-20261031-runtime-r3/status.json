@@ -1,0 +1,11 @@
+{
+  "state": "passed",
+  "completed": [
+    "smoke128",
+    "measure",
+    "full-r2",
+    "full-r1",
+    "full-r3"
+  ],
+  "fullCapacityVerified": true
+}

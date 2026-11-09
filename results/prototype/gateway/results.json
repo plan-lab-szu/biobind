@@ -1,0 +1,152 @@
+{
+  "generatedAt": "2026-09-08T07:51:06.531Z",
+  "warning": "MockAFE and local benchmark ceremony only; not a production deployment.",
+  "results": [
+    {
+      "dimension": 128,
+      "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+      "evmVersion": "shanghai",
+      "verifierDeploymentGas": 425948,
+      "gatewayDeployment": {
+        "gasUsed": 1870419,
+        "runtimeCodeBytes": 8387
+      },
+      "setupTransactions": {
+        "configureCredentialGas": 92904,
+        "configureDeviceGas": 115158,
+        "issueChallengeGas": 76689,
+        "revokeCredentialGas": 35992,
+        "reactivateCredentialGas": 36004,
+        "revokeDeviceGas": 38346,
+        "reactivateDeviceGas": 38358,
+        "cleanupIssueChallengeGas": 59589,
+        "expiredChallengeCleanupGas": 27984
+      },
+      "authentication": {
+        "accepted": true,
+        "transactionGas": 282479,
+        "estimatedGas": 287279,
+        "calldata": {
+          "bytes": 1156,
+          "zeroBytes": 431,
+          "nonzeroBytes": 725,
+          "gas": 13324
+        },
+        "intrinsicGas": 34324,
+        "executionGasAfterIntrinsic": 248155
+      },
+      "anchoredAuthentication": {
+        "first": {
+          "accepted": true,
+          "transactionGas": 306328,
+          "calldata": {
+            "bytes": 1188,
+            "zeroBytes": 466,
+            "nonzeroBytes": 722,
+            "gas": 13416
+          },
+          "intrinsicGas": 34416,
+          "executionGasAfterIntrinsic": 271912
+        },
+        "steady": {
+          "accepted": true,
+          "transactionGas": 289240,
+          "calldata": {
+            "bytes": 1188,
+            "zeroBytes": 465,
+            "nonzeroBytes": 723,
+            "gas": 13428
+          },
+          "intrinsicGas": 34428,
+          "executionGasAfterIntrinsic": 254812
+        },
+        "counterAfter": 2
+      },
+      "negativeTests": {
+        "invalidSignatureRejected": true,
+        "outsiderRejected": true,
+        "revokedCredentialRejected": true,
+        "revokedDeviceRejected": true,
+        "expiredChallengeRejected": true,
+        "replayRejected": true,
+        "prematureForeignCleanupRejected": true,
+        "expiredChallengeCleaned": true,
+        "staleAnchorRejected": true,
+        "anchoredReplayRejected": true
+      }
+    },
+    {
+      "dimension": 512,
+      "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+      "evmVersion": "shanghai",
+      "verifierDeploymentGas": 425924,
+      "gatewayDeployment": {
+        "gasUsed": 1870419,
+        "runtimeCodeBytes": 8387
+      },
+      "setupTransactions": {
+        "configureCredentialGas": 92904,
+        "configureDeviceGas": 115158,
+        "issueChallengeGas": 76689,
+        "revokeCredentialGas": 35992,
+        "reactivateCredentialGas": 36004,
+        "revokeDeviceGas": 38346,
+        "reactivateDeviceGas": 38358,
+        "cleanupIssueChallengeGas": 59589,
+        "expiredChallengeCleanupGas": 27984
+      },
+      "authentication": {
+        "accepted": true,
+        "transactionGas": 282491,
+        "estimatedGas": 287291,
+        "calldata": {
+          "bytes": 1156,
+          "zeroBytes": 430,
+          "nonzeroBytes": 726,
+          "gas": 13336
+        },
+        "intrinsicGas": 34336,
+        "executionGasAfterIntrinsic": 248155
+      },
+      "anchoredAuthentication": {
+        "first": {
+          "accepted": true,
+          "transactionGas": 306348,
+          "calldata": {
+            "bytes": 1188,
+            "zeroBytes": 466,
+            "nonzeroBytes": 722,
+            "gas": 13416
+          },
+          "intrinsicGas": 34416,
+          "executionGasAfterIntrinsic": 271932
+        },
+        "steady": {
+          "accepted": true,
+          "transactionGas": 289248,
+          "calldata": {
+            "bytes": 1188,
+            "zeroBytes": 466,
+            "nonzeroBytes": 722,
+            "gas": 13416
+          },
+          "intrinsicGas": 34416,
+          "executionGasAfterIntrinsic": 254832
+        },
+        "counterAfter": 2
+      },
+      "negativeTests": {
+        "invalidSignatureRejected": true,
+        "outsiderRejected": true,
+        "revokedCredentialRejected": true,
+        "revokedDeviceRejected": true,
+        "expiredChallengeRejected": true,
+        "replayRejected": true,
+        "prematureForeignCleanupRejected": true,
+        "expiredChallengeCleaned": true,
+        "staleAnchorRejected": true,
+        "anchoredReplayRejected": true
+      }
+    }
+  ]
+}

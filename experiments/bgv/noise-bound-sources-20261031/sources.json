@@ -1,0 +1,50 @@
+{
+  "SEAL": "4.1.2",
+  "commit": "119dc32e135cb89c1062076a69310d4413ebc824",
+  "sources": [
+    {
+      "upstreamPath": "native/src/seal/util/rlwe.cpp",
+      "localFile": "rlwe.cpp",
+      "sha256": "93eedac214990633c3ef3795ca151fd67d5b26702d9462e04db8da5b6df20b3c"
+    },
+    {
+      "upstreamPath": "native/src/seal/util/rns.cpp",
+      "localFile": "rns.cpp",
+      "sha256": "a01c930b43bd9b6bacd673dd264cc8e1f1bdf6472c407c28200f1b59a04ea952"
+    },
+    {
+      "upstreamPath": "native/src/seal/encryptor.cpp",
+      "localFile": "encryptor.cpp",
+      "sha256": "2fb326c0526adb937093f40af52f92651bef8a865fb013faf631de169216036d"
+    },
+    {
+      "upstreamPath": "native/src/seal/keygenerator.cpp",
+      "localFile": "keygenerator.cpp",
+      "sha256": "be678f60ad5093ed43dcb17bfffd43811d26c9f5511046edfb19556bfc33bb99"
+    },
+    {
+      "upstreamPath": "native/src/seal/evaluator.cpp",
+      "localFile": "evaluator.cpp",
+      "sha256": "df89d4e9621fa748ed16f818d15524c0d95a2b0c7e82e56b13134e15f4878772"
+    },
+    {
+      "upstreamPath": "native/src/seal/modulus.cpp",
+      "localFile": "modulus.cpp",
+      "sha256": "e8426f6a905432421b8ef4e578b956f96680dc473d7082fc1dc7f8551276d76a"
+    },
+    {
+      "upstreamPath": "native/src/seal/util/defines.h",
+      "localFile": "defines.h",
+      "sha256": "2343f39780268b8e2c812367c4c5aa8b64d853ae789fdfdf20a096cbb1217191"
+    },
+    {
+      "upstreamPath": "LICENSE",
+      "localFile": "LICENSE",
+      "sha256": "27ebda9d51f0a56b7e281ccd8230a27236dcb51c05f64b07869ecf6e965d68b0"
+    },
+    {
+      "localFile": "seal-config.h",
+      "sha256": "4858383a8def5eb88fd4644a878ac88309c3d20655eb4e2da9e41a5617258554"
+    }
+  ]
+}

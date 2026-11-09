@@ -1,0 +1,32 @@
+{
+  "checkedAt": "2026-10-31T05:28:00.664549+00:00",
+  "smoke128": {
+    "profile": "Unified512-2",
+    "last": {
+      "enrollments": 128,
+      "merges": 127,
+      "capacity": 16384,
+      "row_noise_min": 97,
+      "query_noise": 24,
+      "wrong_slots": 0,
+      "wrong_packed_slots": 0,
+      "wrong_row_slots": 0,
+      "fresh_query_noise": 31,
+      "fresh_wrong_slots": 0,
+      "fresh_wrong_packed_slots": 0,
+      "process_handles": 93,
+      "elapsed_ms": 134300.3709
+    },
+    "checkpoints": 8,
+    "correctAtAllCheckpoints": true,
+    "completedCapacity": false,
+    "processReturnCode": 0
+  },
+  "serialMeasurementPassed": true,
+  "actualParametersIdentical": true,
+  "vendorUnchanged": true,
+  "profileUnchanged": true,
+  "manuscriptChanged": [],
+  "fullCapacityVerified": false,
+  "fullRuns": "three new workers launched; independent keys and seeds; acceptance pending"
+}

@@ -1,0 +1,7 @@
+{
+  "mode": "verify",
+  "elapsedMs": 422.04,
+  "baselineRssMiB": 57.6,
+  "sampledPeakRssMiB": 270.38,
+  "valid": true
+}

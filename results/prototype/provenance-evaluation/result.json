@@ -1,0 +1,74 @@
+{
+  "generatedAt": "2026-10-28T15:23:10.822Z",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "node": "v24.19.0",
+  "researchScope": {
+    "authorization": "authorized defensive academic evaluation",
+    "executionEnvironment": "in-process Ganache test chain only",
+    "systemsInScope": [
+      "researcher-owned BioZERO prototype",
+      "deliberately incomplete local comparison baseline",
+      "natural local composition baselines for enrollment and lifecycle seams"
+    ],
+    "systemsOutOfScope": [
+      "third-party services",
+      "public networks",
+      "real users and real biometric data"
+    ],
+    "purpose": "measure whether individually sound uniqueness, ZK, capture-signature, freshness, and lifecycle components establish end-to-end provenance under natural incomplete composition"
+  },
+  "threatModel": {
+    "holderSideHostControlled": true,
+    "syntheticEnrollmentOpeningKnownToHost": true,
+    "authorizedCaptureSigningKeyKnownToHost": false,
+    "padInScope": false
+  },
+  "construction": {
+    "dimension": 128,
+    "vectorSource": "synthetic generated fixture only",
+    "probeConstruction": "host substitutes synthetic enrollment vector",
+    "squaredDistance": "0",
+    "provingKeyStatus": "benchmark-only; not production ceremony",
+    "provingElapsedMs": 944.2643
+  },
+  "cryptographicValidity": {
+    "offlineGroth16Verified": true,
+    "enrollmentCommitmentMatched": true,
+    "probeCommitmentMatched": true,
+    "freshnessContextMatched": true
+  },
+  "provenanceOmissionBaseline": {
+    "hostConstructedWitnessAccepted": true,
+    "sameNullifierRejected": true,
+    "authenticationGas": 278561
+  },
+  "naturalNaiveCompositions": {
+    "soundUniqueReceiptConsumed": true,
+    "sameChainTerminalReceiptLineageStored": true,
+    "uniqueInputDigestDeliberatelyDiffersFromCredentialTemplate": true,
+    "unrelatedEnrollmentCommitmentStored": true,
+    "enrollmentSubstitutionAccepted": true,
+    "enrollmentSubstitutionGas": 276635,
+    "authorizedBlindSigningApiAcceptedHostConstructedProbe": true,
+    "cachedAuthorizationAcceptedAfterCredentialRevocation": true,
+    "historicalAuthorizationGas": 258970
+  },
+  "provenanceAwareGateway": {
+    "unauthorizedCaptureEvidenceRejected": true,
+    "challengePreservedAfterRejection": true,
+    "currentStateRejectionAfterRevocation": true,
+    "challengePreservedAfterRevocation": true,
+    "authorizedCaptureEvidenceAccepted": true,
+    "challengeConsumedAfterAcceptance": true,
+    "replayAfterConsumptionRejected": true,
+    "authenticationGas": 282471
+  },
+  "interpretation": "Sound component results do not compose automatically: a canonical one-time receipt derived from valid same-chain terminal state can authorize an unrelated enrollment commitment, an authorized key exposed as a host-input signing API can bless a host-constructed probe, and historical eligibility can survive revocation unless live state is checked at acceptance.",
+  "limitations": [
+    "software-wallet device mock, not a TEE key",
+    "no physical sensor-path validation",
+    "no PAD/liveness claim",
+    "no real biometric data",
+    "no external system evaluated"
+  ]
+}

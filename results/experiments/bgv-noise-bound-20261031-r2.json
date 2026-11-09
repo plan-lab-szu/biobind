@@ -1,0 +1,36 @@
+{
+  "kind": "static sufficient-condition arithmetic plus toy integer-ring checks; not SEAL runtime",
+  "profile": "Unified512-2",
+  "N": 8192,
+  "L": 512,
+  "K": 16384,
+  "plainUpperBoundExclusive": 281474976710656,
+  "coefficientPrimesRequired": [
+    1152921504606830593,
+    1125899905744897,
+    1125899906629633,
+    1125899906826241
+  ],
+  "dataModulusProduct": 1461501635629472912097222353132967185229959380993,
+  "preSwitchNoiseCoefficientBound": 344085,
+  "freshPhaseBoundConservative": 2306687434143825920,
+  "queryPhaseBound": 365643067275768933643758375524286005426677350400,
+  "strictNoWrapCheck": true,
+  "Q_over_twice_bound": "1.9985359581933557",
+  "wholeBitsConservativeMargin": 0,
+  "maxKCertifiedByThisBound": 32744,
+  "toyChecks": 400,
+  "modulusWitness": "dev-workspace/experiments/results/bgv-repair-r3-f3-64-20261030/FaceNet-3/parameters.json",
+  "modulusWitnessSHA256": "78325d1637a38e33ed6b84f092680598ebb59100a3db49e32ae12a907ccd8c2b",
+  "requires": [
+    "CBD noise coefficients bounded by 21; ternary secret and ephemeral keys",
+    "official SEAL 4.1.2 asymmetric zero encryption with one special-prime drop",
+    "exact listed coefficient primes; 48-bit plaintext prime; correction factor 1",
+    "at most K fresh enrollment ciphertexts per row, all at same level/key",
+    "L ciphertext products summed; no rotations, relinearization, later switching or refresh",
+    "honest constrained encryption; C1 admissible plaintext packing",
+    "correct software/CRT/NTT implementation; independent review still pending"
+  ],
+  "fullSEALCapacityExecuted": false,
+  "securityProofOrIndependentReview": false
+}

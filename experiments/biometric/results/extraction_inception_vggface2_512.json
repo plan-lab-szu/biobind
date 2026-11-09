@@ -1,0 +1,32 @@
+{
+  "images": 7701,
+  "mtcnnFallbackCount": 0,
+  "fallbackImages": [],
+  "embeddingDimension": 512,
+  "normRange": [
+    0.9999998211860657,
+    1.0000001192092896
+  ],
+  "seconds": 602.9,
+  "pipeline": {
+    "detector": "facenet_pytorch.MTCNN(image_size=160, margin=0, post_process=True, select_largest=False, selection_method='center_weighted_size')",
+    "fallback": "central 160x160 crop + fixed_image_standardization",
+    "model": "facenet_pytorch.InceptionResnetV1(pretrained='vggface2').eval()"
+  },
+  "weights": [
+    {
+      "file": "C:\\biobind-data\\torch\\checkpoints\\20180402-114759-vggface2.pt",
+      "sha256": "281cebca8662831adb987a874bdcb36e73f5b1c6dc5ee5878f305e985625d99b",
+      "bytes": 111898327
+    }
+  ],
+  "versions": {
+    "python": "3.12.10",
+    "torch": "2.2.2+cpu",
+    "facenet_pytorch": "2.6.0",
+    "numpy": "1.26.4",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "embeddingsFile": "C:\\biobind-data\\embeddings\\inception_vggface2_512.npz",
+  "embeddingsSha256": "f511b67a4abb5f383fdfbac33c314c5686a5b5454f8ec98afcaeae94453af38f"
+}

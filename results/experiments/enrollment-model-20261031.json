@@ -1,0 +1,177 @@
+{
+  "generatedAt": "2026-10-30T17:53:09.424923+00:00",
+  "sessions": 3,
+  "people": 2,
+  "secure": [
+    {
+      "states": 550,
+      "transitions": 1191,
+      "failures": [],
+      "persons": [
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "states": 740,
+      "transitions": 1508,
+      "failures": [],
+      "persons": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "states": 740,
+      "transitions": 1508,
+      "failures": [],
+      "persons": [
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "states": 740,
+      "transitions": 1508,
+      "failures": [],
+      "persons": [
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "states": 740,
+      "transitions": 1508,
+      "failures": [],
+      "persons": [
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "states": 740,
+      "transitions": 1508,
+      "failures": [],
+      "persons": [
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "states": 740,
+      "transitions": 1508,
+      "failures": [],
+      "persons": [
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "states": 550,
+      "transitions": 1191,
+      "failures": [],
+      "persons": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "ablations": {
+    "I1": {
+      "states": 36,
+      "transitions": 62,
+      "failures": [
+        "W1"
+      ],
+      "counterexample": [
+        "s0:open",
+        "s0:capture",
+        "s0:verdict=True",
+        "s0:finalize/write",
+        "s0:issue/vector=1"
+      ],
+      "persons": [
+        0,
+        0,
+        0
+      ]
+    },
+    "I2": {
+      "states": 21,
+      "transitions": 32,
+      "failures": [
+        "W2"
+      ],
+      "counterexample": [
+        "s0:open",
+        "s0:capture",
+        "s0:verdict=True",
+        "s0:finalize/drop"
+      ],
+      "persons": [
+        0,
+        0,
+        0
+      ]
+    },
+    "I3": {
+      "states": 274,
+      "transitions": 512,
+      "failures": [
+        "W3"
+      ],
+      "counterexample": [
+        "s0:open",
+        "s0:capture",
+        "s0:verdict=True",
+        "s1:open",
+        "s0:finalize/write",
+        "s1:capture",
+        "s1:verdict=True",
+        "s1:finalize/write",
+        "s1:issue/vector=0"
+      ],
+      "persons": [
+        0,
+        0,
+        0
+      ]
+    },
+    "I4": {
+      "states": 302,
+      "transitions": 546,
+      "failures": [
+        "W3"
+      ],
+      "counterexample": [
+        "s0:open",
+        "s0:capture",
+        "s0:verdict=True",
+        "s0:finalize/write",
+        "s1:open",
+        "s1:capture",
+        "s1:verdict=True",
+        "s1:finalize/write",
+        "s1:issue/vector=0"
+      ],
+      "persons": [
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "totalSecureStates": 5540,
+  "totalSecureTransitions": 11430,
+  "scope": "Finite abstract model, exact-equality duplicate relation, perfect primitive/backend assumptions. Not bytecode verification, person-level accuracy, or an unbounded proof.",
+  "I3Ablation": "Abstract variant writes a fresh slot at finalization while preserving the captured vector. It models trusted slot re-encoding, NOT removal of one check in the fixed-slot Solidity implementation.",
+  "W3Timing": "Gallery immediately before the session's atomic insertion; the session's own newly inserted vector is excluded."
+}

@@ -1,0 +1,47 @@
+{
+  "startedAt": "2026-10-30T06:14:47.620093+00:00",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "python": "3.12.10",
+  "processor": "Intel64 Family 6 Model 158 Stepping 13, GenuineIntel",
+  "logicalCPUs": 16,
+  "mode": "stress",
+  "BioZKFHECommit": "76ffb9f1885a2cbdef3f34c73971fc262db1bd60",
+  "SEAL": "official v4.1.2; not the unbuildable bundled fork",
+  "compression": "zstd 1.5.7; zlib off",
+  "inputs": [
+    {
+      "name": "bgv-measure.cpp",
+      "sha256": "66aa77b6e648331ff428966844907a6c97f21ceff4a979722f7e41fd510703b1",
+      "bytes": 14299
+    },
+    {
+      "name": "CMakeLists.txt",
+      "sha256": "f9694a91c35a023400ada1e0f98d3bbb0a2fd9853194ea159103c7f0cf568bec",
+      "bytes": 402
+    },
+    {
+      "name": "scmv_e3_benchmark.cpp",
+      "sha256": "220a712a49a8c1e79c9a57d4ed2c10bf1363589fb0a73ee7f07c4005e499d65d",
+      "bytes": 26021
+    },
+    {
+      "name": "run.py",
+      "sha256": "85e8d7a9142113c923b099d3b290b0588dc2a5ca22a2623c324c59412d6d11ad",
+      "bytes": 7449
+    },
+    {
+      "name": "bgv-measure.exe",
+      "sha256": "3fc015bac23e63adb127a0c66405f8e1cd037444d9b95d83c4de3634f2e10958",
+      "bytes": 4891979
+    }
+  ],
+  "syntheticData": true,
+  "cryptographicRandomness": "SEAL OS entropy; not fixed",
+  "plaintextPRNGSeed": 20261030,
+  "warmups": 1,
+  "measuredRounds": null,
+  "integration": "component only; no ES signing/PVSC/threshold decryption/chain",
+  "coeffBitsOverride": null,
+  "parameterSet": "original",
+  "maxEnrollments": 32
+}

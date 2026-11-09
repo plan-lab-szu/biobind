@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-10-27T15:59:50.672Z",
+  "scope": "BioBind private profile end to end with real LFW features (InceptionResnetV1 VGGFace2, 512-D, Gamma 512) on local Ganache 7.9.2 (Shanghai), solc 0.8.36+commit.8a079791.Emscripten.clang: MCU packet, R1 bridge, BioZKFHEEnrollmentSourceCompact (t=3 of 5 simulated committee, SCMV L=512), adapter, PrivateAuthGateway (PoseidonT3 trees), auth_private_512 proofs; epsilon 319949",
+  "demoSelection": {
+    "personA": "Aaron_Peirsol",
+    "personB": "Abdullah",
+    "images": {
+      "A_enroll": "Aaron_Peirsol/Aaron_Peirsol_0001.jpg",
+      "A_probe": "Aaron_Peirsol/Aaron_Peirsol_0003.jpg",
+      "A_reenroll": "Aaron_Peirsol/Aaron_Peirsol_0004.jpg",
+      "B_enroll": "Abdullah/Abdullah_0001.jpg",
+      "B_probe": "Abdullah/Abdullah_0002.jpg"
+    },
+    "cosine": {
+      "A_enroll~A_probe": 0.8579316138621169,
+      "A_enroll~A_reenroll": 0.6160637911911921,
+      "A_enroll~B_probe": -0.27879906401448173,
+      "B_enroll~B_probe": 0.7738307980353045
+    },
+    "rule": "Export real LFW feature vectors for the 512-D private-circuit demos.\n\nSelection rule (fixed, deterministic; this is a demonstration, not an accuracy\nestimate -- accuracy comes from the View 2 protocol in score_and_analyze.py):\n  * candidates are identities with >= 3 images among the extracted View 2 images;\n  * person A: alphabetically first candidate whose three first images have all\n    pairwise cosine similarities >= 0.6 (enrollment, probe, re-enrollment);\n  * person B: next candidate with the same property and cosine < 0.2 to A's images."
+  },
+  "securityWarning": "Simulated committee (PVSC, coverage, threshold decryption not executed and not in gas); software MCU/bridge/AFE keys; benchmark-only Groth16 setup; synthetic vectors; never deploy.",
+  "enrollments": [
+    {
+      "person": "A",
+      "status": "Finalized",
+      "createSession": 78385,
+      "bindRequest": 47631,
+      "finalize": 153656,
+      "merge": false,
+      "issue": 913042,
+      "total": 1192714
+    },
+    {
+      "person": "B",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48087,
+      "finalize": 119410,
+      "merge": true,
+      "issue": 856559,
+      "total": 1085341
+    },
+    {
+      "person": "A",
+      "status": "Duplicate",
+      "createSession": 61285,
+      "bindRequest": 48075,
+      "finalize": 76168,
+      "merge": true
+    }
+  ],
+  "checks": {
+    "idcSubstitutionRejected": "rejected",
+    "hostChosenCommitmentRejected": "rejected",
+    "sameIdentityDuplicateNotIssued": true,
+    "credentialRootMatchesMirror": true,
+    "genuineAccepted": true,
+    "appPseudonymStableForA": true,
+    "pseudonymsDifferAcrossHolders": true,
+    "impostorRejectedAtWitness": true
+  },
+  "authentications": {
+    "A1": {
+      "accepted": true,
+      "gas": 305060,
+      "challengeGas": 140577,
+      "proveMs": 2476,
+      "distance": "74166",
+      "nullifier": "15634407061487910081670065221746535431840242393880455175924428875345275930657"
+    },
+    "A2": {
+      "accepted": true,
+      "gas": 305060,
+      "challengeGas": 123477,
+      "proveMs": 2109,
+      "distance": "201121",
+      "nullifier": "15634407061487910081670065221746535431840242393880455175924428875345275930657"
+    },
+    "B": {
+      "accepted": true,
+      "gas": 305060,
+      "challengeGas": 123477,
+      "proveMs": 2130,
+      "distance": "118564",
+      "nullifier": "19383430568789416251902353301751665180880699582623474412033971970189642580572"
+    },
+    "impostorOnA": {
+      "accepted": false,
+      "witness": "rejected",
+      "distance": "669897"
+    }
+  }
+}

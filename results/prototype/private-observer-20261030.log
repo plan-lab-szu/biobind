@@ -1,0 +1,113 @@
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+ERROR:  4 Error in template AuthPrivateV2_558 line: 158
+
+{
+  "checks": {
+    "idcSubstitutionRejected": "rejected",
+    "hostChosenCommitmentRejected": "rejected",
+    "reenrollmentOutcomeFollowsThreshold": true,
+    "credentialRootMatchesMirror": true,
+    "genuineAccepted": true,
+    "appPseudonymStableForA": true,
+    "pseudonymsDifferAcrossHolders": true,
+    "impostorRejectedAtWitness": true
+  },
+  "reenrollment": {
+    "innerProduct": "2580826",
+    "tau": "2777020",
+    "status": "Finalized",
+    "outcome": "MISSED duplicate: A holds two credentials"
+  },
+  "enrollments": [
+    {
+      "person": "A",
+      "status": "Finalized",
+      "createSession": 78385,
+      "bindRequest": 47643,
+      "finalize": 153668,
+      "merge": false,
+      "issue": 913054,
+      "total": 1192750
+    },
+    {
+      "person": "B",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48087,
+      "finalize": 119422,
+      "merge": true,
+      "issue": 856559,
+      "total": 1085353
+    },
+    {
+      "person": "A",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48063,
+      "finalize": 119386,
+      "merge": true,
+      "issue": 856559,
+      "total": 1085293
+    }
+  ],
+  "authentications": {
+    "A1": {
+      "accepted": true,
+      "gas": 305048,
+      "challengeGas": 140577,
+      "proveMs": 2448,
+      "distance": "1191545",
+      "nullifier": "15952073305177676841620130262694581888791360786352139947276715306103981210811",
+      "transactionHash": "0x232f646ecbb472570e60855dc1d372c83e99d8ccd8d60d1b79a209bfd8905eb4"
+    },
+    "A2": {
+      "accepted": true,
+      "gas": 305048,
+      "challengeGas": 123477,
+      "proveMs": 1812,
+      "distance": "3220679",
+      "nullifier": "15952073305177676841620130262694581888791360786352139947276715306103981210811",
+      "transactionHash": "0x1e06af20a40627582c3d65738b6908d8b05c9bec4c7404bb26538ab6dbff9c99"
+    },
+    "B": {
+      "accepted": true,
+      "gas": 305048,
+      "challengeGas": 123477,
+      "proveMs": 1894,
+      "distance": "1894837",
+      "nullifier": "16347165875165314711286713023727233946013336330993157974458954698116473133446",
+      "transactionHash": "0x2486fae098f479ceda980c58071fcdd173bbdedd81d53f1876fdba085d3b16eb"
+    },
+    "impostorOnA": {
+      "accepted": false,
+      "witness": "rejected",
+      "distance": "10717782"
+    },
+    "A_otherApp": {
+      "accepted": true,
+      "gas": 305048,
+      "challengeGas": 123465,
+      "proveMs": 1910,
+      "distance": "1191545",
+      "nullifier": "18990938726262950084350050782260361971777433359397291398541717263940035386564",
+      "transactionHash": "0xd51be584b59e0873437909deafb83d103b4b454a3332fa1d1af0c167d1f64cb6"
+    },
+    "B_otherApp": {
+      "accepted": true,
+      "gas": 305036,
+      "challengeGas": 123465,
+      "proveMs": 1940,
+      "distance": "1894837",
+      "nullifier": "7731661833939313969853293737739710050156729872710325251490158765339226985604",
+      "transactionHash": "0xc79ba9e6d3fb2ca9c8c28f024509b0192831c59a63916d321066d5bc720459b0"
+    }
+  }
+}

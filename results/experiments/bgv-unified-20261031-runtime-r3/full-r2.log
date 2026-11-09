@@ -1,0 +1,2 @@
+Running Unified512-2 stress
+{"profile": "Unified512-2", "last": {"enrollments": 16384, "merges": 16383, "capacity": 16384, "row_noise_min": 90, "query_noise": 17, "wrong_slots": 0, "wrong_packed_slots": 0, "wrong_row_slots": 0, "fresh_query_noise": 31, "fresh_wrong_slots": 0, "fresh_wrong_packed_slots": 0, "process_handles": 90, "elapsed_ms": 19673597.5951}, "checkpoints": 16, "correctAtAllCheckpoints": true, "completedCapacity": true, "processReturnCode": 0}

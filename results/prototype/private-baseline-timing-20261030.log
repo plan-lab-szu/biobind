@@ -1,0 +1,14 @@
+[
+  {
+    "circuit": "auth_private_v2_512_b12_dev20",
+    "witnessMedianMs": 392,
+    "proveMedianMs": 1502,
+    "totalMedianMs": 1989
+  },
+  {
+    "circuit": "auth_private_attested_dev20",
+    "witnessMedianMs": 265,
+    "proveMedianMs": 880,
+    "totalMedianMs": 1119
+  }
+]

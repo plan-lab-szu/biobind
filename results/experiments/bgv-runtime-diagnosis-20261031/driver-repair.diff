@@ -1,0 +1,125 @@
+--- old/bgv-measure.cpp
++++ runtime-r2/bgv-measure.cpp
+@@ -6,6 +6,24 @@
+ #include <filesystem>
+ #include <limits>
+ #include <memory>
++#if defined(__MINGW32__) && defined(SEAL_USE_SHARED_MUTEX)
++#error "This MinGW run requires SEAL built with SEAL_USE_CXX17=OFF (stock atomic locks)."
++#endif
++#ifdef _WIN32
++#ifndef NOMINMAX
++#define NOMINMAX
++#endif
++#include <windows.h>
++#endif
++unsigned long process_handles() {
++#ifdef _WIN32
++    DWORD handles=0;
++    if(!GetProcessHandleCount(GetCurrentProcess(),&handles)) throw std::runtime_error("handle telemetry failed");
++    return handles;
++#else
++    return 0;
++#endif
++}
+ const SEALContext *stress_context=nullptr;
+ const PublicKey *stress_public_key=nullptr;
+ bool parallel_stress=false;
+@@ -162,7 +180,7 @@
+         require(!std::filesystem::exists(outdir/"stress.jsonl"),"output exists");
+         size_t limit=argc>5?std::stoull(argv[5]):n*p.d; limit=std::min(limit,n*p.d);
+         require(limit>0,"max enrollments must be positive");
+-        std::ofstream log(outdir/"stress.jsonl"); Times qt;
++        std::ofstream log(outdir/"stress.jsonl"), progress(outdir/"progress.jsonl"); Times qt;
+         auto qct=encrypt_rows(query,p,n,0,true,encoder,enc,qt); std::vector<Ciphertext> block;
+         std::vector<int64_t> expected(p.d,0); std::vector<std::vector<int64_t>> scores(p.d,std::vector<int64_t>(n,0));
+         std::vector<std::vector<int64_t>> enrolled;
+@@ -178,6 +196,12 @@
+             enrolled.push_back(v);
+             for(size_t dim=0;dim<p.L;++dim) expected_rows[dim][slot]+=v[dim]*power;
+             auto score=dot(query,v); expected[slot]+=power*score; scores[slot][layer]=score;
++            if(count==1 || count%64==0 || count==limit) {
++                auto handles=process_handles();
++                progress<<"{\"enrollments\":"<<count<<",\"process_handles\":"<<handles
++                        <<",\"elapsed_ms\":"<<elapsed(start)<<"}\n"; progress.flush();
++                require(handles<10000,"runtime handle growth: stopping before resource exhaustion");
++            }
+             bool checkpoint=(count&(count-1))==0 || count==limit || count%p.d==0 || count%p.d==1;
+             if(!checkpoint) continue;
+             auto answer=identify_block(qct,block,p,eval); int budget=dec.invariant_noise_budget(answer);
+@@ -209,7 +233,8 @@
+                <<",\"row_noise_min\":"<<rowbudget<<",\"query_noise\":"<<budget<<",\"wrong_slots\":"<<errors
+                <<",\"wrong_packed_slots\":"<<packing_errors<<",\"wrong_row_slots\":"<<row_errors
+                <<",\"fresh_query_noise\":"<<fresh_budget<<",\"fresh_wrong_slots\":"<<fresh_errors
+-               <<",\"fresh_wrong_packed_slots\":"<<fresh_packing_errors<<",\"elapsed_ms\":"<<elapsed(start)<<"}\n"; log.flush();
++               <<",\"fresh_wrong_packed_slots\":"<<fresh_packing_errors<<",\"process_handles\":"<<process_handles()
++               <<",\"elapsed_ms\":"<<elapsed(start)<<"}\n"; log.flush();
+             std::cout<<p.model<<' '<<n<<" count "<<count<<" noise "<<budget<<" errors "<<errors<<'/'<<packing_errors<<std::endl;
+             if(errors || packing_errors || row_errors || fresh_errors || fresh_packing_errors) { correctness_failed=true; break; }
+         }
+--- old/run.py
++++ runtime-r2/run.py
+@@ -46,11 +46,14 @@
+     args.out.mkdir(parents=True, exist_ok=False)
+     args.binary_dir.mkdir(parents=True, exist_ok=False)
+     files = [args.source_dir / "bgv-measure.cpp", args.source_dir / "CMakeLists.txt", HERE / "vendor/scmv_e3_benchmark.cpp", Path(__file__), args.exe]
++    build_record = HERE / "runtime-build.json"
++    if build_record.exists():
++        files.append(build_record)
+     manifest = {"startedAt": datetime.now(timezone.utc).isoformat(), "platform": platform.platform(),
+                 "python": platform.python_version(), "processor": platform.processor(),
+                 "logicalCPUs": os.cpu_count(), "mode": args.mode,
+                 "BioZKFHECommit": "76ffb9f1885a2cbdef3f34c73971fc262db1bd60",
+-                "SEAL": "official v4.1.2; not the unbuildable bundled fork", "compression": "zstd 1.5.7; zlib off",
++                "SEAL": "official v4.1.2; SEAL_USE_CXX17=OFF selects stock atomic locks", "compression": "zstd 1.5.7; zlib off",
+                 "inputs": [{"name": p.name, "sha256": sha(p), "bytes": p.stat().st_size} for p in files],
+                 "syntheticData": True, "cryptographicRandomness": "SEAL OS entropy; not fixed",
+                 "plaintextPRNGSeed": args.seed, "warmups": 1, "measuredRounds": 5 if args.mode == "measure" else None,
+@@ -74,14 +77,33 @@
+             cmd.append(args.coeff_bits)
+         cmd.append(str(args.seed))
+         print("Running", name, args.mode, flush=True)
++        watchdog_failed = False
+         with (dest / "run.log").open("w", encoding="utf-8") as log:
+-            completed = subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT)
+-        for filename in ["parameters.json", "samples.jsonl", "stress.jsonl"]:
++            child = subprocess.Popen(cmd, stdout=log, stderr=subprocess.STDOUT)
++            last_size = 0
++            last_progress = time.monotonic()
++            while child.poll() is None:
++                progress_file = binary / ("progress.jsonl" if args.mode == "stress" else "samples.jsonl")
++                # Windows directory metadata may lag writes to an open stream.
++                size = len(progress_file.read_bytes()) if progress_file.exists() else 0
++                if size != last_size:
++                    last_size = size
++                    last_progress = time.monotonic()
++                if time.monotonic() - last_progress > 900:
++                    (dest / "watchdog.json").write_text(json.dumps({"reason": "no new progress for 900 seconds", "pid": child.pid})+"\n")
++                    child.kill()
++                    watchdog_failed = True
++                    break
++                time.sleep(5)
++            returncode = child.wait()
++        for filename in ["parameters.json", "samples.jsonl", "stress.jsonl", "progress.jsonl"]:
+             if (binary / filename).exists():
+                 (dest / filename).write_bytes((binary / filename).read_bytes())
+-        if completed.returncode not in (0, 2):
+-            raise subprocess.CalledProcessError(completed.returncode, cmd)
+-        correctness_failed |= completed.returncode == 2
++        if watchdog_failed:
++            raise RuntimeError("runtime watchdog stopped a stalled child; raw evidence preserved")
++        if returncode not in (0, 2):
++            raise subprocess.CalledProcessError(returncode, cmd)
++        correctness_failed |= returncode == 2
+         raw_name = "samples.jsonl" if args.mode == "measure" else "stress.jsonl"
+         samples = [json.loads(s) for s in (dest / raw_name).read_text().splitlines()]
+         if args.mode == "stress":
+@@ -90,7 +112,7 @@
+                            ["wrong_slots", "wrong_packed_slots", "wrong_row_slots", "fresh_wrong_slots", "fresh_wrong_packed_slots"])
+                            for s in samples),
+                        "completedCapacity": samples[-1]["enrollments"] == n*8192,
+-                       "processReturnCode": completed.returncode}
++                       "processReturnCode": returncode}
+         else:
+             measured = [s for s in samples if not s["warmup"]]
+             summary = {"profile": name, "samples": len(measured), "allChecksPass": all(

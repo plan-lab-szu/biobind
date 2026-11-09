@@ -1,0 +1,154 @@
+{
+  "generatedAt": "2026-10-27T05:30:37.270Z",
+  "scope": "Complete authentication transaction for the homomorphic strategies at N=128 on BN254: nonce check and update, enrollment-digest check, Fiat-Shamir challenge over all commitments and first messages, sample derivation from block.prevrandao, six equations per examined coordinate, full distance reconstruction, and a Groth16 threshold verifier with five public inputs (the reconstructed commitment as four 128-bit limbs and the threshold). The prover sends the full transcript because the sample is fixed only at inclusion.",
+  "securityWarning": "h = 5G has a known discrete log (insecure commitment key, same EVM cost). The threshold circuit is a measurement stand-in that range-checks delta <= tau but does not prove the Pedersen opening of the reconstructed commitment; Groth16 verification gas depends only on the number of public inputs. Local single-party Groth16 setup, benchmark only.",
+  "dimension": 128,
+  "threshold": "1000000",
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "optimizerRuns": 200,
+  "evmVersion": "shanghai",
+  "chain": "Ganache 7.9.2, chain id 31337, block gas limit 80,000,000",
+  "groth16VerifierDeploymentGas": 425924,
+  "results": [
+    {
+      "label": "spot-eta-1",
+      "eta": 1,
+      "samples": 7,
+      "repetitions": 3,
+      "gasUsed": [
+        4141470,
+        4124418,
+        4124634
+      ],
+      "medianGasUsed": 4124634,
+      "calldata": {
+        "bytes": 127844,
+        "zeroBytes": 1180,
+        "nonzeroBytes": 126664,
+        "gas": 2031344
+      },
+      "intrinsicGas": 2052344,
+      "medianExecutionGasAfterIntrinsic": 2072290,
+      "enrollmentGas": 192709,
+      "deploymentGas": 1180895,
+      "controls": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "label": "spot-eta-2",
+      "eta": 2,
+      "samples": 14,
+      "repetitions": 3,
+      "gasUsed": [
+        5129108,
+        5111147,
+        5109954
+      ],
+      "medianGasUsed": 5111147,
+      "calldata": {
+        "bytes": 127844,
+        "zeroBytes": 1183,
+        "nonzeroBytes": 126661,
+        "gas": 2031308
+      },
+      "intrinsicGas": 2052308,
+      "medianExecutionGasAfterIntrinsic": 3058839,
+      "enrollmentGas": 192709,
+      "deploymentGas": 1180895,
+      "controls": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "label": "spot-eta-4",
+      "eta": 4,
+      "samples": 28,
+      "repetitions": 3,
+      "gasUsed": [
+        7123077,
+        7106181,
+        7106001
+      ],
+      "medianGasUsed": 7106181,
+      "calldata": {
+        "bytes": 127844,
+        "zeroBytes": 1155,
+        "nonzeroBytes": 126689,
+        "gas": 2031644
+      },
+      "intrinsicGas": 2052644,
+      "medianExecutionGasAfterIntrinsic": 5053537,
+      "enrollmentGas": 192709,
+      "deploymentGas": 1180895,
+      "controls": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "label": "spot-eta-8",
+      "eta": 8,
+      "samples": 56,
+      "repetitions": 3,
+      "gasUsed": [
+        11211817,
+        11202131,
+        11197790
+      ],
+      "medianGasUsed": 11202131,
+      "calldata": {
+        "bytes": 127844,
+        "zeroBytes": 1168,
+        "nonzeroBytes": 126676,
+        "gas": 2031488
+      },
+      "intrinsicGas": 2052488,
+      "medianExecutionGasAfterIntrinsic": 9149643,
+      "enrollmentGas": 192709,
+      "deploymentGas": 1180895,
+      "controls": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": null
+      }
+    },
+    {
+      "label": "full-check",
+      "eta": null,
+      "samples": 128,
+      "repetitions": 3,
+      "gasUsed": [
+        22114909,
+        22097401,
+        22097629
+      ],
+      "medianGasUsed": 22097629,
+      "calldata": {
+        "bytes": 127844,
+        "zeroBytes": 1140,
+        "nonzeroBytes": 126704,
+        "gas": 2031824
+      },
+      "intrinsicGas": 2052824,
+      "medianExecutionGasAfterIntrinsic": 20044805,
+      "enrollmentGas": 192709,
+      "deploymentGas": 1180895,
+      "controls": {
+        "replayRejected": true,
+        "staleProofRejected": true,
+        "wrongEnrollmentRejected": true,
+        "tamperedResponseRejected": true
+      }
+    }
+  ]
+}

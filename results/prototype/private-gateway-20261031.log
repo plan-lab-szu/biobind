@@ -1,0 +1,95 @@
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+ERROR:  4 Error in template AuthPrivate_479 line: 112
+
+{
+  "checks": {
+    "poseidonMatchesCircomlibjs": true,
+    "deviceRootMatchesMirror": true,
+    "substitutedIdcRejected": "InvalidLink",
+    "receiptConsumedOnce": "InvalidSourceSession",
+    "credentialRootMatchesMirror": true,
+    "nonBeneficiarySenderRejected": "InvalidChallenge",
+    "sameScopeReplayRejected": "NullifierUsed",
+    "appPseudonymStable": true,
+    "oneTimeAndAppNullifiersDiffer": true,
+    "proofOnPreInsertionRootAccepted": true,
+    "preRevocationRootRejected": "InvalidRoot",
+    "unaffectedHolderReprovesOnNewRoot": true,
+    "credentialRootMatchesMirrorAfterRevocation": true,
+    "revokedHolderOldProofRejected": "InvalidRoot",
+    "revokedHolderCannotProveOnNewRoot": true,
+    "preDeviceRevocationRootRejected": "InvalidRoot",
+    "reissueKeepsAppPseudonym": true,
+    "mismatchedScopeRejected": "InvalidStatement",
+    "alteredNullifierRejected": "ProofRejected"
+  },
+  "gas": {
+    "poseidon2CallTx": 51081,
+    "gatewayDeployment": 12128702,
+    "registerDevice": [
+      444638,
+      388095,
+      388131
+    ],
+    "issue": [
+      912678,
+      856147,
+      856135,
+      850952,
+      856171,
+      850940,
+      850940,
+      845757,
+      856159
+    ],
+    "revokeCredential": [
+      1042342,
+      1042308
+    ],
+    "revokeDevice": 554550,
+    "authenticate": [
+      {
+        "case": "oneTime",
+        "gas": 327152
+      },
+      {
+        "case": "appScoped",
+        "gas": 304700
+      },
+      {
+        "case": "appScopedAfterRevocation",
+        "gas": 304760
+      },
+      {
+        "case": "appScopedAfterDeviceRevocation",
+        "gas": 304736
+      }
+    ],
+    "issueChallenge": 140314
+  },
+  "proveMs": [
+    2045,
+    1585,
+    1489,
+    1448,
+    1514,
+    1526,
+    1481,
+    1480,
+    1508,
+    1591,
+    1451
+  ],
+  "runtimeBytes": {
+    "gateway": 7680,
+    "tree": 18925
+  }
+}

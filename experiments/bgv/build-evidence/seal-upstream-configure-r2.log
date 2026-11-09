@@ -1,0 +1,43 @@
+-- Build type (CMAKE_BUILD_TYPE): Release
+-- Microsoft SEAL debug mode: OFF
+-- SEAL_USE_CXX17: ON
+-- SEAL_BUILD_DEPS: ON
+-- SEAL_USE_MSGSL: OFF
+-- SEAL_USE_ZLIB: OFF
+-- SEAL_USE_ZSTD: ON
+-- Zstandard: download ...
+CMake Warning (author) at C:/Users/wangt/AppData/Local/BioBindResearchTools/w64devkit/share/cmake-4.4/Modules/FetchContent.cmake:1968 (message):
+  Calling FetchContent_Populate(zstd) is deprecated, call
+  FetchContent_MakeAvailable(zstd) instead.  Policy CMP0169 can be set to OLD
+  to allow FetchContent_Populate(zstd) to be called directly for now, but the
+  ability to call it with declared details will be removed completely in a
+  future version.
+Call Stack (most recent call first):
+  cmake/ExternalZSTD.cmake:11 (FetchContent_Populate)
+  cmake/SEALMacros.cmake:17 (include)
+  CMakeLists.txt:190 (seal_fetch_thirdparty_content)
+This warning is for project developers.  Use -Wno-author to suppress it.
+
+-- ZSTD VERSION: 1.5.7
+-- CMAKE_INSTALL_PREFIX: C:/Program Files (x86)/SEAL
+-- CMAKE_INSTALL_LIBDIR: lib
+-- ZSTD_LEGACY_SUPPORT defined!
+-- ZSTD_MULTITHREAD_SUPPORT is disabled
+-- SEAL_USE_INTEL_HEXL: OFF
+-- BUILD_SHARED_LIBS: OFF
+-- SEAL_THROW_ON_TRANSPARENT_CIPHERTEXT: ON
+-- SEAL_USE_GAUSSIAN_NOISE: OFF
+-- SEAL_DEFAULT_PRNG: Blake2xb
+-- SEAL_AVOID_BRANCHING: OFF
+-- x86intrin.h - found
+-- SEAL_USE_INTRIN: ON
+-- SEAL_USE_MEMSET_S: OFF
+-- SEAL_USE_EXPLICIT_BZERO: OFF
+-- SEAL_USE_EXPLICIT_MEMSET: OFF
+-- SEAL_BUILD_SEAL_C: OFF
+-- SEAL_BUILD_EXAMPLES: OFF
+-- SEAL_BUILD_TESTS: OFF
+-- SEAL_BUILD_BENCH: OFF
+-- Configuring done (1.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: C:/Users/wangt/AppData/Local/BioBindResearchTools/seal-upstream-build

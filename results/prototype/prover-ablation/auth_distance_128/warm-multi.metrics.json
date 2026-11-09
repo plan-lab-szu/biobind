@@ -1,0 +1,151 @@
+{
+  "generatedAt": "2026-09-08T10:50:00.789Z",
+  "mode": "warm-multi",
+  "singleThread": false,
+  "workerConcurrency": 16,
+  "requestedWorkers": 16,
+  "workerLimitMethod": null,
+  "repetitions": 6,
+  "nodeHardwareConcurrency": 16,
+  "scope": "groth16.prove only, using an existing .wtns and zkey; proof verification is performed by the parent benchmark outside the measured process",
+  "runs": [
+    {
+      "run": 1,
+      "elapsedMs": 977.79,
+      "before": {
+        "rssMiB": 57.98,
+        "heapUsedMiB": 9.37,
+        "externalMiB": 2.49,
+        "arrayBuffersMiB": 0.14
+      },
+      "sampledPeakRssMiB": 579.82,
+      "after": {
+        "rssMiB": 579.82,
+        "heapUsedMiB": 12.26,
+        "externalMiB": 33.07,
+        "arrayBuffersMiB": 30.66
+      },
+      "afterGc": {
+        "rssMiB": 561.7,
+        "heapUsedMiB": 11.09,
+        "externalMiB": 33.07,
+        "arrayBuffersMiB": 1.55
+      }
+    },
+    {
+      "run": 2,
+      "elapsedMs": 463.48,
+      "before": {
+        "rssMiB": 561.7,
+        "heapUsedMiB": 11.05,
+        "externalMiB": 3.95,
+        "arrayBuffersMiB": 1.55
+      },
+      "sampledPeakRssMiB": 687.71,
+      "after": {
+        "rssMiB": 687.71,
+        "heapUsedMiB": 11.23,
+        "externalMiB": 32.3,
+        "arrayBuffersMiB": 29.24
+      },
+      "afterGc": {
+        "rssMiB": 669.58,
+        "heapUsedMiB": 10.22,
+        "externalMiB": 32.3,
+        "arrayBuffersMiB": 0.89
+      }
+    },
+    {
+      "run": 3,
+      "elapsedMs": 451.69,
+      "before": {
+        "rssMiB": 669.58,
+        "heapUsedMiB": 10.21,
+        "externalMiB": 3.95,
+        "arrayBuffersMiB": 0.89
+      },
+      "sampledPeakRssMiB": 886.89,
+      "after": {
+        "rssMiB": 839.38,
+        "heapUsedMiB": 10.28,
+        "externalMiB": 29.26,
+        "arrayBuffersMiB": 25.94
+      },
+      "afterGc": {
+        "rssMiB": 818.16,
+        "heapUsedMiB": 10,
+        "externalMiB": 29.26,
+        "arrayBuffersMiB": 0.64
+      }
+    },
+    {
+      "run": 4,
+      "elapsedMs": 503.92,
+      "before": {
+        "rssMiB": 818.16,
+        "heapUsedMiB": 9.98,
+        "externalMiB": 3.95,
+        "arrayBuffersMiB": 0.64
+      },
+      "sampledPeakRssMiB": 910.44,
+      "after": {
+        "rssMiB": 910.44,
+        "heapUsedMiB": 10.31,
+        "externalMiB": 29.26,
+        "arrayBuffersMiB": 25.53
+      },
+      "afterGc": {
+        "rssMiB": 891.26,
+        "heapUsedMiB": 10.01,
+        "externalMiB": 29.26,
+        "arrayBuffersMiB": 0.23
+      }
+    },
+    {
+      "run": 5,
+      "elapsedMs": 504.48,
+      "before": {
+        "rssMiB": 891.26,
+        "heapUsedMiB": 10,
+        "externalMiB": 3.95,
+        "arrayBuffersMiB": 0.23
+      },
+      "sampledPeakRssMiB": 974.77,
+      "after": {
+        "rssMiB": 680.53,
+        "heapUsedMiB": 11.11,
+        "externalMiB": 33.06,
+        "arrayBuffersMiB": 29.34
+      },
+      "afterGc": {
+        "rssMiB": 659.37,
+        "heapUsedMiB": 10.06,
+        "externalMiB": 33.06,
+        "arrayBuffersMiB": 0.23
+      }
+    },
+    {
+      "run": 6,
+      "elapsedMs": 477.66,
+      "before": {
+        "rssMiB": 659.37,
+        "heapUsedMiB": 10.03,
+        "externalMiB": 3.95,
+        "arrayBuffersMiB": 0.23
+      },
+      "sampledPeakRssMiB": 826.7,
+      "after": {
+        "rssMiB": 826.7,
+        "heapUsedMiB": 11.16,
+        "externalMiB": 34.4,
+        "arrayBuffersMiB": 30.68
+      },
+      "afterGc": {
+        "rssMiB": 808.6,
+        "heapUsedMiB": 10.09,
+        "externalMiB": 34.4,
+        "arrayBuffersMiB": 0.23
+      }
+    }
+  ]
+}

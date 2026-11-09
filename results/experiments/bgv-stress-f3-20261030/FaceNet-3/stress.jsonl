@@ -1,0 +1,3 @@
+{"enrollments":1,"merges":0,"capacity":24576,"row_noise_min":70,"query_noise":1,"wrong_slots":0,"wrong_packed_slots":0,"elapsed_ms":1199.0442}
+{"enrollments":2,"merges":1,"capacity":24576,"row_noise_min":69,"query_noise":0,"wrong_slots":0,"wrong_packed_slots":0,"elapsed_ms":2350.8195}
+{"enrollments":4,"merges":3,"capacity":24576,"row_noise_min":69,"query_noise":0,"wrong_slots":8192,"wrong_packed_slots":8192,"elapsed_ms":4124.9125}

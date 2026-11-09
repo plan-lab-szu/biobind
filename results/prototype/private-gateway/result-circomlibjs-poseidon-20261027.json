@@ -1,0 +1,87 @@
+{
+  "generatedAt": "2026-10-27T13:48:07.761Z",
+  "scope": "PrivateAuthGateway on local Ganache 7.9.2 (Shanghai), solc 0.8.36+commit.8a079791.Emscripten.clang; credential tree depth 20, device tree depth 10, root history 64; circomlibjs Poseidon contracts; real auth_private_128 Groth16 proofs",
+  "securityWarning": "Benchmark-only single-contributor Groth16 setup; software EdDSA and station keys; local fixture finalization source; synthetic vectors; never deploy.",
+  "gas": {
+    "poseidon2CallTx": 51081,
+    "gatewayDeployment": 5649283,
+    "registerDevice": [
+      528248,
+      471705,
+      471741
+    ],
+    "issue": [
+      1077424,
+      1020893,
+      1020881,
+      1015710,
+      1020917,
+      1015698,
+      1015686,
+      1010503,
+      1020905
+    ],
+    "revokeCredential": [
+      1369349,
+      1369315
+    ],
+    "revokeDevice": 719274,
+    "authenticate": [
+      {
+        "case": "oneTime",
+        "gas": 327174
+      },
+      {
+        "case": "appScoped",
+        "gas": 304794
+      },
+      {
+        "case": "appScopedAfterRevocation",
+        "gas": 304794
+      },
+      {
+        "case": "appScopedAfterDeviceRevocation",
+        "gas": 304794
+      }
+    ],
+    "issueChallenge": 140314
+  },
+  "checks": {
+    "poseidonMatchesCircomlibjs": true,
+    "deviceRootMatchesMirror": true,
+    "substitutedIdcRejected": "InvalidLink",
+    "receiptConsumedOnce": "InvalidSourceSession",
+    "credentialRootMatchesMirror": true,
+    "nonBeneficiarySenderRejected": "InvalidChallenge",
+    "sameScopeReplayRejected": "NullifierUsed",
+    "appPseudonymStable": true,
+    "oneTimeAndAppNullifiersDiffer": true,
+    "proofOnPreInsertionRootAccepted": true,
+    "preRevocationRootRejected": "InvalidRoot",
+    "unaffectedHolderReprovesOnNewRoot": true,
+    "credentialRootMatchesMirrorAfterRevocation": true,
+    "revokedHolderOldProofRejected": "InvalidRoot",
+    "revokedHolderCannotProveOnNewRoot": true,
+    "preDeviceRevocationRootRejected": "InvalidRoot",
+    "reissueKeepsAppPseudonym": true,
+    "mismatchedScopeRejected": "InvalidStatement",
+    "alteredNullifierRejected": "ProofRejected"
+  },
+  "proveMs": [
+    1807,
+    1520,
+    1360,
+    1270,
+    1594,
+    1380,
+    1367,
+    1343,
+    1432,
+    1323,
+    1438
+  ],
+  "runtimeBytes": {
+    "gateway": 7680,
+    "tree": 3442
+  }
+}

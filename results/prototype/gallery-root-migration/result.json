@@ -1,0 +1,68 @@
+{
+  "generatedAt": "2026-10-28T15:23:58.676Z",
+  "scope": "Gallery root migration rule I2(b) on the SCMV plaintext model; committee n=5, t=3, members 3 and 4 corrupt; synthetic vectors; no EVM",
+  "params": {
+    "L": 128,
+    "d": 4,
+    "n": 3,
+    "gamma": 128,
+    "T": "35729",
+    "tau": "8192",
+    "committee": {
+      "n": 5,
+      "t": 3,
+      "corrupt": [
+        3,
+        4
+      ]
+    }
+  },
+  "results": {
+    "honest": {
+      "rule": "migration",
+      "attack": "honest",
+      "attackOutcome": "Applied",
+      "secondEnrollmentOfAPassesDedup": false,
+      "onChainCountMatchesNode": true,
+      "onChainCommitmentsMatchNode": true
+    },
+    "dropEnrollment_callerRoot": {
+      "rule": "caller",
+      "attack": "drop",
+      "attackOutcome": "Applied",
+      "secondEnrollmentOfAPassesDedup": true,
+      "onChainCountMatchesNode": true,
+      "onChainCommitmentsMatchNode": true
+    },
+    "dropEnrollment_migration": {
+      "rule": "migration",
+      "attack": "drop",
+      "attackOutcome": "Rejected:InsufficientConfirmations",
+      "secondEnrollmentOfAPassesDedup": true,
+      "onChainCountMatchesNode": true,
+      "onChainCommitmentsMatchNode": true
+    },
+    "zeroEnrollment_migration": {
+      "rule": "migration",
+      "attack": "zero",
+      "attackOutcome": "Rejected:InsufficientConfirmations",
+      "secondEnrollmentOfAPassesDedup": true,
+      "onChainCountMatchesNode": true,
+      "onChainCommitmentsMatchNode": true
+    },
+    "outsiderAndDuplicateSignatures": {
+      "rule": "migration",
+      "attack": "outsider-and-duplicates",
+      "attackOutcome": "Rejected:InsufficientConfirmations",
+      "secondEnrollmentOfAPassesDedup": true,
+      "onChainCountMatchesNode": true,
+      "onChainCommitmentsMatchNode": true
+    },
+    "onChainChecks": {
+      "wrongSlot": "Rejected:SlotOrCount",
+      "appendWrongDigest": "Rejected:AppendMismatch",
+      "appendHonestWithoutCommittee": "Applied",
+      "staleUOld": "Rejected:StaleOrWrongBlock"
+    }
+  }
+}

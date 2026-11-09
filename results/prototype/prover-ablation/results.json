@@ -1,0 +1,646 @@
+{
+  "generatedAt": "2026-09-08T18:52:37.5358424+08:00",
+  "scope": "Groth16 prove-only ablation using an existing witness and proving key.",
+  "host": {
+    "os": "Microsoft Windows 11 专业版",
+    "cpu": "Intel(R) Core(TM) i9-9900T CPU @ 2.10GHz",
+    "logicalProcessors": 16,
+    "totalMemoryGiB": 31.79,
+    "node": "v24.19.0",
+    "snarkjs": "0.7.6"
+  },
+  "modes": {
+    "coldDefaultMulti": "One proof per Node process; snarkjs default worker count.",
+    "coldSingleThread": "One proof per Node process; snarkjs prover option singleThread=true.",
+    "warmDefaultMulti": "Repeated proofs in one Node process; run 1 initializes the cached curve/workers and runs 2..N are steady-state."
+  },
+  "nativeBackend": {
+    "rapidsnarkAvailable": false,
+    "measured": false,
+    "note": "No rapidsnark executable or local C/C++ build toolchain; WSL is present without an installed Linux distribution. No native number is estimated."
+  },
+  "results": [
+    {
+      "circuit": "auth_distance_128",
+      "coldDefaultMulti": {
+        "workerConcurrency": 16,
+        "repetitions": 5,
+        "medianElapsedMs": 798.05,
+        "medianPeakWorkingSetMiB": 580.77,
+        "source": "build/proving/results.json"
+      },
+      "coldSingleThread": {
+        "workerConcurrency": 1,
+        "repetitions": 5,
+        "elapsedMs": [
+          1879.68,
+          1846.76,
+          2290.7,
+          2098.16,
+          2028.86
+        ],
+        "medianElapsedMs": 2028.86,
+        "peakWorkingSetMiB": [
+          161.36,
+          161.26,
+          161.36,
+          161.18,
+          171.06
+        ],
+        "medianPeakWorkingSetMiB": 161.36,
+        "proofVerified": true
+      },
+      "coldWorkerGrid": [
+        {
+          "workerConcurrency": 1,
+          "repetitions": 5,
+          "elapsedMs": [
+            1879.68,
+            1846.76,
+            2290.7,
+            2098.16,
+            2028.86
+          ],
+          "medianElapsedMs": 2028.86,
+          "peakWorkingSetMiB": [
+            161.36,
+            161.26,
+            161.36,
+            161.18,
+            171.06
+          ],
+          "medianPeakWorkingSetMiB": 161.36,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "snarkjs singleThread=true"
+        },
+        {
+          "workerConcurrency": 2,
+          "repetitions": 5,
+          "elapsedMs": [
+            1834.57,
+            1665.97,
+            1508.41,
+            1392.38,
+            1372.87
+          ],
+          "medianElapsedMs": 1508.41,
+          "peakWorkingSetMiB": [
+            253.92,
+            253.9,
+            253.38,
+            251.13,
+            254.42
+          ],
+          "medianPeakWorkingSetMiB": 253.9,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "os.cpus() limited before importing snarkjs/ffjavascript in an isolated process"
+        },
+        {
+          "workerConcurrency": 4,
+          "repetitions": 5,
+          "elapsedMs": [
+            1185.0,
+            1212.9,
+            1163.9,
+            1110.36,
+            1158.74
+          ],
+          "medianElapsedMs": 1163.9,
+          "peakWorkingSetMiB": [
+            383.86,
+            398.46,
+            405.45,
+            401.58,
+            404.61
+          ],
+          "medianPeakWorkingSetMiB": 401.58,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "os.cpus() limited before importing snarkjs/ffjavascript in an isolated process"
+        },
+        {
+          "workerConcurrency": 8,
+          "repetitions": 5,
+          "elapsedMs": [
+            860.62,
+            880.16,
+            849.41,
+            846.7,
+            966.01
+          ],
+          "medianElapsedMs": 860.62,
+          "peakWorkingSetMiB": [
+            465.02,
+            464.82,
+            464.13,
+            464.43,
+            465.28
+          ],
+          "medianPeakWorkingSetMiB": 464.82,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "os.cpus() limited before importing snarkjs/ffjavascript in an isolated process"
+        },
+        {
+          "workerConcurrency": 16,
+          "repetitions": 5,
+          "elapsedMs": [
+            777.93,
+            820.62,
+            768.4,
+            798.05,
+            842.55
+          ],
+          "medianElapsedMs": 798.05,
+          "peakWorkingSetMiB": [
+            580.77,
+            584.57,
+            580.0,
+            576.26,
+            582.14
+          ],
+          "medianPeakWorkingSetMiB": 580.77,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "snarkjs/ffjavascript default"
+        }
+      ],
+      "warmDefaultMulti": {
+        "workerConcurrency": 16,
+        "repetitions": 6,
+        "firstElapsedMs": 977.79,
+        "steadyElapsedMs": [
+          463.48,
+          451.69,
+          503.92,
+          504.48,
+          477.66
+        ],
+        "medianSteadyElapsedMs": 477.66,
+        "steadySampledPeakRssMiB": [
+          687.71,
+          886.89,
+          910.44,
+          974.77,
+          826.7
+        ],
+        "medianSteadySampledPeakRssMiB": 886.89,
+        "processPeakWorkingSetMiB": 971.82,
+        "perRun": [
+          {
+            "run": 1,
+            "elapsedMs": 977.79,
+            "before": {
+              "rssMiB": 57.98,
+              "heapUsedMiB": 9.37,
+              "externalMiB": 2.49,
+              "arrayBuffersMiB": 0.14
+            },
+            "sampledPeakRssMiB": 579.82,
+            "after": {
+              "rssMiB": 579.82,
+              "heapUsedMiB": 12.26,
+              "externalMiB": 33.07,
+              "arrayBuffersMiB": 30.66
+            },
+            "afterGc": {
+              "rssMiB": 561.7,
+              "heapUsedMiB": 11.09,
+              "externalMiB": 33.07,
+              "arrayBuffersMiB": 1.55
+            }
+          },
+          {
+            "run": 2,
+            "elapsedMs": 463.48,
+            "before": {
+              "rssMiB": 561.7,
+              "heapUsedMiB": 11.05,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 1.55
+            },
+            "sampledPeakRssMiB": 687.71,
+            "after": {
+              "rssMiB": 687.71,
+              "heapUsedMiB": 11.23,
+              "externalMiB": 32.3,
+              "arrayBuffersMiB": 29.24
+            },
+            "afterGc": {
+              "rssMiB": 669.58,
+              "heapUsedMiB": 10.22,
+              "externalMiB": 32.3,
+              "arrayBuffersMiB": 0.89
+            }
+          },
+          {
+            "run": 3,
+            "elapsedMs": 451.69,
+            "before": {
+              "rssMiB": 669.58,
+              "heapUsedMiB": 10.21,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.89
+            },
+            "sampledPeakRssMiB": 886.89,
+            "after": {
+              "rssMiB": 839.38,
+              "heapUsedMiB": 10.28,
+              "externalMiB": 29.26,
+              "arrayBuffersMiB": 25.94
+            },
+            "afterGc": {
+              "rssMiB": 818.16,
+              "heapUsedMiB": 10,
+              "externalMiB": 29.26,
+              "arrayBuffersMiB": 0.64
+            }
+          },
+          {
+            "run": 4,
+            "elapsedMs": 503.92,
+            "before": {
+              "rssMiB": 818.16,
+              "heapUsedMiB": 9.98,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.64
+            },
+            "sampledPeakRssMiB": 910.44,
+            "after": {
+              "rssMiB": 910.44,
+              "heapUsedMiB": 10.31,
+              "externalMiB": 29.26,
+              "arrayBuffersMiB": 25.53
+            },
+            "afterGc": {
+              "rssMiB": 891.26,
+              "heapUsedMiB": 10.01,
+              "externalMiB": 29.26,
+              "arrayBuffersMiB": 0.23
+            }
+          },
+          {
+            "run": 5,
+            "elapsedMs": 504.48,
+            "before": {
+              "rssMiB": 891.26,
+              "heapUsedMiB": 10,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.23
+            },
+            "sampledPeakRssMiB": 974.77,
+            "after": {
+              "rssMiB": 680.53,
+              "heapUsedMiB": 11.11,
+              "externalMiB": 33.06,
+              "arrayBuffersMiB": 29.34
+            },
+            "afterGc": {
+              "rssMiB": 659.37,
+              "heapUsedMiB": 10.06,
+              "externalMiB": 33.06,
+              "arrayBuffersMiB": 0.23
+            }
+          },
+          {
+            "run": 6,
+            "elapsedMs": 477.66,
+            "before": {
+              "rssMiB": 659.37,
+              "heapUsedMiB": 10.03,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.23
+            },
+            "sampledPeakRssMiB": 826.7,
+            "after": {
+              "rssMiB": 826.7,
+              "heapUsedMiB": 11.16,
+              "externalMiB": 34.4,
+              "arrayBuffersMiB": 30.68
+            },
+            "afterGc": {
+              "rssMiB": 808.6,
+              "heapUsedMiB": 10.09,
+              "externalMiB": 34.4,
+              "arrayBuffersMiB": 0.23
+            }
+          }
+        ],
+        "proofVerified": true
+      },
+      "comparisons": {
+        "singleThreadMemoryReductionPercent": 72.22,
+        "singleThreadTimeMultiplier": 2.54,
+        "warmSteadySpeedupOverColdDefault": 1.67
+      }
+    },
+    {
+      "circuit": "auth_distance_512",
+      "coldDefaultMulti": {
+        "workerConcurrency": 16,
+        "repetitions": 5,
+        "medianElapsedMs": 1530.08,
+        "medianPeakWorkingSetMiB": 1087.78,
+        "source": "build/proving/results.json"
+      },
+      "coldSingleThread": {
+        "workerConcurrency": 1,
+        "repetitions": 5,
+        "elapsedMs": [
+          5505.93,
+          5051.83,
+          5147.02,
+          5147.43,
+          5155.25
+        ],
+        "medianElapsedMs": 5147.43,
+        "peakWorkingSetMiB": [
+          242.39,
+          246.49,
+          248.6,
+          242.67,
+          248.59
+        ],
+        "medianPeakWorkingSetMiB": 246.49,
+        "proofVerified": true
+      },
+      "coldWorkerGrid": [
+        {
+          "workerConcurrency": 1,
+          "repetitions": 5,
+          "elapsedMs": [
+            5505.93,
+            5051.83,
+            5147.02,
+            5147.43,
+            5155.25
+          ],
+          "medianElapsedMs": 5147.43,
+          "peakWorkingSetMiB": [
+            242.39,
+            246.49,
+            248.6,
+            242.67,
+            248.59
+          ],
+          "medianPeakWorkingSetMiB": 246.49,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "snarkjs singleThread=true"
+        },
+        {
+          "workerConcurrency": 2,
+          "repetitions": 5,
+          "elapsedMs": [
+            3208.96,
+            3444.19,
+            3271.75,
+            3398.16,
+            3261.98
+          ],
+          "medianElapsedMs": 3271.75,
+          "peakWorkingSetMiB": [
+            326.87,
+            309.97,
+            325.54,
+            326.19,
+            311.13
+          ],
+          "medianPeakWorkingSetMiB": 325.54,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "os.cpus() limited before importing snarkjs/ffjavascript in an isolated process"
+        },
+        {
+          "workerConcurrency": 4,
+          "repetitions": 5,
+          "elapsedMs": [
+            2124.46,
+            2261.49,
+            2166.63,
+            2088.88,
+            2092.24
+          ],
+          "medianElapsedMs": 2124.46,
+          "peakWorkingSetMiB": [
+            445.57,
+            457.66,
+            456.17,
+            445.45,
+            446.32
+          ],
+          "medianPeakWorkingSetMiB": 446.32,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "os.cpus() limited before importing snarkjs/ffjavascript in an isolated process"
+        },
+        {
+          "workerConcurrency": 8,
+          "repetitions": 5,
+          "elapsedMs": [
+            1661.31,
+            1690.54,
+            1726.73,
+            1626.07,
+            1679.19
+          ],
+          "medianElapsedMs": 1679.19,
+          "peakWorkingSetMiB": [
+            677.09,
+            692.79,
+            698.33,
+            681.99,
+            695.53
+          ],
+          "medianPeakWorkingSetMiB": 692.79,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "os.cpus() limited before importing snarkjs/ffjavascript in an isolated process"
+        },
+        {
+          "workerConcurrency": 16,
+          "repetitions": 5,
+          "elapsedMs": [
+            1510.29,
+            1469.53,
+            1542.37,
+            1688.63,
+            1530.08
+          ],
+          "medianElapsedMs": 1530.08,
+          "peakWorkingSetMiB": [
+            1087.78,
+            1089.04,
+            1087.41,
+            1086.7,
+            1089.48
+          ],
+          "medianPeakWorkingSetMiB": 1087.78,
+          "representativeProofVerified": true,
+          "workerLimitMethod": "snarkjs/ffjavascript default"
+        }
+      ],
+      "warmDefaultMulti": {
+        "workerConcurrency": 16,
+        "repetitions": 6,
+        "firstElapsedMs": 1541.76,
+        "steadyElapsedMs": [
+          1197.4,
+          1162.19,
+          1099.24,
+          1072.88,
+          1061.94
+        ],
+        "medianSteadyElapsedMs": 1099.24,
+        "steadySampledPeakRssMiB": [
+          1260.38,
+          1153.43,
+          1378.29,
+          1181.18,
+          1236.95
+        ],
+        "medianSteadySampledPeakRssMiB": 1236.95,
+        "processPeakWorkingSetMiB": 1403.78,
+        "perRun": [
+          {
+            "run": 1,
+            "elapsedMs": 1541.76,
+            "before": {
+              "rssMiB": 57.97,
+              "heapUsedMiB": 9.37,
+              "externalMiB": 2.49,
+              "arrayBuffersMiB": 0.14
+            },
+            "sampledPeakRssMiB": 1085.36,
+            "after": {
+              "rssMiB": 827.07,
+              "heapUsedMiB": 10.21,
+              "externalMiB": 69.34,
+              "arrayBuffersMiB": 66.36
+            },
+            "afterGc": {
+              "rssMiB": 762.63,
+              "heapUsedMiB": 9.91,
+              "externalMiB": 69.34,
+              "arrayBuffersMiB": 0.97
+            }
+          },
+          {
+            "run": 2,
+            "elapsedMs": 1197.4,
+            "before": {
+              "rssMiB": 762.63,
+              "heapUsedMiB": 9.88,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.97
+            },
+            "sampledPeakRssMiB": 1260.38,
+            "after": {
+              "rssMiB": 681.37,
+              "heapUsedMiB": 10.58,
+              "externalMiB": 76.96,
+              "arrayBuffersMiB": 73.23
+            },
+            "afterGc": {
+              "rssMiB": 608.23,
+              "heapUsedMiB": 9.93,
+              "externalMiB": 76.96,
+              "arrayBuffersMiB": 0.23
+            }
+          },
+          {
+            "run": 3,
+            "elapsedMs": 1162.19,
+            "before": {
+              "rssMiB": 608.23,
+              "heapUsedMiB": 9.92,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.23
+            },
+            "sampledPeakRssMiB": 1153.43,
+            "after": {
+              "rssMiB": 858.64,
+              "heapUsedMiB": 10.47,
+              "externalMiB": 72.7,
+              "arrayBuffersMiB": 68.98
+            },
+            "afterGc": {
+              "rssMiB": 788.23,
+              "heapUsedMiB": 9.97,
+              "externalMiB": 72.7,
+              "arrayBuffersMiB": 0.23
+            }
+          },
+          {
+            "run": 4,
+            "elapsedMs": 1099.24,
+            "before": {
+              "rssMiB": 788.23,
+              "heapUsedMiB": 9.95,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.23
+            },
+            "sampledPeakRssMiB": 1378.29,
+            "after": {
+              "rssMiB": 1119.91,
+              "heapUsedMiB": 11.22,
+              "externalMiB": 92.1,
+              "arrayBuffersMiB": 88.38
+            },
+            "afterGc": {
+              "rssMiB": 1030.25,
+              "heapUsedMiB": 9.97,
+              "externalMiB": 69.34,
+              "arrayBuffersMiB": 0.23
+            }
+          },
+          {
+            "run": 5,
+            "elapsedMs": 1072.88,
+            "before": {
+              "rssMiB": 1030.25,
+              "heapUsedMiB": 9.96,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.23
+            },
+            "sampledPeakRssMiB": 1181.18,
+            "after": {
+              "rssMiB": 857.88,
+              "heapUsedMiB": 10.47,
+              "externalMiB": 72.7,
+              "arrayBuffersMiB": 68.98
+            },
+            "afterGc": {
+              "rssMiB": 781.44,
+              "heapUsedMiB": 10,
+              "externalMiB": 72.7,
+              "arrayBuffersMiB": 0.23
+            }
+          },
+          {
+            "run": 6,
+            "elapsedMs": 1061.94,
+            "before": {
+              "rssMiB": 781.44,
+              "heapUsedMiB": 9.99,
+              "externalMiB": 3.95,
+              "arrayBuffersMiB": 0.23
+            },
+            "sampledPeakRssMiB": 1236.95,
+            "after": {
+              "rssMiB": 1198.55,
+              "heapUsedMiB": 10.55,
+              "externalMiB": 72.7,
+              "arrayBuffersMiB": 68.98
+            },
+            "afterGc": {
+              "rssMiB": 1113.09,
+              "heapUsedMiB": 10.07,
+              "externalMiB": 72.7,
+              "arrayBuffersMiB": 0.23
+            }
+          }
+        ],
+        "proofVerified": true
+      },
+      "comparisons": {
+        "singleThreadMemoryReductionPercent": 77.34,
+        "singleThreadTimeMultiplier": 3.36,
+        "warmSteadySpeedupOverColdDefault": 1.39
+      }
+    }
+  ]
+}

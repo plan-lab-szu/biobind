@@ -1,0 +1,11 @@
+ERROR:  4 Error in template AuthDistance_154 line: 61
+
+[31;22m[ERROR] [39;1msnarkJS[0m: Error: Error: Assert Failed. Error in template AuthDistance_154 line: 61
+
+    at C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\circom_runtime\build\main.cjs:529:27
+    at Array.forEach (<anonymous>)
+    at WitnessCalculatorCircom2._doCalculateWitness (C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\circom_runtime\build\main.cjs:500:14)
+    at WitnessCalculatorCircom2.calculateWTNSBin (C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\circom_runtime\build\main.cjs:559:20)
+    at wtnsCalculate$1 (C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\snarkjs\build\cli.cjs:6100:28)
+    at async Object.wtnsCalculate [as action] (C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\snarkjs\build\cli.cjs:12925:5)
+    at async clProcessor (C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\snarkjs\build\cli.cjs:519:27)

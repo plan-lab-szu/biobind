@@ -1,0 +1,213 @@
+{
+  "generatedAt": "2026-09-08T09:40:05.817Z",
+  "scope": "Same-harness BN254 verification kernel for six legacy Pedersen consistency equations per sampled coordinate plus full-vector distance commitment reconstruction. It excludes Fiat-Shamir sample derivation, enrollment storage, nonce state, and the legacy threshold Groth16 verifier.",
+  "securityWarning": "The benchmark uses H=5G so valid points can be generated deterministically. This is insecure for a real Pedersen commitment but has the same EVM group-operation cost.",
+  "dimension": 128,
+  "compiler": "0.8.36+commit.8a079791.Emscripten.clang",
+  "optimizerRuns": 200,
+  "evmVersion": "shanghai",
+  "chain": "Ganache 7.9.2, chain id 31337",
+  "repetitions": 3,
+  "deployment": {
+    "gasUsed": 541007,
+    "initCodeBytes": 2413,
+    "runtimeCodeBytes": 2247
+  },
+  "operationCountPerSample": {
+    "consistencyEquations": 6,
+    "bn254ScalarMultiplications": 18,
+    "bn254Additions": 12
+  },
+  "fixedDistanceReconstruction": {
+    "coordinates": 128,
+    "bn254AdditionsPerCoordinate": 4
+  },
+  "results": [
+    {
+      "label": "reconstruction-only",
+      "lambda": null,
+      "samples": 0,
+      "oneBadCoordinateDetection": 0,
+      "repetitions": 3,
+      "accepted": true,
+      "modifiedResponseRejected": null,
+      "unsampledTargetTamperAccepted": true,
+      "distanceReconstructionMatches": true,
+      "gasUsed": [
+        999981,
+        999981,
+        999981
+      ],
+      "medianGasUsed": 999981,
+      "gasEstimated": [
+        1594193,
+        1594193,
+        1594193
+      ],
+      "medianGasEstimated": 1594193,
+      "calldata": {
+        "bytes": 24900,
+        "zeroBytes": 421,
+        "nonzeroBytes": 24479,
+        "gas": 393348
+      },
+      "intrinsicGas": 414348,
+      "medianExecutionGasAfterIntrinsic": 585633
+    },
+    {
+      "label": "lambda-1",
+      "lambda": 1,
+      "samples": 7,
+      "oneBadCoordinateDetection": 0.0546875,
+      "repetitions": 3,
+      "accepted": true,
+      "modifiedResponseRejected": true,
+      "unsampledTargetTamperAccepted": true,
+      "distanceReconstructionMatches": true,
+      "gasUsed": [
+        1988454,
+        1988454,
+        1988454
+      ],
+      "medianGasUsed": 1988454,
+      "gasEstimated": [
+        2152485,
+        2152485,
+        2152485
+      ],
+      "medianGasEstimated": 2152485,
+      "calldata": {
+        "bytes": 30724,
+        "zeroBytes": 1912,
+        "nonzeroBytes": 28812,
+        "gas": 468640
+      },
+      "intrinsicGas": 489640,
+      "medianExecutionGasAfterIntrinsic": 1498814
+    },
+    {
+      "label": "lambda-2",
+      "lambda": 2,
+      "samples": 14,
+      "oneBadCoordinateDetection": 0.109375,
+      "repetitions": 3,
+      "accepted": true,
+      "modifiedResponseRejected": true,
+      "unsampledTargetTamperAccepted": true,
+      "distanceReconstructionMatches": true,
+      "gasUsed": [
+        2984186,
+        2984186,
+        2984186
+      ],
+      "medianGasUsed": 2984186,
+      "gasEstimated": [
+        2987255,
+        2987255,
+        2987255
+      ],
+      "medianGasEstimated": 2987255,
+      "calldata": {
+        "bytes": 36548,
+        "zeroBytes": 3412,
+        "nonzeroBytes": 33136,
+        "gas": 543824
+      },
+      "intrinsicGas": 564824,
+      "medianExecutionGasAfterIntrinsic": 2419362
+    },
+    {
+      "label": "lambda-4",
+      "lambda": 4,
+      "samples": 28,
+      "oneBadCoordinateDetection": 0.21875,
+      "repetitions": 3,
+      "accepted": true,
+      "modifiedResponseRejected": true,
+      "unsampledTargetTamperAccepted": true,
+      "distanceReconstructionMatches": true,
+      "gasUsed": [
+        4997901,
+        4997901,
+        4997901
+      ],
+      "medianGasUsed": 4997901,
+      "gasEstimated": [
+        5000863,
+        5000863,
+        5000863
+      ],
+      "medianGasEstimated": 5000863,
+      "calldata": {
+        "bytes": 48196,
+        "zeroBytes": 6396,
+        "nonzeroBytes": 41800,
+        "gas": 694384
+      },
+      "intrinsicGas": 715384,
+      "medianExecutionGasAfterIntrinsic": 4282517
+    },
+    {
+      "label": "lambda-8",
+      "lambda": 8,
+      "samples": 56,
+      "oneBadCoordinateDetection": 0.4375,
+      "repetitions": 3,
+      "accepted": true,
+      "modifiedResponseRejected": true,
+      "unsampledTargetTamperAccepted": true,
+      "distanceReconstructionMatches": true,
+      "gasUsed": [
+        9113567,
+        9113567,
+        9113567
+      ],
+      "medianGasUsed": 9113567,
+      "gasEstimated": [
+        9116315,
+        9116315,
+        9116315
+      ],
+      "medianGasEstimated": 9116315,
+      "calldata": {
+        "bytes": 71492,
+        "zeroBytes": 12364,
+        "nonzeroBytes": 59128,
+        "gas": 995504
+      },
+      "intrinsicGas": 1016504,
+      "medianExecutionGasAfterIntrinsic": 8097063
+    },
+    {
+      "label": "full-check",
+      "lambda": null,
+      "samples": 128,
+      "oneBadCoordinateDetection": 1,
+      "repetitions": 3,
+      "accepted": true,
+      "modifiedResponseRejected": true,
+      "unsampledTargetTamperAccepted": false,
+      "distanceReconstructionMatches": true,
+      "gasUsed": [
+        20237503,
+        20237503,
+        20237503
+      ],
+      "medianGasUsed": 20237503,
+      "gasEstimated": [
+        20239700,
+        20239700,
+        20239700
+      ],
+      "medianGasEstimated": 20239700,
+      "calldata": {
+        "bytes": 131396,
+        "zeroBytes": 27663,
+        "nonzeroBytes": 103733,
+        "gas": 1770380
+      },
+      "intrinsicGas": 1791380,
+      "medianExecutionGasAfterIntrinsic": 18446123
+    }
+  ]
+}

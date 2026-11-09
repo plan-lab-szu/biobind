@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-10-27T16:10:52.531Z",
+  "rounds": 5,
+  "warmupDiscarded": 1,
+  "results": [
+    {
+      "circuit": "auth_private_512_b12",
+      "wide": false,
+      "devDepth": 10,
+      "witnessMs": [
+        322,
+        297,
+        297,
+        279,
+        301
+      ],
+      "proveMs": [
+        1841,
+        1809,
+        1743,
+        1761,
+        1728
+      ],
+      "witnessMedianMs": 297,
+      "proveMedianMs": 1761,
+      "totalMedianMs": 2040
+    },
+    {
+      "circuit": "auth_private_v2_512_b12",
+      "wide": true,
+      "devDepth": 10,
+      "witnessMs": [
+        416,
+        414,
+        403,
+        433,
+        383
+      ],
+      "proveMs": [
+        1334,
+        1310,
+        1264,
+        1321,
+        1235
+      ],
+      "witnessMedianMs": 414,
+      "proveMedianMs": 1310,
+      "totalMedianMs": 1724
+    },
+    {
+      "circuit": "auth_private_v2_512_b12_dev20",
+      "wide": true,
+      "devDepth": 20,
+      "witnessMs": [
+        427,
+        423,
+        360,
+        404,
+        447
+      ],
+      "proveMs": [
+        1485,
+        1390,
+        1327,
+        1282,
+        1354
+      ],
+      "witnessMedianMs": 423,
+      "proveMedianMs": 1354,
+      "totalMedianMs": 1801
+    }
+  ]
+}

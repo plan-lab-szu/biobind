@@ -1,0 +1,9 @@
+{
+  "status": "new hidden controller; all subprocess levels explicitly CREATE_NO_WINDOW; acceptance pending",
+  "controllerPID": 14768,
+  "executable": "C:/Users/wangt/AppData/Local/BioBindResearchTools/bgv-build-unified-20261031-runtime-r2/bgv-measure.exe",
+  "resultDirectory": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\results\\bgv-unified-20261031-runtime-r3",
+  "script": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r3\\run-full.py",
+  "startedAt": "2026-10-31T13:33:51.5363150+08:00",
+  "scratchDirectory": "C:/Users/wangt/AppData/Local/BioBindResearchTools/bgv-unified-20261031-runtime-r3"
+}

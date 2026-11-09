@@ -1,0 +1,8 @@
+{
+  "controllerPID": 25568,
+  "resultDirectory": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\results\\bgv-unified-20261031-resumed",
+  "scratchDirectory": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-unified-20261031-resumed",
+  "executable": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-build-unified-20261031\\bgv-measure.exe",
+  "script": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031\\run-full.py",
+  "status": "launched; acceptance pending"
+}

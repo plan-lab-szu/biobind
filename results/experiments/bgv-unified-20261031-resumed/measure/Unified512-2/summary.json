@@ -1,0 +1,73 @@
+{
+  "profile": "Unified512-2",
+  "samples": 5,
+  "allChecksPass": true,
+  "medians": {
+    "enroll_construct_ms": 1.1845,
+    "enroll_encode_ms": 50.0365,
+    "enroll_encrypt_ms": 2231.6213,
+    "query_construct_ms": 1.1657,
+    "query_encode_ms": 48.3412,
+    "query_encrypt_ms": 2136.591,
+    "save_none_ms": 191.6397,
+    "save_default_ms": 702.6847,
+    "load_two_ms": 280.194,
+    "add_ms": 35.3561,
+    "save_merge_ms": 206.092,
+    "query_evaluation_ms": 295.7264,
+    "none_bytes": 201388584,
+    "default_bytes": 188627258,
+    "framing_bytes": 4136,
+    "enroll_total_ms": 2283.3215999999998,
+    "query_encrypt_total_ms": 2186.3719
+  },
+  "minimumQueryNoiseBits": 31,
+  "binaryEvidence": [
+    {
+      "file": "tail.bin",
+      "bytes": 201388584,
+      "sha256": "945255d58a4f321d78e93765a3a9d342e156bdb2da2f59850dc512cd72a546e6",
+      "keccak256": "cf86cba18e5bde2c2dfd72c30853de73fad3e591483244f9f2a29ad4079cd596",
+      "keccak_ms_with_warmup": [
+        746.2808000000223,
+        705.8968000001187,
+        734.0222000000267,
+        726.1863000001085,
+        725.6878999999117,
+        701.6267999999855
+      ],
+      "median_keccak_ms": 725.6878999999117
+    },
+    {
+      "file": "enrollment.bin",
+      "bytes": 201388584,
+      "sha256": "8ce64c00ee07d456f2a9859081ee0c734cc91756b77b799ba9a30fba58c59f96",
+      "keccak256": "6b413e66c1ae822bab2a49a8cbe602f1a49f44c82712cc3ae751edc794a673cf",
+      "keccak_ms_with_warmup": [
+        730.3239000000303,
+        691.6636000000835,
+        697.6159999999254,
+        683.5266000000502,
+        695.1515999999174,
+        685.1097000001118
+      ],
+      "median_keccak_ms": 691.6636000000835
+    },
+    {
+      "file": "merged.bin",
+      "bytes": 201388584,
+      "sha256": "9d20c27f3c465e70259dd4c52a517e8b876baa57572ec8a63e4024ff72803edb",
+      "keccak256": "99313568e99c3c5135c0b7954b017b06416440904e9fe0a3eb5c8ba8745aa72a",
+      "keccak_ms_with_warmup": [
+        697.3734000000604,
+        711.6484000000582,
+        693.3532999998988,
+        693.781799999897,
+        702.0390999998654,
+        690.0832000001174
+      ],
+      "median_keccak_ms": 693.781799999897
+    }
+  ],
+  "binaryRetention": "Full ciphertexts retained in local external binary-dir; hashes portable. No keys exported."
+}

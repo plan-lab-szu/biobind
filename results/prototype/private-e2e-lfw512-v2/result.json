@@ -1,0 +1,102 @@
+{
+  "generatedAt": "2026-10-27T16:25:40.177Z",
+  "scope": "BioBind private profile end to end, recommended configuration: real LFW features (InceptionResnetV1 VGGFace2, 512-D), 12-bit coordinates (Gamma 2047), commitment format v2, device tree depth 20; local Ganache 7.9.2 (Shanghai), solc 0.8.36+commit.8a079791.Emscripten.clang: MCU packet, R1 bridge, BioZKFHEEnrollmentSourceCompact (t=3 of 5 simulated committee, SCMV L=512), adapter, PrivateAuthGateway (PoseidonT3 trees), auth_private_v2_512_b12_dev20 proofs; epsilon 5253245; dedup tau 2777020 (LFW-calibrated, FMR<=1e-4)",
+  "demoSelection": {
+    "personA": "Aaron_Peirsol",
+    "personB": "Abdullah",
+    "images": {
+      "A_enroll": "Aaron_Peirsol/Aaron_Peirsol_0001.jpg",
+      "A_probe": "Aaron_Peirsol/Aaron_Peirsol_0003.jpg",
+      "A_reenroll": "Aaron_Peirsol/Aaron_Peirsol_0004.jpg",
+      "B_enroll": "Abdullah/Abdullah_0001.jpg",
+      "B_probe": "Abdullah/Abdullah_0002.jpg"
+    },
+    "cosine": {
+      "A_enroll~A_probe": 0.8579316138621169,
+      "A_enroll~A_reenroll": 0.6160637911911921,
+      "A_enroll~B_probe": -0.27879906401448173,
+      "B_enroll~B_probe": 0.7738307980353045
+    },
+    "rule": "Export real LFW feature vectors for the 512-D private-circuit demos.\n\nSelection rule (fixed, deterministic; this is a demonstration, not an accuracy\nestimate -- accuracy comes from the View 2 protocol in score_and_analyze.py):\n  * candidates are identities with >= 3 images among the extracted View 2 images;\n  * person A: alphabetically first candidate whose three first images have all\n    pairwise cosine similarities >= 0.6 (enrollment, probe, re-enrollment);\n  * person B: next candidate with the same property and cosine < 0.2 to A's images."
+  },
+  "securityWarning": "Simulated committee (PVSC, coverage, threshold decryption not executed and not in gas); software MCU/bridge/AFE keys; benchmark-only Groth16 setup; synthetic vectors; never deploy.",
+  "enrollments": [
+    {
+      "person": "A",
+      "status": "Finalized",
+      "createSession": 78385,
+      "bindRequest": 47643,
+      "finalize": 153692,
+      "merge": false,
+      "issue": 913054,
+      "total": 1192774
+    },
+    {
+      "person": "B",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48087,
+      "finalize": 119398,
+      "merge": true,
+      "issue": 856559,
+      "total": 1085329
+    },
+    {
+      "person": "A",
+      "status": "Finalized",
+      "createSession": 61285,
+      "bindRequest": 48075,
+      "finalize": 119422,
+      "merge": true,
+      "issue": 856547,
+      "total": 1085329
+    }
+  ],
+  "checks": {
+    "idcSubstitutionRejected": "rejected",
+    "hostChosenCommitmentRejected": "rejected",
+    "reenrollmentOutcomeFollowsThreshold": true,
+    "credentialRootMatchesMirror": true,
+    "genuineAccepted": true,
+    "appPseudonymStableForA": true,
+    "pseudonymsDifferAcrossHolders": true,
+    "impostorRejectedAtWitness": true
+  },
+  "reenrollment": {
+    "innerProduct": "2580826",
+    "tau": "2777020",
+    "status": "Finalized",
+    "outcome": "MISSED duplicate: A holds two credentials"
+  },
+  "authentications": {
+    "A1": {
+      "accepted": true,
+      "gas": 305072,
+      "challengeGas": 140577,
+      "proveMs": 2347,
+      "distance": "1191545",
+      "nullifier": "15634407061487910081670065221746535431840242393880455175924428875345275930657"
+    },
+    "A2": {
+      "accepted": true,
+      "gas": 305072,
+      "challengeGas": 123477,
+      "proveMs": 1894,
+      "distance": "3220679",
+      "nullifier": "15634407061487910081670065221746535431840242393880455175924428875345275930657"
+    },
+    "B": {
+      "accepted": true,
+      "gas": 305060,
+      "challengeGas": 123477,
+      "proveMs": 1867,
+      "distance": "1894837",
+      "nullifier": "19383430568789416251902353301751665180880699582623474412033971970189642580572"
+    },
+    "impostorOnA": {
+      "accepted": false,
+      "witness": "rejected",
+      "distance": "10717782"
+    }
+  }
+}

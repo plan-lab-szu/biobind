@@ -1,0 +1,52 @@
+TAP version 13
+# This version of µWS is not compatible with your Node.js build:
+# Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+# Require stack:
+# - C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\prototype\\route-a\\node_modules\\ganache\\node_modules\\@trufflesuite\\uws-js-unofficial\\src\\uws.js
+# - C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\prototype\\route-a\\node_modules\\ganache\\dist\\node\\core.js
+# Falling back to a NodeJS implementation; performance may be degraded.
+# Subtest: integrated chain consumes receipt, validates capture, and atomically consumes freshness
+ok 1 - integrated chain consumes receipt, validates capture, and atomically consumes freshness
+  ---
+  duration_ms: 6170.0063
+  type: 'test'
+  ...
+# Subtest: device revocation ordered before submission rejects a prepared authentication
+ok 2 - device revocation ordered before submission rejects a prepared authentication
+  ---
+  duration_ms: 4836.7331
+  type: 'test'
+  ...
+# Subtest: device rotation invalidates old capture and admits a compatible new device
+ok 3 - device rotation invalidates old capture and admits a compatible new device
+  ---
+  duration_ms: 5637.6069
+  type: 'test'
+  ...
+# Subtest: credential revocation ordered before submission rejects a prepared authentication
+ok 4 - credential revocation ordered before submission rejects a prepared authentication
+  ---
+  duration_ms: 4669.8417
+  type: 'test'
+  ...
+# Subtest: match threshold is explicit, immutable, authorized, and checked before consuming freshness
+ok 5 - match threshold is explicit, immutable, authorized, and checked before consuming freshness
+  ---
+  duration_ms: 5665.4668
+  type: 'test'
+  ...
+# Subtest: canonical policy commits application and threshold and replacement revokes old credentials
+ok 6 - canonical policy commits application and threshold and replacement revokes old credentials
+  ---
+  duration_ms: 4864.2516
+  type: 'test'
+  ...
+1..6
+# tests 6
+# suites 0
+# pass 6
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 32983.8981

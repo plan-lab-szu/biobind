@@ -1,0 +1,7 @@
+Running Unified512-2 stress
+Traceback (most recent call last):
+  File "C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\dev-workspace\experiments\bgv\unified-20261031\run.py", line 128, in <module>
+    main()
+  File "C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\dev-workspace\experiments\bgv\unified-20261031\run.py", line 83, in main
+    raise subprocess.CalledProcessError(completed.returncode, cmd)
+subprocess.CalledProcessError: Command '['C:\\Users\\wangt\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\BioBindResearchTools\\bgv-build-unified-20261031\\bgv-measure.exe', 'stress', 'Unified512', '2', 'C:\\Users\\wangt\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\BioBindResearchTools\\bgv-unified-20261031-resumed\\full-r3\\Unified512-2', '16384', '60,50,50,50', '20261033']' returned non-zero exit status 4294967295.

@@ -1,0 +1,11 @@
+{
+  "generatedAt": "2026-10-30T04:42:59.246Z",
+  "constraints": 15534,
+  "node": "v24.19.0",
+  "warning": "Local single-contributor benchmark key, not deployable.",
+  "sourceSha256": {
+    "circuits/auth_private_attested.circom": "127a06d69a51c830a1a9ec29d6d0a738f29cfb95e455214615f8cd2df2119c0f",
+    "circuits/auth_private_attested_dev20.circom": "d990ebc193f67e7954d4aff7343f2fcf173b7703e23e1b8afb204aac1440f6df",
+    "circuits/auth_private_v2.circom": "fa35af18340d57aa3ea4f37544b56ae889dca6b110571d2d0bcf8375b44910df"
+  }
+}

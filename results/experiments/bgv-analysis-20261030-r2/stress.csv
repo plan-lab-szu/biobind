@@ -1,0 +1,7 @@
+"run","profile","enrollments","merges","capacity","row_noise_min","query_noise","wrong_slots","wrong_packed_slots","elapsed_ms"
+"bgv-stress-f3-20261030","FaceNet-3","4","3","24576","69","0","8192","8192","4124.9125"
+"bgv-stress-f3-v1-20261030-r2","FaceNet-3","16","15","24576","67","0","8192","8192","12017.1974"
+"bgv-stress-f3-v1-20261030-r3","FaceNet-3","8","7","24576","68","0","8192","8192","6304.0056"
+"bgv-stress-m2-20261030","MobileFaceNet-2","16","15","16384","63","0","8192","8192","48482.0476"
+"bgv-stress-m2-v1-20261030-r2","MobileFaceNet-2","16","15","16384","63","0","8192","8192","50309.1704"
+"bgv-stress-m2-v1-20261030-r3","MobileFaceNet-2","32","31","16384","63","0","8192","8192","100686.6993"

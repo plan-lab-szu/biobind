@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\dev-workspace\experiments\bgv\unified-20261031\run-full.py", line 54, in <module>
+    status['completed'].append(result.result()); save()
+                               ^^^^^^^^^^^^^^^
+  File "C:\Users\wangt\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wangt\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\_base.py", line 401, in __get_result
+    raise self._exception
+  File "C:\Users\wangt\AppData\Local\Programs\Python\Python312\Lib\concurrent\futures\thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\dev-workspace\experiments\bgv\unified-20261031\run-full.py", line 34, in run
+    subprocess.run(cmd, stdout=log, stderr=subprocess.STDOUT, check=True)
+  File "C:\Users\wangt\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['C:\\Users\\wangt\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', 'C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031\\run.py', '--exe', 'C:\\Users\\wangt\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\BioBindResearchTools\\bgv-build-unified-20261031\\bgv-measure.exe', '--mode', 'stress', '--profile', 'Unified512-2', '--parameter-set', 'incremental-candidate', '--seed', '20261032', '--out', 'C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\results\\bgv-unified-20261031-resumed\\full-r2', '--binary-dir', 'C:\\Users\\wangt\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\BioBindResearchTools\\bgv-unified-20261031-resumed\\full-r2', '--max-enrollments', '16384']' returned non-zero exit status 1.

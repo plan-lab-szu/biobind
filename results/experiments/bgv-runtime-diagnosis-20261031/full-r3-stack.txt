@@ -1,0 +1,72 @@
+[New Thread 10784.0x26dc (id 2)]
+[New Thread 10784.0xf90 (id 3)]
+[New Thread 10784.0x29ec (id 4)]
+[New Thread 10784.0x4b10 (id 5)]
+[Switching to thread 1 (Thread 10784.0x60cc)]
+0x00007ff9b3ec28a4 in ntdll!ZwWaitForMultipleObjects () from C:/WINDOWS/SYSTEM32/ntdll.dll
+
+Thread 5 (Thread 10784.0x4b10 (exiting)):
+#0  0x00007ff9b3ec27b4 in ntdll!ZwTerminateThread () from C:/WINDOWS/SYSTEM32/ntdll.dll
+Backtrace stopped: Cannot access memory at address 0x997b1ff778
+
+Thread 4 (Thread 10784.0x29ec):
+#0  0x00007ff9b3ec28a4 in ntdll!ZwWaitForMultipleObjects () from C:/WINDOWS/SYSTEM32/ntdll.dll
+#1  0x00007ff9b13f2773 in WaitForMultipleObjectsEx () from C:/WINDOWS/System32/KernelBase.dll
+#2  0x00007ff9b13f2641 in WaitForMultipleObjects () from C:/WINDOWS/System32/KernelBase.dll
+#3  0x00007ff7604948a9 in do_sema_b_wait_intern ()
+#4  0x00007ff76049740f in sem_wait ()
+#5  0x00007ff76046f390 in gomp_sem_wait ()
+#6  0x00007ff76046f4be in gomp_barrier_wait_end ()
+#7  0x00007ff76046cf52 in gomp_thread_start ()
+#8  0x00007ff76049878d in pthread_create_wrapper ()
+#9  0x00007ff9b201f0ad in msvcrt!_beginthreadex () from C:/WINDOWS/System32/msvcrt.dll
+#10 0x00007ff9b201f17c in msvcrt!_endthreadex () from C:/WINDOWS/System32/msvcrt.dll
+#11 0x00007ff9b237dda7 in KERNEL32!BaseThreadInitThunk () from C:/WINDOWS/System32/kernel32.dll
+#12 0x00007ff9b3ddee4c in ntdll!RtlUserThreadStart () from C:/WINDOWS/SYSTEM32/ntdll.dll
+#13 0x0000000000000000 in ?? ()
+
+Thread 3 (Thread 10784.0xf90):
+#0  0x00007ff9b3ec28a4 in ntdll!ZwWaitForMultipleObjects () from C:/WINDOWS/SYSTEM32/ntdll.dll
+#1  0x00007ff9b13f2773 in WaitForMultipleObjectsEx () from C:/WINDOWS/System32/KernelBase.dll
+#2  0x00007ff9b13f2641 in WaitForMultipleObjects () from C:/WINDOWS/System32/KernelBase.dll
+#3  0x00007ff7604948a9 in do_sema_b_wait_intern ()
+#4  0x00007ff76049740f in sem_wait ()
+#5  0x00007ff76046f390 in gomp_sem_wait ()
+#6  0x00007ff76046f4be in gomp_barrier_wait_end ()
+#7  0x00007ff76046cf52 in gomp_thread_start ()
+#8  0x00007ff76049878d in pthread_create_wrapper ()
+#9  0x00007ff9b201f0ad in msvcrt!_beginthreadex () from C:/WINDOWS/System32/msvcrt.dll
+#10 0x00007ff9b201f17c in msvcrt!_endthreadex () from C:/WINDOWS/System32/msvcrt.dll
+#11 0x00007ff9b237dda7 in KERNEL32!BaseThreadInitThunk () from C:/WINDOWS/System32/kernel32.dll
+#12 0x00007ff9b3ddee4c in ntdll!RtlUserThreadStart () from C:/WINDOWS/SYSTEM32/ntdll.dll
+#13 0x0000000000000000 in ?? ()
+
+Thread 2 (Thread 10784.0x26dc):
+#0  0x00007ff9b3ec28a4 in ntdll!ZwWaitForMultipleObjects () from C:/WINDOWS/SYSTEM32/ntdll.dll
+#1  0x00007ff9b13f2773 in WaitForMultipleObjectsEx () from C:/WINDOWS/System32/KernelBase.dll
+#2  0x00007ff9b13f2641 in WaitForMultipleObjects () from C:/WINDOWS/System32/KernelBase.dll
+#3  0x00007ff7604948a9 in do_sema_b_wait_intern ()
+#4  0x00007ff76049740f in sem_wait ()
+#5  0x00007ff76046f390 in gomp_sem_wait ()
+#6  0x00007ff76046f597 in gomp_team_barrier_wait_end ()
+#7  0x00007ff76046cf8a in gomp_thread_start ()
+#8  0x00007ff76049878d in pthread_create_wrapper ()
+#9  0x00007ff9b201f0ad in msvcrt!_beginthreadex () from C:/WINDOWS/System32/msvcrt.dll
+#10 0x00007ff9b201f17c in msvcrt!_endthreadex () from C:/WINDOWS/System32/msvcrt.dll
+#11 0x00007ff9b237dda7 in KERNEL32!BaseThreadInitThunk () from C:/WINDOWS/System32/kernel32.dll
+#12 0x00007ff9b3ddee4c in ntdll!RtlUserThreadStart () from C:/WINDOWS/SYSTEM32/ntdll.dll
+#13 0x0000000000000000 in ?? ()
+
+Thread 1 (Thread 10784.0x60cc):
+#0  0x00007ff9b3ec28a4 in ntdll!ZwWaitForMultipleObjects () from C:/WINDOWS/SYSTEM32/ntdll.dll
+#1  0x00007ff9b13f2773 in WaitForMultipleObjectsEx () from C:/WINDOWS/System32/KernelBase.dll
+#2  0x00007ff9b13f2641 in WaitForMultipleObjects () from C:/WINDOWS/System32/KernelBase.dll
+#3  0x00007ff7604948a9 in do_sema_b_wait_intern ()
+#4  0x00007ff76049740f in sem_wait ()
+#5  0x00007ff76046f390 in gomp_sem_wait ()
+#6  0x00007ff76046f4be in gomp_barrier_wait_end ()
+#7  0x00007ff76046d99d in gomp_team_start ()
+#8  0x00007ff760464256 in GOMP_parallel ()
+#9  0x00007ff760316001 in encrypt_rows(std::vector<long long, std::allocator<long long> > const&, (anonymous namespace)::ModelParams const&, int, unsigned long long, bool, seal::BatchEncoder&, seal::Encryptor&, Times&) [clone .constprop.0] ()
+#10 0x00007ff76057ed3f in main ()
+[Inferior 1 (process 10784) detached]

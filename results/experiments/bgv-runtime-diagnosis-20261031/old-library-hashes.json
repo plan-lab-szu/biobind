@@ -1,0 +1,17 @@
+[
+  {
+    "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-build-unified-20261031\\bgv-measure.exe",
+    "sha256": "e6cb9995dfdc9da1bb76ab51bbb1f3cf21194fab8944d3dbbd561d46330bdee7",
+    "bytes": 5126195
+  },
+  {
+    "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-upstream-build\\lib\\libseal-4.1.a",
+    "sha256": "365d288d7a261becdac9268aa06eb13ed6f4d9d7868fe6bef840ad6a131e9eec",
+    "bytes": 1568938
+  },
+  {
+    "path": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\seal-upstream-build\\native\\src\\seal\\util\\config.h",
+    "sha256": "4858383a8def5eb88fd4644a878ac88309c3d20655eb4e2da9e41a5617258554",
+    "bytes": 1221
+  }
+]

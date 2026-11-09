@@ -1,0 +1,5 @@
+{"enrollments":1,"merges":0,"capacity":16384,"row_noise_min":66,"query_noise":3,"wrong_slots":0,"wrong_packed_slots":0,"elapsed_ms":3613.1538}
+{"enrollments":2,"merges":1,"capacity":16384,"row_noise_min":66,"query_noise":2,"wrong_slots":0,"wrong_packed_slots":0,"elapsed_ms":7303.2045}
+{"enrollments":4,"merges":3,"capacity":16384,"row_noise_min":65,"query_noise":1,"wrong_slots":0,"wrong_packed_slots":0,"elapsed_ms":13525.5085}
+{"enrollments":8,"merges":7,"capacity":16384,"row_noise_min":64,"query_noise":0,"wrong_slots":0,"wrong_packed_slots":0,"elapsed_ms":25551.4275}
+{"enrollments":16,"merges":15,"capacity":16384,"row_noise_min":63,"query_noise":0,"wrong_slots":8192,"wrong_packed_slots":8192,"elapsed_ms":50309.1704}

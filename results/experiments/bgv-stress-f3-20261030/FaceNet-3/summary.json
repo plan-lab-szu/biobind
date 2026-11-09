@@ -1,0 +1,15 @@
+{
+  "profile": "FaceNet-3",
+  "last": {
+    "enrollments": 4,
+    "merges": 3,
+    "capacity": 24576,
+    "row_noise_min": 69,
+    "query_noise": 0,
+    "wrong_slots": 8192,
+    "wrong_packed_slots": 8192,
+    "elapsed_ms": 4124.9125
+  },
+  "checkpoints": 3,
+  "correctAtAllCheckpoints": false
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "TimeCreated": "2026-10-31T01:53:42.2125151+08:00",
+    "Id": 3077,
+    "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume7\\Users\\wangt\\AppData\\Local\\Programs\\Python\\Python312\\python.exe) attempted to load \\Device\\HarddiskVolume7\\Users\\wangt\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\BioBindResearchTools\\bgv-build-unified-20261031\\bgv-measure.exe that did not meet the Enterprise signing level requirements or violated code integrity policy (Policy ID:{0283ac0f-fff1-49ae-ada1-8a933130cad6})."
+  },
+  {
+    "TimeCreated": "2026-10-31T01:53:42.1677432+08:00",
+    "Id": 3033,
+    "Message": "Code Integrity determined that a process (\\Device\\HarddiskVolume7\\Users\\wangt\\AppData\\Local\\Programs\\Python\\Python312\\python.exe) attempted to load \\Device\\HarddiskVolume7\\Users\\wangt\\AppData\\Local\\Packages\\OpenAI.Codex_2p2nqsd0c76g0\\LocalCache\\Local\\BioBindResearchTools\\bgv-build-unified-20261031\\bgv-measure.exe that did not meet the Enterprise signing level requirements."
+  }
+]

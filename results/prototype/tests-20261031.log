@@ -1,0 +1,98 @@
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+✔ finalized source session is consumed in the same transaction that issues the credential (6833.1558ms)
+✔ invalid enrollment-link signature rolls back adapter consumption and local receipt creation (1504.3112ms)
+✔ receipt/request mismatch and terminal adapter revocation cannot leave partial issuance state (1296.8121ms)
+✔ template successor atomically consumes a new source receipt and preserves the old credential on failure (2431.7985ms)
+✔ model-based successor interleavings preserve one active credential and never half-consume a receipt (5990.4336ms)
+✔ bounded seeded successor fuzz preserves receipt and single-active-lineage invariants (17041.9854ms)
+✔ packing is deterministic and stays below 2^240 (1.87ms)
+✔ commitment is deterministic for an identical opening (506.5466ms)
+✔ role, policy, context, salt and coordinates are bound (3.496ms)
+✔ coordinate range and dimension mismatches are rejected (1.0536ms)
+✔ offset encoding preserves squared distance (0.2585ms)
+✔ EIP-712 digest signing spends one unit and replay returns identical bytes (62.2767ms)
+✔ invalid scoped request cannot sign and post-reservation failure costs a unit (23.2321ms)
+✔ revoked policy scope cannot replay and successor scope signs separately (48.0804ms)
+✔ concurrent sign requests never exceed provisioned budget (47.6531ms)
+✔ SCMV base matches the paper's operating points and recovery is exact (10.1379ms)
+✔ paper request binding: divergent C_enroll lets one identity obtain two uniqueness results (50.4971ms)
+✔ bridge links only the receipt and request derived from its own sealed capture (826.3588ms)
+✔ bridge rejects session mixing and a forged gallery count before deriving anything (49.2664ms)
+✔ bound source aborts a stale slot and accepts a fresh retry (98.6756ms)
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+✔ unique receipt issuance binds the enrollment commitment (3912.5269ms)
+✔ device and policy revocation are terminal and checked at submission (2717.8278ms)
+✔ successor transitions preserve one active credential per lineage (4188.9156ms)
+✔ sample count follows min(N, ceil(lambda log2 N)) (0.9343ms)
+✔ one-coordinate detection is exactly t/N (0.264ms)
+✔ full checking cannot miss an inconsistent coordinate (0.15ms)
+✔ old table exact-formula audit is reproducible (0.1698ms)
+✔ near-certain one-coordinate detection approaches FullCheck (1.7833ms)
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+✔ pinned profile admits only matching 128/512-D verifier and circuit artifacts (9058.5667ms)
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+✔ same-chain adapter derives a canonical one-time receipt from finalized BioZKFHE state (2679.6611ms)
+✔ adapter rejects non-enrollment, non-finalized, non-unique, incomplete, and under-confirmed sessions (1592.7511ms)
+✔ a downstream failure rolls back adapter consumption and consumer revocation is terminal (780.2953ms)
+✔ adapter accepts only the calldata record whose encoding matches the stored digest (1144.2596ms)
+✔ 128D and 512D packets round-trip with fixed, auditable overhead (13.2364ms)
+✔ untrusted transport cannot alter encrypted vector or authenticated metadata (2.3794ms)
+✔ session transplantation, stale counters, and expiry are rejected (1.6445ms)
+✔ a different attested TEE channel cannot decrypt the packet (1.7479ms)
+✔ wire profile rejects invalid dimensions and coordinates before signing (1.4543ms)
+✔ AEAD nonce is domain-derived from channel identity and monotonic counter (0.3334ms)
+This version of µWS is not compatible with your Node.js build:
+
+Error: Cannot find module '../binaries/uws_win32_x64_137.node'
+Require stack:
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\node_modules\@trufflesuite\uws-js-unofficial\src\uws.js
+- C:\Users\wangt\Dropbox\ProjectsWorkingSpace\BioZERO\prototype\route-a\node_modules\ganache\dist\node\core.js
+Falling back to a NodeJS implementation; performance may be degraded.
+
+
+✔ integrated chain consumes receipt, validates capture, and atomically consumes freshness (6295.8872ms)
+✔ device revocation ordered before submission rejects a prepared authentication (5173.473ms)
+✔ device rotation invalidates old capture and admits a compatible new device (5870.7179ms)
+✔ credential revocation ordered before submission rejects a prepared authentication (4888.6045ms)
+✔ match threshold is explicit, immutable, authorized, and checked before consuming freshness (5868.811ms)
+✔ canonical policy commits application and threshold and replacement revokes old credentials (5103.3919ms)
+ℹ tests 45
+ℹ suites 0
+ℹ pass 45
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 106138.8023

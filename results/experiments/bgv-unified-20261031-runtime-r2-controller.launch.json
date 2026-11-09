@@ -1,0 +1,9 @@
+{
+  "controllerPID": 23224,
+  "resultDirectory": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\results\\bgv-unified-20261031-runtime-r2",
+  "scratchDirectory": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-unified-20261031-runtime-r2",
+  "executable": "C:\\Users\\wangt\\AppData\\Local\\BioBindResearchTools\\bgv-build-unified-20261031-runtime-r2\\bgv-measure.exe",
+  "script": "C:\\Users\\wangt\\Dropbox\\ProjectsWorkingSpace\\BioZERO\\dev-workspace\\experiments\\bgv\\unified-20261031-runtime-r2\\run-full.py",
+  "startedAt": "2026-10-31T05:23:33.667811+00:00",
+  "status": "launched; repaired runtime smoke and capacity acceptance pending"
+}

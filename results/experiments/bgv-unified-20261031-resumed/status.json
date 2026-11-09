@@ -1,0 +1,9 @@
+{
+  "state": "failed_or_blocked",
+  "completed": [
+    "smoke128",
+    "measure"
+  ],
+  "fullCapacityVerified": false,
+  "error": "CalledProcessError(1, ['C:\\\\Users\\\\wangt\\\\AppData\\\\Local\\\\Programs\\\\Python\\\\Python312\\\\python.exe', 'C:\\\\Users\\\\wangt\\\\Dropbox\\\\ProjectsWorkingSpace\\\\BioZERO\\\\dev-workspace\\\\experiments\\\\bgv\\\\unified-20261031\\\\run.py', '--exe', 'C:\\\\Users\\\\wangt\\\\AppData\\\\Local\\\\Packages\\\\OpenAI.Codex_2p2nqsd0c76g0\\\\LocalCache\\\\Local\\\\BioBindResearchTools\\\\bgv-build-unified-20261031\\\\bgv-measure.exe', '--mode', 'stress', '--profile', 'Unified512-2', '--parameter-set', 'incremental-candidate', '--seed', '20261032', '--out', 'C:\\\\Users\\\\wangt\\\\Dropbox\\\\ProjectsWorkingSpace\\\\BioZERO\\\\dev-workspace\\\\experiments\\\\results\\\\bgv-unified-20261031-resumed\\\\full-r2', '--binary-dir', 'C:\\\\Users\\\\wangt\\\\AppData\\\\Local\\\\Packages\\\\OpenAI.Codex_2p2nqsd0c76g0\\\\LocalCache\\\\Local\\\\BioBindResearchTools\\\\bgv-unified-20261031-resumed\\\\full-r2', '--max-enrollments', '16384'])"
+}

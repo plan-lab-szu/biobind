@@ -1,0 +1,77 @@
+[
+  {
+    "run": "bgv-diagnose-r3-original-f3-20261030",
+    "file": "bgv-measure.cpp",
+    "matches": true
+  },
+  {
+    "run": "bgv-diagnose-r3-original-f3-20261030",
+    "file": "CMakeLists.txt",
+    "matches": true
+  },
+  {
+    "run": "bgv-diagnose-r3-original-f3-20261030",
+    "file": "scmv_e3_benchmark.cpp",
+    "matches": true
+  },
+  {
+    "run": "bgv-diagnose-r3-original-f3-20261030",
+    "file": "run.py",
+    "matches": true
+  },
+  {
+    "run": "bgv-diagnose-r3-original-f3-20261030",
+    "file": "bgv-measure.exe",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-f3-64-20261030",
+    "file": "bgv-measure.cpp",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-f3-64-20261030",
+    "file": "CMakeLists.txt",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-f3-64-20261030",
+    "file": "scmv_e3_benchmark.cpp",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-f3-64-20261030",
+    "file": "run.py",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-f3-64-20261030",
+    "file": "bgv-measure.exe",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-m2-64-20261030",
+    "file": "bgv-measure.cpp",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-m2-64-20261030",
+    "file": "CMakeLists.txt",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-m2-64-20261030",
+    "file": "scmv_e3_benchmark.cpp",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-m2-64-20261030",
+    "file": "run.py",
+    "matches": true
+  },
+  {
+    "run": "bgv-repair-r3-m2-64-20261030",
+    "file": "bgv-measure.exe",
+    "matches": true
+  }
+]
