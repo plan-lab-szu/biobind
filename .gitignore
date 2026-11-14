@@ -39,3 +39,7 @@ __pycache__/
 *.pyc
 .DS_Store
 Thumbs.db
+
+# Licensed Bosphorus per-probe records stay external
+bosphorus_scores.csv
+*.failures.json

@@ -1,0 +1,3444 @@
+{
+  "run": "R-BOSPHORUS-REANALYSIS-20261114",
+  "sourceRun": "R-BOSPHORUS-20261109",
+  "subjectsInGallery": 98,
+  "images": 4342,
+  "detectionFailuresTotal": 41,
+  "attendedGroups": [
+    "O_EYE",
+    "O_MOUTH",
+    "O_GLASSES",
+    "O_HAIR",
+    "E_all",
+    "LFAU_all",
+    "UFAU_all",
+    "CAU_all",
+    "YR_le30",
+    "PR_slight"
+  ],
+  "interpretation": {
+    "grouping": "Original protocol grouping retained; no operational acceptance gate was run.",
+    "matchingMissDetected": "Maximum score over the fixed gallery below the unchanged LFW threshold, conditional on detection.",
+    "candidateAcceptanceFailClosed": "Matching misses / all submitted probes, assuming every detection failure rejects; offline candidates, not issued credentials.",
+    "historicalCombined": "Historical detection failures plus matching misses; not an issuance-risk estimate.",
+    "weighting": "Pooled attempt-weighted descriptive rates; subjects have unequal probe counts.",
+    "uncertainty": "95% percentile subject-cluster bootstrap intervals conditional on the observed gallery and thresholds; whole subject probe sets resampled. Not a worst-case adversarial bound. Intervals omitted at empirical 0/1 boundaries."
+  },
+  "tables": {
+    "FMR<=0.001": {
+      "tau": 2322295,
+      "cosineEquivalent": 0.5542,
+      "groups": {
+        "O_EYE": {
+          "submitted": 98,
+          "detected": 93,
+          "detectionFailure": {
+            "k": 5,
+            "n": 98,
+            "rate": 0.05102040816326531,
+            "clusterCi95": [
+              0.01020408163265306,
+              0.10204081632653061
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012,
+            "clusterCi95": [
+              0.0,
+              0.03296703296703297
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.030612244897959183
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.061224489795918366
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012
+          }
+        },
+        "O_MOUTH": {
+          "submitted": 98,
+          "detected": 98,
+          "detectionFailure": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "O_GLASSES": {
+          "submitted": 97,
+          "detected": 96,
+          "detectionFailure": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.010309278350515464,
+            "clusterCi95": [
+              0.0,
+              0.03125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 96,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 97,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.010309278350515464
+          },
+          "subjectsWithSubmittedProbes": 97,
+          "subjectsWithDetectedProbes": 96,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 96,
+            "rate": 0.0
+          }
+        },
+        "O_HAIR": {
+          "submitted": 65,
+          "detected": 63,
+          "detectionFailure": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077,
+            "clusterCi95": [
+              0.0,
+              0.078125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 63,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 65,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077
+          },
+          "subjectsWithSubmittedProbes": 64,
+          "subjectsWithDetectedProbes": 62,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 62,
+            "rate": 0.0
+          }
+        },
+        "E_all": {
+          "submitted": 421,
+          "detected": 418,
+          "detectionFailure": {
+            "k": 3,
+            "n": 421,
+            "rate": 0.007125890736342043,
+            "clusterCi95": [
+              0.0,
+              0.019138755980861243
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 3,
+            "n": 418,
+            "rate": 0.007177033492822967,
+            "clusterCi95": [
+              0.0,
+              0.01939655172413793
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 3,
+            "n": 421,
+            "rate": 0.007125890736342043,
+            "clusterCi95": [
+              0.0,
+              0.019138755980861243
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 421,
+            "rate": 0.014251781472684086
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "LFAU_all": {
+          "submitted": 1443,
+          "detected": 1435,
+          "detectionFailure": {
+            "k": 8,
+            "n": 1443,
+            "rate": 0.005544005544005544,
+            "clusterCi95": [
+              0.0,
+              0.016197385188918775
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 5,
+            "n": 1435,
+            "rate": 0.003484320557491289,
+            "clusterCi95": [
+              0.0,
+              0.009838436138639401
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 5,
+            "n": 1443,
+            "rate": 0.003465003465003465,
+            "clusterCi95": [
+              0.0,
+              0.009776536312849162
+            ]
+          },
+          "historicalCombined": {
+            "k": 13,
+            "n": 1443,
+            "rate": 0.009009009009009009
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "UFAU_all": {
+          "submitted": 402,
+          "detected": 397,
+          "detectionFailure": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.012437810945273632,
+            "clusterCi95": [
+              0.0,
+              0.030952380952380953
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 397,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 402,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.012437810945273632
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "CAU_all": {
+          "submitted": 159,
+          "detected": 159,
+          "detectionFailure": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 93,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 93,
+            "rate": 0.0
+          }
+        },
+        "YR_le30": {
+          "submitted": 294,
+          "detected": 293,
+          "detectionFailure": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687,
+            "clusterCi95": [
+              0.0,
+              0.01020408163265306
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 294,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "YR_45": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 195,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "YR_90": {
+          "submitted": 196,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 9,
+            "n": 196,
+            "rate": 0.04591836734693878,
+            "clusterCi95": [
+              0.015306122448979591,
+              0.08163265306122448
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 18,
+            "n": 187,
+            "rate": 0.0962566844919786,
+            "clusterCi95": [
+              0.05319148936170213,
+              0.14361775596567528
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 18,
+            "n": 196,
+            "rate": 0.09183673469387756,
+            "clusterCi95": [
+              0.05102040816326531,
+              0.1377551020408163
+            ]
+          },
+          "historicalCombined": {
+            "k": 27,
+            "n": 196,
+            "rate": 0.1377551020408163
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 97,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 16,
+            "n": 97,
+            "rate": 0.16494845360824742
+          }
+        },
+        "PR_slight": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.010256410256410256,
+            "clusterCi95": [
+              0.0,
+              0.02577319587628866
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.025510204081632654
+            ]
+          },
+          "historicalCombined": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.015306122448979591
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "PR_full": {
+          "submitted": 195,
+          "detected": 191,
+          "detectionFailure": {
+            "k": 4,
+            "n": 195,
+            "rate": 0.020512820512820513,
+            "clusterCi95": [
+              0.00510204081632653,
+              0.041237113402061855
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 191,
+            "rate": 0.010471204188481676,
+            "clusterCi95": [
+              0.0,
+              0.02631578947368421
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.010256410256410256,
+            "clusterCi95": [
+              0.0,
+              0.02564102564102564
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 195,
+            "rate": 0.03076923076923077
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "CR_all": {
+          "submitted": 197,
+          "detected": 196,
+          "detectionFailure": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.005076142131979695,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 197,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.005076142131979695
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "N_repeat_control": {
+          "submitted": 187,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 73,
+          "subjectsWithDetectedProbes": 73,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 73,
+            "rate": 0.0
+          }
+        },
+        "ATTENDED_pooled": {
+          "submitted": 3273,
+          "detected": 3247,
+          "detectionFailure": {
+            "k": 26,
+            "n": 3273,
+            "rate": 0.007943782462572564,
+            "clusterCi95": [
+              0.0014432830955782674,
+              0.01916214843234294
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 11,
+            "n": 3247,
+            "rate": 0.0033877425315676007,
+            "clusterCi95": [
+              0.00033155949361303444,
+              0.007493033837928717
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 11,
+            "n": 3273,
+            "rate": 0.003360831041857623,
+            "clusterCi95": [
+              0.0003286203703983594,
+              0.007428075345499093
+            ]
+          },
+          "historicalCombined": {
+            "k": 37,
+            "n": 3273,
+            "rate": 0.011304613504430187
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 5,
+            "n": 98,
+            "rate": 0.05102040816326531
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 58,
+        "n": 187,
+        "rate": 0.31016042780748665,
+        "clusterCi95": [
+          0.21212121212121213,
+          0.4153026481715005
+        ]
+      }
+    },
+    "FMR<=0.0001": {
+      "tau": 2777020,
+      "cosineEquivalent": 0.6627,
+      "groups": {
+        "O_EYE": {
+          "submitted": 98,
+          "detected": 93,
+          "detectionFailure": {
+            "k": 5,
+            "n": 98,
+            "rate": 0.05102040816326531,
+            "clusterCi95": [
+              0.01020408163265306,
+              0.10204081632653061
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012,
+            "clusterCi95": [
+              0.0,
+              0.03296703296703297
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.030612244897959183
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.061224489795918366
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012
+          }
+        },
+        "O_MOUTH": {
+          "submitted": 98,
+          "detected": 98,
+          "detectionFailure": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.030612244897959183
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.030612244897959183
+            ]
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306
+          }
+        },
+        "O_GLASSES": {
+          "submitted": 97,
+          "detected": 96,
+          "detectionFailure": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.010309278350515464,
+            "clusterCi95": [
+              0.0,
+              0.03125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 3,
+            "n": 96,
+            "rate": 0.03125,
+            "clusterCi95": [
+              0.0,
+              0.07216494845360824
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 3,
+            "n": 97,
+            "rate": 0.030927835051546393,
+            "clusterCi95": [
+              0.0,
+              0.07142857142857142
+            ]
+          },
+          "historicalCombined": {
+            "k": 4,
+            "n": 97,
+            "rate": 0.041237113402061855
+          },
+          "subjectsWithSubmittedProbes": 97,
+          "subjectsWithDetectedProbes": 96,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 3,
+            "n": 96,
+            "rate": 0.03125
+          }
+        },
+        "O_HAIR": {
+          "submitted": 65,
+          "detected": 63,
+          "detectionFailure": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077,
+            "clusterCi95": [
+              0.0,
+              0.078125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 63,
+            "rate": 0.031746031746031744,
+            "clusterCi95": [
+              0.0,
+              0.08196721311475409
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077,
+            "clusterCi95": [
+              0.0,
+              0.07936507936507936
+            ]
+          },
+          "historicalCombined": {
+            "k": 4,
+            "n": 65,
+            "rate": 0.06153846153846154
+          },
+          "subjectsWithSubmittedProbes": 64,
+          "subjectsWithDetectedProbes": 62,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 62,
+            "rate": 0.03225806451612903
+          }
+        },
+        "E_all": {
+          "submitted": 421,
+          "detected": 418,
+          "detectionFailure": {
+            "k": 3,
+            "n": 421,
+            "rate": 0.007125890736342043,
+            "clusterCi95": [
+              0.0,
+              0.019138755980861243
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 5,
+            "n": 418,
+            "rate": 0.011961722488038277,
+            "clusterCi95": [
+              0.002277904328018223,
+              0.02558139534883721
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 5,
+            "n": 421,
+            "rate": 0.011876484560570071,
+            "clusterCi95": [
+              0.0022674454397143473,
+              0.025263762855414346
+            ]
+          },
+          "historicalCombined": {
+            "k": 8,
+            "n": 421,
+            "rate": 0.019002375296912115
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 4,
+            "n": 98,
+            "rate": 0.04081632653061224
+          }
+        },
+        "LFAU_all": {
+          "submitted": 1443,
+          "detected": 1435,
+          "detectionFailure": {
+            "k": 8,
+            "n": 1443,
+            "rate": 0.005544005544005544,
+            "clusterCi95": [
+              0.0,
+              0.016197385188918775
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 16,
+            "n": 1435,
+            "rate": 0.011149825783972125,
+            "clusterCi95": [
+              0.004884771782091972,
+              0.018855536497045904
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 16,
+            "n": 1443,
+            "rate": 0.011088011088011088,
+            "clusterCi95": [
+              0.004857737682165163,
+              0.018721811933608456
+            ]
+          },
+          "historicalCombined": {
+            "k": 24,
+            "n": 1443,
+            "rate": 0.016632016632016633
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 12,
+            "n": 98,
+            "rate": 0.12244897959183673
+          }
+        },
+        "UFAU_all": {
+          "submitted": 402,
+          "detected": 397,
+          "detectionFailure": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.012437810945273632,
+            "clusterCi95": [
+              0.0,
+              0.030952380952380953
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 397,
+            "rate": 0.005037783375314861,
+            "clusterCi95": [
+              0.0,
+              0.012821336760925377
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 402,
+            "rate": 0.004975124378109453,
+            "clusterCi95": [
+              0.0,
+              0.012690355329949238
+            ]
+          },
+          "historicalCombined": {
+            "k": 7,
+            "n": 402,
+            "rate": 0.017412935323383085
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "CAU_all": {
+          "submitted": 159,
+          "detected": 159,
+          "detectionFailure": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 93,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 93,
+            "rate": 0.0
+          }
+        },
+        "YR_le30": {
+          "submitted": 294,
+          "detected": 293,
+          "detectionFailure": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687,
+            "clusterCi95": [
+              0.0,
+              0.01020408163265306
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 294,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "YR_45": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 195,
+            "rate": 0.005128205128205128,
+            "clusterCi95": [
+              0.0,
+              0.015463917525773196
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "historicalCombined": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.01020408163265306
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306
+          }
+        },
+        "YR_90": {
+          "submitted": 196,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 9,
+            "n": 196,
+            "rate": 0.04591836734693878,
+            "clusterCi95": [
+              0.015306122448979591,
+              0.08163265306122448
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 81,
+            "n": 187,
+            "rate": 0.43315508021390375,
+            "clusterCi95": [
+              0.3516483516483517,
+              0.5135135135135135
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 81,
+            "n": 196,
+            "rate": 0.413265306122449,
+            "clusterCi95": [
+              0.336734693877551,
+              0.4897959183673469
+            ]
+          },
+          "historicalCombined": {
+            "k": 90,
+            "n": 196,
+            "rate": 0.45918367346938777
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 97,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 57,
+            "n": 97,
+            "rate": 0.5876288659793815
+          }
+        },
+        "PR_slight": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.010256410256410256,
+            "clusterCi95": [
+              0.0,
+              0.02577319587628866
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.025510204081632654
+            ]
+          },
+          "historicalCombined": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.015306122448979591
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "PR_full": {
+          "submitted": 195,
+          "detected": 191,
+          "detectionFailure": {
+            "k": 4,
+            "n": 195,
+            "rate": 0.020512820512820513,
+            "clusterCi95": [
+              0.00510204081632653,
+              0.041237113402061855
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 191,
+            "rate": 0.010471204188481676,
+            "clusterCi95": [
+              0.0,
+              0.02631578947368421
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.010256410256410256,
+            "clusterCi95": [
+              0.0,
+              0.02564102564102564
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 195,
+            "rate": 0.03076923076923077
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "CR_all": {
+          "submitted": 197,
+          "detected": 196,
+          "detectionFailure": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.005076142131979695,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.02564102564102564
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 197,
+            "rate": 0.01015228426395939,
+            "clusterCi95": [
+              0.0,
+              0.025510204081632654
+            ]
+          },
+          "historicalCombined": {
+            "k": 3,
+            "n": 197,
+            "rate": 0.015228426395939087
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "N_repeat_control": {
+          "submitted": 187,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 73,
+          "subjectsWithDetectedProbes": 73,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 73,
+            "rate": 0.0
+          }
+        },
+        "ATTENDED_pooled": {
+          "submitted": 3273,
+          "detected": 3247,
+          "detectionFailure": {
+            "k": 26,
+            "n": 3273,
+            "rate": 0.007943782462572564,
+            "clusterCi95": [
+              0.0014432830955782674,
+              0.01916214843234294
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 32,
+            "n": 3247,
+            "rate": 0.00985525100092393,
+            "clusterCi95": [
+              0.0057324600589868475,
+              0.014657493269518396
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 32,
+            "n": 3273,
+            "rate": 0.00977696303085854,
+            "clusterCi95": [
+              0.005683385689387213,
+              0.014528626534036113
+            ]
+          },
+          "historicalCombined": {
+            "k": 58,
+            "n": 3273,
+            "rate": 0.017720745493431105
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 22,
+            "n": 98,
+            "rate": 0.22448979591836735
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 2,
+        "n": 187,
+        "rate": 0.0106951871657754,
+        "clusterCi95": [
+          0.0,
+          0.03409090909090909
+        ]
+      }
+    },
+    "FMR<=1e-05": {
+      "tau": 3162706,
+      "cosineEquivalent": 0.7548,
+      "groups": {
+        "O_EYE": {
+          "submitted": 98,
+          "detected": 93,
+          "detectionFailure": {
+            "k": 5,
+            "n": 98,
+            "rate": 0.05102040816326531,
+            "clusterCi95": [
+              0.01020408163265306,
+              0.10204081632653061
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012,
+            "clusterCi95": [
+              0.0,
+              0.03296703296703297
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.030612244897959183
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.061224489795918366
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012
+          }
+        },
+        "O_MOUTH": {
+          "submitted": 98,
+          "detected": 98,
+          "detectionFailure": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.07142857142857142,
+            "clusterCi95": [
+              0.02040816326530612,
+              0.12244897959183673
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.07142857142857142,
+            "clusterCi95": [
+              0.02040816326530612,
+              0.12244897959183673
+            ]
+          },
+          "historicalCombined": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.07142857142857142
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.07142857142857142
+          }
+        },
+        "O_GLASSES": {
+          "submitted": 97,
+          "detected": 96,
+          "detectionFailure": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.010309278350515464,
+            "clusterCi95": [
+              0.0,
+              0.03125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 7,
+            "n": 96,
+            "rate": 0.07291666666666667,
+            "clusterCi95": [
+              0.02127659574468085,
+              0.1276595744680851
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 7,
+            "n": 97,
+            "rate": 0.07216494845360824,
+            "clusterCi95": [
+              0.020833333333333332,
+              0.12631578947368421
+            ]
+          },
+          "historicalCombined": {
+            "k": 8,
+            "n": 97,
+            "rate": 0.08247422680412371
+          },
+          "subjectsWithSubmittedProbes": 97,
+          "subjectsWithDetectedProbes": 96,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 7,
+            "n": 96,
+            "rate": 0.07291666666666667
+          }
+        },
+        "O_HAIR": {
+          "submitted": 65,
+          "detected": 63,
+          "detectionFailure": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077,
+            "clusterCi95": [
+              0.0,
+              0.078125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 9,
+            "n": 63,
+            "rate": 0.14285714285714285,
+            "clusterCi95": [
+              0.0625,
+              0.23636363636363636
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 9,
+            "n": 65,
+            "rate": 0.13846153846153847,
+            "clusterCi95": [
+              0.06060606060606061,
+              0.22950819672131148
+            ]
+          },
+          "historicalCombined": {
+            "k": 11,
+            "n": 65,
+            "rate": 0.16923076923076924
+          },
+          "subjectsWithSubmittedProbes": 64,
+          "subjectsWithDetectedProbes": 62,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 9,
+            "n": 62,
+            "rate": 0.14516129032258066
+          }
+        },
+        "E_all": {
+          "submitted": 421,
+          "detected": 418,
+          "detectionFailure": {
+            "k": 3,
+            "n": 421,
+            "rate": 0.007125890736342043,
+            "clusterCi95": [
+              0.0,
+              0.019138755980861243
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 33,
+            "n": 418,
+            "rate": 0.07894736842105263,
+            "clusterCi95": [
+              0.04884303820170981,
+              0.11298076923076923
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 33,
+            "n": 421,
+            "rate": 0.07838479809976247,
+            "clusterCi95": [
+              0.04849884526558892,
+              0.11212868110951897
+            ]
+          },
+          "historicalCombined": {
+            "k": 36,
+            "n": 421,
+            "rate": 0.0855106888361045
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 22,
+            "n": 98,
+            "rate": 0.22448979591836735
+          }
+        },
+        "LFAU_all": {
+          "submitted": 1443,
+          "detected": 1435,
+          "detectionFailure": {
+            "k": 8,
+            "n": 1443,
+            "rate": 0.005544005544005544,
+            "clusterCi95": [
+              0.0,
+              0.016197385188918775
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 57,
+            "n": 1435,
+            "rate": 0.0397212543554007,
+            "clusterCi95": [
+              0.02618533101717815,
+              0.055039939892439084
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 57,
+            "n": 1443,
+            "rate": 0.0395010395010395,
+            "clusterCi95": [
+              0.02602459766454644,
+              0.054767191443031805
+            ]
+          },
+          "historicalCombined": {
+            "k": 65,
+            "n": 1443,
+            "rate": 0.04504504504504504
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 32,
+            "n": 98,
+            "rate": 0.32653061224489793
+          }
+        },
+        "UFAU_all": {
+          "submitted": 402,
+          "detected": 397,
+          "detectionFailure": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.012437810945273632,
+            "clusterCi95": [
+              0.0,
+              0.030952380952380953
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 8,
+            "n": 397,
+            "rate": 0.020151133501259445,
+            "clusterCi95": [
+              0.007371007371007371,
+              0.037037037037037035
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 8,
+            "n": 402,
+            "rate": 0.01990049751243781,
+            "clusterCi95": [
+              0.007263922518159807,
+              0.03658696207380908
+            ]
+          },
+          "historicalCombined": {
+            "k": 13,
+            "n": 402,
+            "rate": 0.03233830845771144
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 7,
+            "n": 98,
+            "rate": 0.07142857142857142
+          }
+        },
+        "CAU_all": {
+          "submitted": 159,
+          "detected": 159,
+          "detectionFailure": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 93,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 93,
+            "rate": 0.0
+          }
+        },
+        "YR_le30": {
+          "submitted": 294,
+          "detected": 293,
+          "detectionFailure": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687,
+            "clusterCi95": [
+              0.0,
+              0.01020408163265306
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 293,
+            "rate": 0.0034129692832764505,
+            "clusterCi95": [
+              0.0,
+              0.010273972602739725
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687,
+            "clusterCi95": [
+              0.0,
+              0.01020408163265306
+            ]
+          },
+          "historicalCombined": {
+            "k": 2,
+            "n": 294,
+            "rate": 0.006802721088435374
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306
+          }
+        },
+        "YR_45": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 18,
+            "n": 195,
+            "rate": 0.09230769230769231,
+            "clusterCi95": [
+              0.05102040816326531,
+              0.13917525773195877
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 18,
+            "n": 196,
+            "rate": 0.09183673469387756,
+            "clusterCi95": [
+              0.05102040816326531,
+              0.1377551020408163
+            ]
+          },
+          "historicalCombined": {
+            "k": 19,
+            "n": 196,
+            "rate": 0.09693877551020408
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 15,
+            "n": 98,
+            "rate": 0.15306122448979592
+          }
+        },
+        "YR_90": {
+          "submitted": 196,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 9,
+            "n": 196,
+            "rate": 0.04591836734693878,
+            "clusterCi95": [
+              0.015306122448979591,
+              0.08163265306122448
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 154,
+            "n": 187,
+            "rate": 0.8235294117647058,
+            "clusterCi95": [
+              0.7593582887700535,
+              0.8829787234042553
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 154,
+            "n": 196,
+            "rate": 0.7857142857142857,
+            "clusterCi95": [
+              0.7193877551020408,
+              0.8520408163265306
+            ]
+          },
+          "historicalCombined": {
+            "k": 163,
+            "n": 196,
+            "rate": 0.8316326530612245
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 97,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 88,
+            "n": 97,
+            "rate": 0.9072164948453608
+          }
+        },
+        "PR_slight": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.010256410256410256,
+            "clusterCi95": [
+              0.0,
+              0.02577319587628866
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.025510204081632654
+            ]
+          },
+          "historicalCombined": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.015306122448979591
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "PR_full": {
+          "submitted": 195,
+          "detected": 191,
+          "detectionFailure": {
+            "k": 4,
+            "n": 195,
+            "rate": 0.020512820512820513,
+            "clusterCi95": [
+              0.00510204081632653,
+              0.041237113402061855
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 6,
+            "n": 191,
+            "rate": 0.031413612565445025,
+            "clusterCi95": [
+              0.010362694300518135,
+              0.05759162303664921
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 6,
+            "n": 195,
+            "rate": 0.03076923076923077,
+            "clusterCi95": [
+              0.01020408163265306,
+              0.05641025641025641
+            ]
+          },
+          "historicalCombined": {
+            "k": 10,
+            "n": 195,
+            "rate": 0.05128205128205128
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.061224489795918366
+          }
+        },
+        "CR_all": {
+          "submitted": 197,
+          "detected": 196,
+          "detectionFailure": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.005076142131979695,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 15,
+            "n": 196,
+            "rate": 0.07653061224489796,
+            "clusterCi95": [
+              0.04040404040404041,
+              0.11794871794871795
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 15,
+            "n": 197,
+            "rate": 0.07614213197969544,
+            "clusterCi95": [
+              0.04040404040404041,
+              0.11734693877551021
+            ]
+          },
+          "historicalCombined": {
+            "k": 16,
+            "n": 197,
+            "rate": 0.08121827411167512
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 13,
+            "n": 98,
+            "rate": 0.1326530612244898
+          }
+        },
+        "N_repeat_control": {
+          "submitted": 187,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 73,
+          "subjectsWithDetectedProbes": 73,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 73,
+            "rate": 0.0
+          }
+        },
+        "ATTENDED_pooled": {
+          "submitted": 3273,
+          "detected": 3247,
+          "detectionFailure": {
+            "k": 26,
+            "n": 3273,
+            "rate": 0.007943782462572564,
+            "clusterCi95": [
+              0.0014432830955782674,
+              0.01916214843234294
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 125,
+            "n": 3247,
+            "rate": 0.0384970742223591,
+            "clusterCi95": [
+              0.02848987578696614,
+              0.049324866894283136
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 125,
+            "n": 3273,
+            "rate": 0.03819126183929117,
+            "clusterCi95": [
+              0.02822708298421212,
+              0.04892788732466045
+            ]
+          },
+          "historicalCombined": {
+            "k": 151,
+            "n": 3273,
+            "rate": 0.046135044301863735
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 52,
+            "n": 98,
+            "rate": 0.5306122448979592
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 0,
+        "n": 187,
+        "rate": 0.0,
+        "clusterCi95": null,
+        "intervalStatus": "omitted_at_empirical_boundary"
+      }
+    },
+    "FMR<=1e-06": {
+      "tau": 3406345,
+      "cosineEquivalent": 0.8129,
+      "groups": {
+        "O_EYE": {
+          "submitted": 98,
+          "detected": 93,
+          "detectionFailure": {
+            "k": 5,
+            "n": 98,
+            "rate": 0.05102040816326531,
+            "clusterCi95": [
+              0.01020408163265306,
+              0.10204081632653061
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 3,
+            "n": 93,
+            "rate": 0.03225806451612903,
+            "clusterCi95": [
+              0.0,
+              0.07368421052631578
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 3,
+            "n": 98,
+            "rate": 0.030612244897959183,
+            "clusterCi95": [
+              0.0,
+              0.07142857142857142
+            ]
+          },
+          "historicalCombined": {
+            "k": 8,
+            "n": 98,
+            "rate": 0.08163265306122448
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 3,
+            "n": 93,
+            "rate": 0.03225806451612903
+          }
+        },
+        "O_MOUTH": {
+          "submitted": 98,
+          "detected": 98,
+          "detectionFailure": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 24,
+            "n": 98,
+            "rate": 0.24489795918367346,
+            "clusterCi95": [
+              0.16326530612244897,
+              0.336734693877551
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 24,
+            "n": 98,
+            "rate": 0.24489795918367346,
+            "clusterCi95": [
+              0.16326530612244897,
+              0.336734693877551
+            ]
+          },
+          "historicalCombined": {
+            "k": 24,
+            "n": 98,
+            "rate": 0.24489795918367346
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 24,
+            "n": 98,
+            "rate": 0.24489795918367346
+          }
+        },
+        "O_GLASSES": {
+          "submitted": 97,
+          "detected": 96,
+          "detectionFailure": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.010309278350515464,
+            "clusterCi95": [
+              0.0,
+              0.03125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 16,
+            "n": 96,
+            "rate": 0.16666666666666666,
+            "clusterCi95": [
+              0.09375,
+              0.24489795918367346
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 16,
+            "n": 97,
+            "rate": 0.16494845360824742,
+            "clusterCi95": [
+              0.09278350515463918,
+              0.2421696528555375
+            ]
+          },
+          "historicalCombined": {
+            "k": 17,
+            "n": 97,
+            "rate": 0.17525773195876287
+          },
+          "subjectsWithSubmittedProbes": 97,
+          "subjectsWithDetectedProbes": 96,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 16,
+            "n": 96,
+            "rate": 0.16666666666666666
+          }
+        },
+        "O_HAIR": {
+          "submitted": 65,
+          "detected": 63,
+          "detectionFailure": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077,
+            "clusterCi95": [
+              0.0,
+              0.078125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 19,
+            "n": 63,
+            "rate": 0.30158730158730157,
+            "clusterCi95": [
+              0.19117647058823528,
+              0.42028985507246375
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 19,
+            "n": 65,
+            "rate": 0.2923076923076923,
+            "clusterCi95": [
+              0.18461538461538463,
+              0.4084507042253521
+            ]
+          },
+          "historicalCombined": {
+            "k": 21,
+            "n": 65,
+            "rate": 0.3230769230769231
+          },
+          "subjectsWithSubmittedProbes": 64,
+          "subjectsWithDetectedProbes": 62,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 19,
+            "n": 62,
+            "rate": 0.3064516129032258
+          }
+        },
+        "E_all": {
+          "submitted": 421,
+          "detected": 418,
+          "detectionFailure": {
+            "k": 3,
+            "n": 421,
+            "rate": 0.007125890736342043,
+            "clusterCi95": [
+              0.0,
+              0.019138755980861243
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 64,
+            "n": 418,
+            "rate": 0.15311004784688995,
+            "clusterCi95": [
+              0.10426540284360189,
+              0.20535768861334258
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 64,
+            "n": 421,
+            "rate": 0.15201900237529692,
+            "clusterCi95": [
+              0.10362663087583494,
+              0.20388349514563106
+            ]
+          },
+          "historicalCombined": {
+            "k": 67,
+            "n": 421,
+            "rate": 0.15914489311163896
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 32,
+            "n": 98,
+            "rate": 0.32653061224489793
+          }
+        },
+        "LFAU_all": {
+          "submitted": 1443,
+          "detected": 1435,
+          "detectionFailure": {
+            "k": 8,
+            "n": 1443,
+            "rate": 0.005544005544005544,
+            "clusterCi95": [
+              0.0,
+              0.016197385188918775
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 161,
+            "n": 1435,
+            "rate": 0.11219512195121951,
+            "clusterCi95": [
+              0.08969195166315487,
+              0.13677024188580375
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 161,
+            "n": 1443,
+            "rate": 0.11157311157311157,
+            "clusterCi95": [
+              0.08907666645853185,
+              0.13629632329122127
+            ]
+          },
+          "historicalCombined": {
+            "k": 169,
+            "n": 1443,
+            "rate": 0.11711711711711711
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 66,
+            "n": 98,
+            "rate": 0.673469387755102
+          }
+        },
+        "UFAU_all": {
+          "submitted": 402,
+          "detected": 397,
+          "detectionFailure": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.012437810945273632,
+            "clusterCi95": [
+              0.0,
+              0.030952380952380953
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 20,
+            "n": 397,
+            "rate": 0.05037783375314862,
+            "clusterCi95": [
+              0.025252525252525252,
+              0.0794044665012407
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 20,
+            "n": 402,
+            "rate": 0.04975124378109453,
+            "clusterCi95": [
+              0.024875621890547265,
+              0.0784313725490196
+            ]
+          },
+          "historicalCombined": {
+            "k": 25,
+            "n": 402,
+            "rate": 0.06218905472636816
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 14,
+            "n": 98,
+            "rate": 0.14285714285714285
+          }
+        },
+        "CAU_all": {
+          "submitted": 159,
+          "detected": 159,
+          "detectionFailure": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 5,
+            "n": 159,
+            "rate": 0.031446540880503145,
+            "clusterCi95": [
+              0.00641025641025641,
+              0.060407768964815506
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 5,
+            "n": 159,
+            "rate": 0.031446540880503145,
+            "clusterCi95": [
+              0.00641025641025641,
+              0.060407768964815506
+            ]
+          },
+          "historicalCombined": {
+            "k": 5,
+            "n": 159,
+            "rate": 0.031446540880503145
+          },
+          "subjectsWithSubmittedProbes": 93,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 5,
+            "n": 93,
+            "rate": 0.053763440860215055
+          }
+        },
+        "YR_le30": {
+          "submitted": 294,
+          "detected": 293,
+          "detectionFailure": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687,
+            "clusterCi95": [
+              0.0,
+              0.01020408163265306
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 12,
+            "n": 293,
+            "rate": 0.040955631399317405,
+            "clusterCi95": [
+              0.02040816326530612,
+              0.06529209621993128
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 12,
+            "n": 294,
+            "rate": 0.04081632653061224,
+            "clusterCi95": [
+              0.02040816326530612,
+              0.06462585034013606
+            ]
+          },
+          "historicalCombined": {
+            "k": 13,
+            "n": 294,
+            "rate": 0.04421768707482993
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 11,
+            "n": 98,
+            "rate": 0.11224489795918367
+          }
+        },
+        "YR_45": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 48,
+            "n": 195,
+            "rate": 0.24615384615384617,
+            "clusterCi95": [
+              0.17435897435897435,
+              0.32142857142857145
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 48,
+            "n": 196,
+            "rate": 0.24489795918367346,
+            "clusterCi95": [
+              0.17346938775510204,
+              0.32142857142857145
+            ]
+          },
+          "historicalCombined": {
+            "k": 49,
+            "n": 196,
+            "rate": 0.25
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 34,
+            "n": 98,
+            "rate": 0.3469387755102041
+          }
+        },
+        "YR_90": {
+          "submitted": 196,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 9,
+            "n": 196,
+            "rate": 0.04591836734693878,
+            "clusterCi95": [
+              0.015306122448979591,
+              0.08163265306122448
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 181,
+            "n": 187,
+            "rate": 0.9679144385026738,
+            "clusterCi95": [
+              0.9315789473684211,
+              0.9947089947089947
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 181,
+            "n": 196,
+            "rate": 0.923469387755102,
+            "clusterCi95": [
+              0.8775510204081632,
+              0.9642857142857143
+            ]
+          },
+          "historicalCombined": {
+            "k": 190,
+            "n": 196,
+            "rate": 0.9693877551020408
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 97,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 95,
+            "n": 97,
+            "rate": 0.979381443298969
+          }
+        },
+        "PR_slight": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 3,
+            "n": 195,
+            "rate": 0.015384615384615385,
+            "clusterCi95": [
+              0.0,
+              0.03571428571428571
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.015306122448979591,
+            "clusterCi95": [
+              0.0,
+              0.03571428571428571
+            ]
+          },
+          "historicalCombined": {
+            "k": 4,
+            "n": 196,
+            "rate": 0.02040816326530612
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 3,
+            "n": 98,
+            "rate": 0.030612244897959183
+          }
+        },
+        "PR_full": {
+          "submitted": 195,
+          "detected": 191,
+          "detectionFailure": {
+            "k": 4,
+            "n": 195,
+            "rate": 0.020512820512820513,
+            "clusterCi95": [
+              0.00510204081632653,
+              0.041237113402061855
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 15,
+            "n": 191,
+            "rate": 0.07853403141361257,
+            "clusterCi95": [
+              0.041666666666666664,
+              0.11979166666666667
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 15,
+            "n": 195,
+            "rate": 0.07692307692307693,
+            "clusterCi95": [
+              0.04081632653061224,
+              0.11794871794871795
+            ]
+          },
+          "historicalCombined": {
+            "k": 19,
+            "n": 195,
+            "rate": 0.09743589743589744
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 14,
+            "n": 98,
+            "rate": 0.14285714285714285
+          }
+        },
+        "CR_all": {
+          "submitted": 197,
+          "detected": 196,
+          "detectionFailure": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.005076142131979695,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 45,
+            "n": 196,
+            "rate": 0.22959183673469388,
+            "clusterCi95": [
+              0.16751269035532995,
+              0.29441624365482233
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 45,
+            "n": 197,
+            "rate": 0.22842639593908629,
+            "clusterCi95": [
+              0.16751269035532995,
+              0.29441624365482233
+            ]
+          },
+          "historicalCombined": {
+            "k": 46,
+            "n": 197,
+            "rate": 0.233502538071066
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 37,
+            "n": 98,
+            "rate": 0.37755102040816324
+          }
+        },
+        "N_repeat_control": {
+          "submitted": 187,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 73,
+          "subjectsWithDetectedProbes": 73,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 73,
+            "rate": 0.0
+          }
+        },
+        "ATTENDED_pooled": {
+          "submitted": 3273,
+          "detected": 3247,
+          "detectionFailure": {
+            "k": 26,
+            "n": 3273,
+            "rate": 0.007943782462572564,
+            "clusterCi95": [
+              0.0014432830955782674,
+              0.01916214843234294
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 327,
+            "n": 3247,
+            "rate": 0.10070834616569141,
+            "clusterCi95": [
+              0.0817560598068722,
+              0.12077149483667661
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 327,
+            "n": 3273,
+            "rate": 0.0999083409715857,
+            "clusterCi95": [
+              0.08115753219025693,
+              0.11991648741516214
+            ]
+          },
+          "historicalCombined": {
+            "k": 353,
+            "n": 3273,
+            "rate": 0.10785212343415826
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 80,
+            "n": 98,
+            "rate": 0.8163265306122449
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 0,
+        "n": 187,
+        "rate": 0.0,
+        "clusterCi95": null,
+        "intervalStatus": "omitted_at_empirical_boundary"
+      }
+    },
+    "current Gamma^2/2": {
+      "tau": 2095104,
+      "cosineEquivalent": 0.5,
+      "groups": {
+        "O_EYE": {
+          "submitted": 98,
+          "detected": 93,
+          "detectionFailure": {
+            "k": 5,
+            "n": 98,
+            "rate": 0.05102040816326531,
+            "clusterCi95": [
+              0.01020408163265306,
+              0.10204081632653061
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012,
+            "clusterCi95": [
+              0.0,
+              0.03296703296703297
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.030612244897959183
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 98,
+            "rate": 0.061224489795918366
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 93,
+            "rate": 0.010752688172043012
+          }
+        },
+        "O_MOUTH": {
+          "submitted": 98,
+          "detected": 98,
+          "detectionFailure": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "O_GLASSES": {
+          "submitted": 97,
+          "detected": 96,
+          "detectionFailure": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.010309278350515464,
+            "clusterCi95": [
+              0.0,
+              0.03125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 96,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 97,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 97,
+            "rate": 0.010309278350515464
+          },
+          "subjectsWithSubmittedProbes": 97,
+          "subjectsWithDetectedProbes": 96,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 96,
+            "rate": 0.0
+          }
+        },
+        "O_HAIR": {
+          "submitted": 65,
+          "detected": 63,
+          "detectionFailure": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077,
+            "clusterCi95": [
+              0.0,
+              0.078125
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 63,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 65,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 2,
+            "n": 65,
+            "rate": 0.03076923076923077
+          },
+          "subjectsWithSubmittedProbes": 64,
+          "subjectsWithDetectedProbes": 62,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 62,
+            "rate": 0.0
+          }
+        },
+        "E_all": {
+          "submitted": 421,
+          "detected": 418,
+          "detectionFailure": {
+            "k": 3,
+            "n": 421,
+            "rate": 0.007125890736342043,
+            "clusterCi95": [
+              0.0,
+              0.019138755980861243
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 3,
+            "n": 418,
+            "rate": 0.007177033492822967,
+            "clusterCi95": [
+              0.0,
+              0.01939655172413793
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 3,
+            "n": 421,
+            "rate": 0.007125890736342043,
+            "clusterCi95": [
+              0.0,
+              0.019138755980861243
+            ]
+          },
+          "historicalCombined": {
+            "k": 6,
+            "n": 421,
+            "rate": 0.014251781472684086
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "LFAU_all": {
+          "submitted": 1443,
+          "detected": 1435,
+          "detectionFailure": {
+            "k": 8,
+            "n": 1443,
+            "rate": 0.005544005544005544,
+            "clusterCi95": [
+              0.0,
+              0.016197385188918775
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 4,
+            "n": 1435,
+            "rate": 0.0027874564459930314,
+            "clusterCi95": [
+              0.0,
+              0.008765522279035792
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 4,
+            "n": 1443,
+            "rate": 0.002772002772002772,
+            "clusterCi95": [
+              0.0,
+              0.008702115813503598
+            ]
+          },
+          "historicalCombined": {
+            "k": 12,
+            "n": 1443,
+            "rate": 0.008316008316008316
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306
+          }
+        },
+        "UFAU_all": {
+          "submitted": 402,
+          "detected": 397,
+          "detectionFailure": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.012437810945273632,
+            "clusterCi95": [
+              0.0,
+              0.030952380952380953
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 397,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 402,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 5,
+            "n": 402,
+            "rate": 0.012437810945273632
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "CAU_all": {
+          "submitted": 159,
+          "detected": 159,
+          "detectionFailure": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 159,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 93,
+          "subjectsWithDetectedProbes": 93,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 93,
+            "rate": 0.0
+          }
+        },
+        "YR_le30": {
+          "submitted": 294,
+          "detected": 293,
+          "detectionFailure": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687,
+            "clusterCi95": [
+              0.0,
+              0.01020408163265306
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 293,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 294,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 294,
+            "rate": 0.003401360544217687
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "YR_45": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 195,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "YR_90": {
+          "submitted": 196,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 9,
+            "n": 196,
+            "rate": 0.04591836734693878,
+            "clusterCi95": [
+              0.015306122448979591,
+              0.08163265306122448
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 7,
+            "n": 187,
+            "rate": 0.0374331550802139,
+            "clusterCi95": [
+              0.010638297872340425,
+              0.07065217391304347
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 7,
+            "n": 196,
+            "rate": 0.03571428571428571,
+            "clusterCi95": [
+              0.01020408163265306,
+              0.0663265306122449
+            ]
+          },
+          "historicalCombined": {
+            "k": 16,
+            "n": 196,
+            "rate": 0.08163265306122448
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 97,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 6,
+            "n": 97,
+            "rate": 0.061855670103092786
+          }
+        },
+        "PR_slight": {
+          "submitted": 196,
+          "detected": 195,
+          "detectionFailure": {
+            "k": 1,
+            "n": 196,
+            "rate": 0.00510204081632653,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 2,
+            "n": 195,
+            "rate": 0.010256410256410256,
+            "clusterCi95": [
+              0.0,
+              0.02577319587628866
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 2,
+            "n": 196,
+            "rate": 0.01020408163265306,
+            "clusterCi95": [
+              0.0,
+              0.025510204081632654
+            ]
+          },
+          "historicalCombined": {
+            "k": 3,
+            "n": 196,
+            "rate": 0.015306122448979591
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 2,
+            "n": 98,
+            "rate": 0.02040816326530612
+          }
+        },
+        "PR_full": {
+          "submitted": 195,
+          "detected": 191,
+          "detectionFailure": {
+            "k": 4,
+            "n": 195,
+            "rate": 0.020512820512820513,
+            "clusterCi95": [
+              0.00510204081632653,
+              0.041237113402061855
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 1,
+            "n": 191,
+            "rate": 0.005235602094240838,
+            "clusterCi95": [
+              0.0,
+              0.015873015873015872
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 1,
+            "n": 195,
+            "rate": 0.005128205128205128,
+            "clusterCi95": [
+              0.0,
+              0.015463917525773196
+            ]
+          },
+          "historicalCombined": {
+            "k": 5,
+            "n": 195,
+            "rate": 0.02564102564102564
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 1,
+            "n": 98,
+            "rate": 0.01020408163265306
+          }
+        },
+        "CR_all": {
+          "submitted": 197,
+          "detected": 196,
+          "detectionFailure": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.005076142131979695,
+            "clusterCi95": [
+              0.0,
+              0.015306122448979591
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 196,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 197,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 1,
+            "n": 197,
+            "rate": 0.005076142131979695
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 98,
+            "rate": 0.0
+          }
+        },
+        "N_repeat_control": {
+          "submitted": 187,
+          "detected": 187,
+          "detectionFailure": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "matchingMissDetected": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0,
+            "clusterCi95": null,
+            "intervalStatus": "omitted_at_empirical_boundary"
+          },
+          "historicalCombined": {
+            "k": 0,
+            "n": 187,
+            "rate": 0.0
+          },
+          "subjectsWithSubmittedProbes": 73,
+          "subjectsWithDetectedProbes": 73,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 0,
+            "n": 73,
+            "rate": 0.0
+          }
+        },
+        "ATTENDED_pooled": {
+          "submitted": 3273,
+          "detected": 3247,
+          "detectionFailure": {
+            "k": 26,
+            "n": 3273,
+            "rate": 0.007943782462572564,
+            "clusterCi95": [
+              0.0014432830955782674,
+              0.01916214843234294
+            ]
+          },
+          "matchingMissDetected": {
+            "k": 10,
+            "n": 3247,
+            "rate": 0.003079765937788728,
+            "clusterCi95": [
+              0.0003026634382566586,
+              0.007167397706264095
+            ]
+          },
+          "candidateAcceptanceFailClosed": {
+            "k": 10,
+            "n": 3273,
+            "rate": 0.0030553009471432934,
+            "clusterCi95": [
+              0.0003009328919650918,
+              0.007103677368403844
+            ]
+          },
+          "historicalCombined": {
+            "k": 36,
+            "n": 3273,
+            "rate": 0.010999083409715857
+          },
+          "subjectsWithSubmittedProbes": 98,
+          "subjectsWithDetectedProbes": 98,
+          "subjectsWithAnyMatchingMiss": {
+            "k": 4,
+            "n": 98,
+            "rate": 0.04081632653061224
+          }
+        }
+      },
+      "falseDuplicateControl": {
+        "k": 103,
+        "n": 187,
+        "rate": 0.5508021390374331,
+        "clusterCi95": [
+          0.43783783783783786,
+          0.6627218934911243
+        ]
+      }
+    }
+  },
+  "bootstrap": {
+    "seed": 20261114,
+    "repetitions": 20000,
+    "rng": "numpy.PCG64",
+    "numpyVersion": "2.5.1",
+    "subjectsPerDraw": 98,
+    "quantileMethod": "linear",
+    "weighting": "ratio of pooled counts per draw",
+    "gallery": "held fixed; gallery-selection uncertainty not estimated",
+    "anyMissInterpretation": "descriptive fraction of subjects with a miss in their available finite probe sets; unequal probe counts; not an adaptive attack probability"
+  },
+  "inputs": [
+    {
+      "name": "bosphorus_evasion.json",
+      "sha256": "5e47a44d70af7ef70b2515df056e8eb6341744be109e317372bc93877e27eb8b"
+    },
+    {
+      "name": "extraction_bosphorus.json",
+      "sha256": "236cfad9f42141c9cba63384687824b83c1601d544b573fe5d2eb939da08bace"
+    },
+    {
+      "name": "bosphorus_scores.csv",
+      "sha256": "9f1b1f8ae0c21c9bd3010ee46afe72fc596a153af2e90a6ee08db11eba27a8eb"
+    },
+    {
+      "name": "bosphorus_embeddings.failures.json",
+      "sha256": "7108dc26e18310d920242b36449631818b877ab5325c3a980729298660bfce0e"
+    }
+  ],
+  "scriptSha256": "be54cb2433052ada9655a4db9bbd46bee332079a47bbc938b479420ba8eb7bc1"
+}

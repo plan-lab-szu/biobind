@@ -4,6 +4,12 @@ Research artifact for the paper *BioBind: Binding Biometric Deduplication to
 Zero-Knowledge Authentication*. Paper: <https://arxiv.org/abs/2611.12636> (arXiv:2611.12636).
 Repository: <https://github.com/plan-lab-szu/biobind>.
 
+The 14 November 2026 update adds a staged Bosphorus reanalysis that separates
+face-detection failures from matching misses. Historical outputs remain
+available for arXiv v1; the revised analysis and table generator are described
+in [the biometric README](experiments/biometric/README.md). See
+[revision notes](docs/revision-20261114.md) for interpretation and provenance.
+
 Authors: Taotao Wang, Xiaoxiao Wu, Shengli Zhang
 (College of Electronics and Information Engineering, Shenzhen University).
 
@@ -35,7 +41,7 @@ experiments; and the archived outputs behind every number in the paper.
 | `prototype/scripts/` | Evaluation scripts (one per experiment, see below) and shared libraries in `scripts/lib/` (enrollment bridge, plaintext model of BioZKFHE's packed gallery, commitments, observer) |
 | `prototype/test/` | Node test suite: 10 files, 45 tests |
 | `prototype/reference/` | Python reference model of the capture attempt budget |
-| `experiments/biometric/` | LFW pipeline: alignment, embedding, quantization, scoring, deduplication calibration ([README](experiments/biometric/README.md)) |
+| `experiments/biometric/` | LFW pipeline and Bosphorus appearance-change evaluation, including staged reanalysis ([README](experiments/biometric/README.md)) |
 | `experiments/bgv/` | C++ / Microsoft SEAL component experiment for BGV enrollment, merge and query (`unified-20261031-runtime-r3/` is the configuration in the paper) ([README](experiments/bgv/README.md)) |
 | `experiments/check-*.py` | Bounded enrollment-state model check; BGV noise-bound arithmetic |
 | `results/prototype/` | Archived outputs of the prototype scripts (JSON, logs, reports) |
@@ -123,7 +129,8 @@ are under `results/prototype/<folder>/`. Run IDs refer to
 | Composed enrollment cost with BioZKFHE | `enrollment-cost-model.py` (needs BioZKFHE's published E2/E3 data) | `enrollment-cost/` | R-COST-20261027 |
 | LFW accuracy, ROC, quantization | `experiments/biometric/` | `experiments/biometric/results/` | R-LFW-20261027 |
 | Deduplication threshold calibration | `experiments/biometric/scripts/dedup_calibration.py` | `experiments/biometric/results/dedup_calibration.json` | R-DEDUP-20261028 |
-| Evasive re-enrollment on Bosphorus (2D images; licensed data not included) | `experiments/biometric/scripts/extract_bosphorus.py`, `bosphorus_evasion.py`, `make_bosphorus_tables.py` | `experiments/biometric/results/bosphorus_evasion.json`, `extraction_bosphorus.json` | R-BOSPHORUS-20261109 |
+| Historical Bosphorus combined metric (arXiv v1; licensed data not included) | `experiments/biometric/scripts/extract_bosphorus.py`, `bosphorus_evasion.py`, `make_bosphorus_tables.py` | `experiments/biometric/results/bosphorus_evasion.json`, `extraction_bosphorus.json` | R-BOSPHORUS-20261109 |
+| Bosphorus detection/matching separation and subject-cluster intervals | `experiments/biometric/scripts/reanalyze_bosphorus.py`, `make_bosphorus_reanalysis_table.py` | `experiments/biometric/results/bosphorus_reanalysis_20261114.json` | R-BOSPHORUS-REANALYSIS-20261114 |
 | BGV components and three 16,384-registration histories | `experiments/bgv/unified-20261031-runtime-r3/` | `results/experiments/bgv-unified-20261031-runtime-r3*/` | R-BGV-RUNTIME-R3-* |
 | Controls with BioZKFHE's original parameter sets (its experiment E3) | `experiments/bgv/run.py` | `results/experiments/bgv-measure-20261030/`, `bgv-repair-r3-*` | R-BGV-20261030, R-BGVFIX-* |
 | Bounded enrollment-state model | `experiments/check-enrollment-model.py` | `results/experiments/enrollment-model-20261031.json` | R-MODEL-20261031 |
@@ -147,12 +154,13 @@ pass the file path as the first argument.
   threshold decryption are not executed; gas figures exclude them.
 - Every gas figure is a single local Ganache run; timings come from one
   machine.
-- The face-recognition evaluation uses one public model on LFW and cannot
-  support low-FAR or adversarial claims. The Bosphorus run adds cooperative
-  evasion attempts (occlusion, expression, pose) by 98 subjects; it gives
-  empirical miss rates, not an adversary's bound. Its false-duplicate control
-  is far above the LFW calibration at the loosest thresholds, so only the
-  stricter operating points are meaningful.
+- The face-recognition evaluation uses one public model on LFW and Bosphorus.
+  These samples do not establish low-FAR performance or worst-case adversarial
+  error bounds. Bosphorus provides controlled appearance changes from 98
+  subjects, with a fixed gallery and thresholds; the reanalysis separates
+  detection failures from matching misses and preserves within-subject
+  dependence in its bootstrap intervals. No station acceptance gate or
+  adaptive attack policy was evaluated.
 - Archived outputs record the folder names of the development workspace (for example `prototype/route-a/build/...` and
   `dev-workspace/experiments/...`). `docs/run-register.csv` maps them to this
   repository. Some READMEs under `experiments/bgv/` link to internal design

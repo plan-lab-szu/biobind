@@ -1,10 +1,10 @@
-# Biometric experiments (LFW)
+# Biometric experiments (LFW and Bosphorus)
 
-This folder reproduces the face-recognition numbers in the paper: LFW View 2
-accuracy under quantization (paper Table XI and the ROC figure) and the 1:N
-deduplication threshold calibration (paper Table XII and the deduplication
-figure). Face images, model weights, embeddings and the exported demo vectors
-are **not** included; the scripts regenerate them from public sources.
+This folder reproduces LFW View 2 accuracy under quantization, 1:N
+deduplication threshold calibration, and the Bosphorus appearance-change
+evaluation. See the root README and `docs/run-register.csv` for run IDs.
+Table and figure numbers differ between manuscript versions. Face images,
+model weights, embeddings and exported demo vectors are not included.
 
 ## Data and model
 
@@ -48,37 +48,80 @@ and `R-DEDUP-20261028` in `docs/run-register.csv`). Per-pair squared distances
 are included; they are derived from public LFW pairs and contain no images or
 embeddings.
 
-## Bosphorus evasive re-enrollment
+## Bosphorus appearance changes and re-enrollment
 
-The Bosphorus database (2D images only) is not included and must be obtained
-from Boğaziçi University. With the images extracted outside the repository:
+The Bosphorus database is not included. Obtain access from Boğaziçi
+University under its usage terms and keep images and derived per-probe
+records outside this repository. The gallery uses the first neutral image
+of each of 98 subjects; the seven excluded subjects are skipped before
+image loading. Every other image is a probe, with fixed LFW-calibrated
+thresholds and no retuning. These are controlled appearance changes, not
+an adaptive attack evaluation or a deployed station acceptance gate.
+
+Generate inputs with the original extraction/scoring pipeline (Python 3.11
+for the archived Bosphorus extraction):
 
 ```bash
-python -I scripts/extract_bosphorus.py --root <BosphorusDB> --out <emb.npz>
-python -I scripts/bosphorus_evasion.py --embeddings <emb.npz> --scores-out <scores.csv>
-python -I scripts/make_bosphorus_tables.py --out-dir tables
+python -I scripts/extract_bosphorus.py --root <BosphorusDB> --out <external-dir>/bosphorus_embeddings.npz
+python -I scripts/bosphorus_evasion.py --embeddings <external-dir>/bosphorus_embeddings.npz --scores-out <external-dir>/bosphorus_scores.csv
 ```
 
-The last command needs no licensed data: it regenerates the paper's full
-Bosphorus table (`bosphorus-full.tex`) and the compact table of the arXiv
-version (`bosphorus-compact.tex`) from `results/bosphorus_evasion.json`, and
-its output is byte-identical to the tables in the manuscript.
+The historical `results/bosphorus_evasion.json` and
+`results/extraction_bosphorus.json` are unchanged. The old combined metric
+counts a detection failure as a miss; it must not be interpreted as a
+successful uniqueness verdict or credential issuance. The following command
+reproduces the historical tables used in arXiv v1:
 
-The protocol is frozen in the docstrings of both scripts: the gallery holds each
-subject's first neutral image, every other image of that subject is a probe,
-thresholds come from `results/dedup_calibration.json` (LFW), and detection
-failures count as missed duplicates. The seven subjects listed in the
-database's `unallowed_subjects.txt` are skipped before any image is read. The
-per-probe score file and the per-image list of failed detections contain
-subject identifiers and are not part of this repository (`extract_bosphorus.py`
-writes the list next to the embeddings, `bosphorus_evasion.py` reads it from
-there); `results/extraction_bosphorus.json` gives the failure counts by
-condition and `results/bosphorus_evasion.json` holds the aggregates (run ID
-`R-BOSPHORUS-20261109`).
+```bash
+python -I scripts/make_bosphorus_tables.py --out-dir tables/historical
+```
+
+### Reanalysis of 14 November 2026
+
+`results/bosphorus_reanalysis_20261114.json` separates detection failures
+from matching misses and reports 95% subject-cluster bootstrap intervals.
+In the original candidate attended-capture grouping, 3,273 probes include
+26 detection failures and 3,247 detected probes. At the LFW per-pair FMR
+calibration target of 10^-4, 32 detected probes miss the gallery:
+32/3,247 = 0.99% (95% interval 0.57–1.47%). At 10^-5 the count is
+125/3,247 = 3.85% (2.85–4.93%). If every detection failure rejects, the
+corresponding offline candidate-acceptance fractions are 32/3,273 and
+125/3,273; these are not measurements of issued duplicate credentials.
+
+With the licensed per-probe inputs available locally, reproduce the full
+reanalysis using NumPy 2.5.1 (the version recorded with this run):
+
+```bash
+python -I scripts/reanalyze_bosphorus.py --scores <external-dir>/bosphorus_scores.csv --failures <external-dir>/bosphorus_embeddings.failures.json --out <external-dir>/bosphorus_reanalysis_check.json
+```
+
+The defaults use 20,000 resamples of 98 whole subjects, NumPy PCG64 seed
+20261114, pooled-count ratios and linear percentile quantiles. The gallery
+and thresholds are held fixed. Zero-event intervals are omitted rather
+than presented as zero-risk bounds. The output records input and script
+SHA-256 hashes and the NumPy version; no per-subject identifiers are
+published in the reanalysis output.
+
+Without licensed inputs, reproduce the separated counts and rates from
+the public historical aggregates, or render the current table from the
+published reanalysis JSON:
+
+```bash
+python -I scripts/reanalyze_bosphorus.py --out <external-dir>/bosphorus_counts_only.json
+python -I scripts/make_bosphorus_reanalysis_table.py
+```
+
+The first command cannot recover subject-cluster intervals from aggregate
+counts alone; use a separate output path so it does not replace the full
+archived result. The second needs no licensed inputs and writes
+`tables/bosphorus-full.tex` with black text, including the published cluster
+intervals. Historical tables are kept separate from this revised table.
 
 ## Limits
 
-LFW has 3,000 impostor pairs, so it supports no low-FAR claim. Only one public
-model and one dataset were evaluated. The deduplication rates are
-non-adversarial reference values, not the adversarial miss probability used
-in the paper's security bound.
+The evaluation uses one public face model on LFW and Bosphorus. LFW has
+3,000 impostor pairs and does not establish performance at very low FAR.
+Bosphorus estimates are conditional on a fixed gallery, thresholds and
+finite, unequal sets of available probes. They do not estimate the
+worst-case conditional biometric errors in the security argument or
+validate capture provenance, liveness detection or attempt-budget controls.

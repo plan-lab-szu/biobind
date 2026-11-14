@@ -1,7 +1,7 @@
 {
   "schemaVersion": "0.1",
-  "updatedLocalDate": "2026-10-27",
-  "purpose": "Journal biometric verification study; first LFW View 2 result exists (2026-10-27)",
+  "updatedLocalDate": "2026-11-14",
+  "purpose": "LFW verification and deduplication calibration; controlled Bosphorus appearance changes with staged reanalysis",
   "datasets": [
     {
       "id": "lfw-view2",
@@ -76,9 +76,31 @@
       16
     ],
     "pairLevelRecordsStatus": "scores for all 6,000 pairs under float and 7 quantizations in results/scores_*.csv",
-    "scoreEvaluatorStatus": "fixed-fold integer-distance scorer implemented and tested; no real scores",
+    "scoreEvaluatorStatus": "fixed-fold integer-distance scorer implemented and tested; archived real LFW scores available",
     "lowFarRule": "report false-accept counts and interval; no unsupported TAR@1e-4 from LFW alone",
     "quantizationRule": "L2-normalize, x Gamma, round half away from zero; Gamma = 2^(b-1)-1 for b in {4,6,8,10,12,16}, plus BioZKFHE Gamma = 512",
     "resultsSummary": "results/lfw_view2_summary.json"
+  },
+  "bosphorusReanalysis": {
+    "run": "R-BOSPHORUS-REANALYSIS-20261114",
+    "result": "results/bosphorus_reanalysis_20261114.json",
+    "resultSha256": "327047bea33700d6c82c53e66f6d3b8c301b9e693b73866e9ff477ff8f10301f",
+    "script": "scripts/reanalyze_bosphorus.py",
+    "scriptSha256": "be54cb2433052ada9655a4db9bbd46bee332079a47bbc938b479420ba8eb7bc1",
+    "tableGenerator": "scripts/make_bosphorus_reanalysis_table.py",
+    "table": "tables/bosphorus-full.tex",
+    "historicalResult": "results/bosphorus_evasion.json",
+    "privateInputsIncluded": false,
+    "bootstrap": {
+      "seed": 20261114,
+      "repetitions": 20000,
+      "rng": "numpy.PCG64",
+      "numpyVersion": "2.5.1",
+      "subjectsPerDraw": 98,
+      "quantileMethod": "linear",
+      "weighting": "ratio of pooled counts per draw",
+      "gallery": "held fixed; gallery-selection uncertainty not estimated",
+      "anyMissInterpretation": "descriptive fraction of subjects with a miss in their available finite probe sets; unequal probe counts; not an adaptive attack probability"
+    }
   }
 }
